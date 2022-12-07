@@ -8,11 +8,11 @@ module.exports = (sequelize) => {
       allowNull: true,
       primaryKey: true
     },
-    user: {
+    QR: {
       type: DataTypes.STRING, 
       allowNull: false,
     },
-    stars: {
+    event: {
       type: DataTypes.INTEGER, 
       allowNull: false,
     },
@@ -22,3 +22,5 @@ module.exports = (sequelize) => {
     },  
   });
 };
+
+//PREGUNTAR A ALFRED !!!!!
