@@ -8,10 +8,12 @@
 const puppeteer = require("puppeteer");  // simula un browser de chrome
 const randomUseragent = require("random-useragent"); // simula un usuario recorriendo el browser
 
-let api = [];
+
 // esta funcion 
 const initialization = async ()=>{
-
+    
+    let api = [];
+    
     const header = randomUseragent.getRandom(); // generamos un usuario virtual
 
     const browser = await puppeteer.launch(); // inicializamos el launcher de puppetter ( seria como abrir el browser)
@@ -62,7 +64,7 @@ const initialization = async ()=>{
     for( const i of url){  // recorro el arreglo de url para entrar a cada detail (evento) de la primer pagina. 
 
 
-        //                 --------------nombre evento------------------------
+        //--------------------------------NOMBRE EVENTO------------------------
 
         await page2.goto(i); // le paso la url del evento 
 
@@ -82,14 +84,25 @@ const initialization = async ()=>{
 
         //----------------- FECHA EVENTO-------------------------------------------
 
-        await page2.waitForSelector(".cont-head-ficha");    // lo mismo pero con la fecha XD
+        await page2.waitForSelector(".contenedor");    // lo mismo pero con la fecha XD
    
-        const lislali = await  page2.$("li");
- 
-        
-        const fecha = await page2.evaluate(e => e.innerText,lislali);
+        const lislali = await  page2.$$("li");
 
-        // console.log(fecha);
+        let arreglo = [];
+ 
+        for (const i of lislali){
+
+
+            const fecha = await i.evaluate(e => e.innerText, lislali);
+
+            arreglo.push(fecha);
+        }
+        // console.log(arreglo);
+
+        let arreglo2 = arreglo.filter(e=> e.includes("-"));
+
+        // console.log(arreglo2);
+        
 
         // api.push({fecha});
 
@@ -113,35 +126,59 @@ const initialization = async ()=>{
 
         //---------------------------PRECIO DEL EVENTO-------------------------------
 
-        await page2.waitForSelector(".sin-borde");
+        await page2.waitForSelector(".sin-borde, .cont-desc")  
+    
+        const c = await page2.$$(".td-modify")
+        
+        let daa3 = "";
 
-        const c = await page2.$$(".td-modify"); // td
+        if(c.length >0 ){
 
-        let arr = []
+               
 
-        for(const i of c){
+            let arr = []
 
-            const precio = await i.evaluate(e => e.innerText, c);
+            
+            for(const i of c){
 
-            arr.push( precio)
-            // console.log(precio);
+                const precio = await i.evaluate(e => e.innerText, c);
+
+                arr.push( precio);
+                // console.log(precio);
+            };
+
+
+            // let mapArr = arr.map(e=> e.toString().replace("\t", "")) //replace(/<[^>]*>?/g, '');
+            // console.log(arr);
+
+            let daa = arr.map(e => e.replace(/(\r\n\t|\n|\r|\t)/gm, " ").trim());
+            // let daa = arr[0].a.replace(/(\r\n|\n|\r)/gm, "");
+            // let daa2 = daa.find(e =>  e.includes("$"));
+
+            let daa2 = daa.map(e => e.replace(/^\s+|\s+$|\s+(?=\s)/g, ""));
+            // console.log(daa2);
+
+            daa3 = daa2.filter(e=> !e.includes("0 1"));
+
+            // console.log(daa3);
+
+
+            // api.push(daa3);
+
+        }else{
+
+            // await page2.waitForSelector(".cont-desc");
+
+            // const c1 = await page2.$(".text-mobile");
+        
+        
+            // const c2 = await page2.evaluate(e => e.innerText, c1)
+
+            // console.log("sin precio")
+            
+            daa3 = "Sin precio";
         }
     
-        // let mapArr = arr.map(e=> e.toString().replace("\t", "")) //replace(/<[^>]*>?/g, '');
-        // console.log(arr);
-
-        let daa = arr.map(e => e.replace(/(\r\n\t|\n|\r|\t)/gm, " ").trim());
-        // let daa = arr[0].a.replace(/(\r\n|\n|\r)/gm, "");
-        // let daa2 = daa.find(e =>  e.includes("$"));
-
-        let daa2 = daa.map(e => e.replace(/^\s+|\s+$|\s+(?=\s)/g, ""));
-        // console.log(daa2);
-
-        let daa3 = daa2.filter(e=> !e.includes("0 1"));
-
-        // console.log(daa3);
-
-        // api.push(daa3);
 
         //---------------------------descripcion del evento -------------------------------------
 
@@ -184,9 +221,9 @@ const initialization = async ()=>{
         api.push({
 
             name: nombre,
-            date:fecha,
+            date: arreglo2,
             location: lugar2,
-            price: daa3,
+            price:daa3,
             description: arrS3,
             image: imagen
 
@@ -194,12 +231,12 @@ const initialization = async ()=>{
 
     }
 
-    console.log(api);
+    // console.log(api);
 
 
+    let obj = {results: api};
 
-
-
+    return obj;
 
 
 
@@ -212,6 +249,10 @@ const initialization = async ()=>{
 };
 
 initialization();
+
+module.exports = initialization;
+
+
 
 // console.log(api);
 
