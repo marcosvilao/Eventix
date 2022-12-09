@@ -34,15 +34,18 @@ const { User, Event, Review, Ticket } = sequelize.models;
 
 // Aca vendrian las relaciones
 // Product.hasMany(Reviews);
+
 //muchos a muchos
-User.belongsToMany(Event, {through : 'user_event'})
-Event.belongsToMany(User, {through : 'user_event'})
+User.belongsToMany(Event, {through : 'user_event'});
+Event.belongsToMany(User, {through : 'user_event'});
+
 //uno a muchos 
-User.hasMany(Review, {through : 'user_review'})
-Review.belongsTo(User, {through : 'user_review'})
+User.hasMany(Review);         // las relaciones que no sean de muchos a muchos no es necesario designarles tabla intermedia. :v
+Review.belongsTo(User);
+
 //uno a muchos
-User.hasMany(Ticket, {through: 'user_ticket'})
-Ticket.belongsTo(User, {through : 'user_ticket'})
+User.hasMany(Ticket);
+Ticket.belongsTo(User);
 
 module.exports = {
     ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');

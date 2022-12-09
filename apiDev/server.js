@@ -236,7 +236,7 @@ const initialization = async ()=>{
 
     let obj = {results: api};
 
-    return obj;
+    // return obj;
 
 
 
