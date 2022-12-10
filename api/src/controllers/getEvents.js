@@ -13,7 +13,7 @@ const getEvents = async()=>{
 
             id: id++,
             name: e.name,
-            date: e.date,
+            date: e.date.length > 0 ? e.date : ["Funciones Disponibles"],
             location: e.location,
             price: typeof e.price  === "object"? e.price.filter(e => e.includes("$") ): "Info price", 
             image: e.image
