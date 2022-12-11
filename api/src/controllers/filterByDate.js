@@ -41,7 +41,7 @@ const filterByDate = async(day, month, year, funcionesDisponibles) =>{
             return eventsDisponibles2;
         }; 
         
-        return "No Hay evento en esa fecha";
+        return "No hay evento en esa fecha";
 
     };
 
@@ -68,10 +68,10 @@ const filterByDate = async(day, month, year, funcionesDisponibles) =>{
             return eventsDate;
         };
            
-        return "No Hay evento en esa fecha";
+        return "No hay evento en esa fecha";
     };
     
-    return "Debe Ingresar Una fecha";
+    return "Debe ingresar una fecha";
 };
 
 module.exports = filterByDate;

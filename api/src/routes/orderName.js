@@ -1,5 +1,5 @@
 const {Router} = require("express");
-const orderByName = require("../controllers/orderByName");
+const filterByAlphabet = require("../controllers/FilterbyAlphabet");
 
 const route = Router();
 
@@ -7,11 +7,11 @@ route.get("/", async(req,res)=>{
 
     try {
         
-        const {order} = req.body;
+        const {filter} = req.body;
 
-       const eventOrder = await orderByName(order);
+       const eventFilter = await filterByAlphabet(filter);
 
-        res.status(200).json(eventOrder);
+        res.status(200).json(eventFilter);
 
 
     } catch (error) {

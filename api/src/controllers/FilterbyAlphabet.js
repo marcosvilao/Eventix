@@ -1,11 +1,11 @@
 const getEvents = require("../controllers/getEvents");
 
 
-const orderByName = async(order) =>{
+const filterByAlphabet = async(filter) =>{
 
     const events = await getEvents();
 
-    const eventOrder = order === "A-Z" ? events.sort(function(a,b){
+    const eventFilter = filter === "A-Z" ? events.sort(function(a,b){
 
         if(a.name.toLowerCase() > b.name.toLowerCase()) return 1;
         if(b.name.toLowerCase() > a.name.toLowerCase()) return -1;
@@ -19,8 +19,8 @@ const orderByName = async(order) =>{
         return 0;
     });
 
-    return eventOrder;
+    return eventFilter;
 
 };
 
-module.exports = orderByName;
+module.exports = filterByAlphabet;

@@ -3,7 +3,7 @@ const { Router } = require('express');
 // Ejemplo: const authRouter = require('./auth.js');
 const api = require("./Api");
 const events = require("./events");
-const order = require("./orderName");
+const filter = require("./filterByAlphabet");
 const filterDate = require("./filterDate");
 const eventname = require("./eventName");
 
@@ -16,7 +16,7 @@ router.use("/api", api);
 
 router.use("/events", events);
 
-router.use("/order",order);
+router.use("/filteralphabet", filter);
 
 router.use("/filterdate", filterDate);
 
