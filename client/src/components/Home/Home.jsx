@@ -4,6 +4,8 @@ import Navbar from '../Navbar/Navbar'
 import SearchBar from '../SearchBar/SearchBar'
 
 function Home() {
+
+
   return (
     <div>
         <Navbar/>
