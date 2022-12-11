@@ -3,7 +3,7 @@ import React from 'react'
 export default function Detail() {
   return (
     <div>
-      hola
+      ACA VA TODO EL DETALLE DEL EVENTO CHETO MAL
     </div>
   )
 }
