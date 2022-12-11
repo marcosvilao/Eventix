@@ -4,13 +4,18 @@ const getEvents = require("../controllers/getEvents");
 const route = Router();
 
 route.get("/",async(req,res)=>{         // GET http://localhost:3001/events
-
+    const {name} = req.query
     try {
-        
         const event = await getEvents();
-
-        res.status(200).json(event);
-
+        if(name){
+            const searchEvent = event.filter((event) => event.name.toLowerCase().includes(name.toLowerCase())) 
+            searchEvent.length ? 
+            res.status(200).json(searchEvent)
+            :
+            res.status(404).json({msg : `Can´t find event ${name}`})
+        } else {
+            res.status(200).json(event);
+        }
     } catch (error) {
 
         res.status(500).send(error.message);
@@ -19,23 +24,7 @@ route.get("/",async(req,res)=>{         // GET http://localhost:3001/events
 
 });
 
-route.get("/",async(req,res)=>{         // GET http://localhost:3001/events
 
-    try {
-        const {name} = req.query
-        const event = await getEvents();
-
-        const searchEvent = event.filter((event) => event.name === name) 
-
-        res.status(200).json(searchEvent);
-
-    } catch (error) {
-
-        res.status(500).send(error.message);
-        
-    };
-
-});
 
 route.get("/:id",async(req,res)=>{         // GET http://localhost:3001/events
 
