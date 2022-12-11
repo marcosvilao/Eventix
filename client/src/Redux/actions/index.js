@@ -93,5 +93,18 @@ export const filterByDate = (date) => {
 };
 
 export const searchEventById = (id) => {
+  return async function (dispatch){
+    try {
+    
+      
 
+
+    } catch (error) {
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  }
 }
