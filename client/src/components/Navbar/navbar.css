@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    box-shadow: rgb(255, 255, 255);
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    background-color: black;
+}
+
+.left {
+    align-items: center;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.right {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}

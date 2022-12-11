@@ -9,7 +9,6 @@ import Detail from './components/Detail/Detail';
 function App() {
   return (
     <div>
-      hola
       <Switch>
       <Route exact path={'/'} component={Home}/>
       <Route exact path={'/home/:id'} component={Detail}/>
