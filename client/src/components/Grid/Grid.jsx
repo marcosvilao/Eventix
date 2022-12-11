@@ -15,9 +15,15 @@ export default function Grid() {
     useEffect(() => {
       dispatch(getAllEvents())
     }, [dispatch])
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        dispatch(getAllEvents())
+    }
     
     return (
         <div>
+        <button onClick={handleClick}>Refresh events</button> 
         {
         <ul>
             {
