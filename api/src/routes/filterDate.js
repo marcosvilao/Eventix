@@ -1,6 +1,6 @@
 const {Router} = require("express");
 const filterByDate = require("../controllers/filterByDate");
-const checkData = require("../middelwares/checkDataFilterDate");
+const checkData = require("../middlewares/checkDataFilterDate");
 
 const route = Router();
 
