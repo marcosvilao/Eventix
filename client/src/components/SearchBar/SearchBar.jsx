@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import {getNameCountry } from '../../actions'
 import styles from './searchbar.module.css'
 
 
@@ -16,11 +15,10 @@ export default function SearchBar() {
     const handleSubmit = (e)=>{
       if(name === ''){
         e.preventDefault()
-        alert('Insert a country')
+        alert('Insert a event')
       } 
       else{
         e.preventDefault()
-        dispatch(getNameCountry(name))
         setName('')
       }
     }
