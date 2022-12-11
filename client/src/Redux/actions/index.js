@@ -11,6 +11,8 @@ export const FILTER_BY_DATE = "FILTER_BY_DATE";
 
 export const GET_EVENT_ID = "GET_EVENT_ID"
 
+export const GET_NAME_EVENT = "GET_NAME_EVENT"
+
 //-------------------------------------------------
 const URL = "http://localhost:3001"
 //-------------------------------------------------
@@ -28,6 +30,31 @@ export const getAllEvents = () => {
       dispatch({
 
         type: GET_ALL_EVENTS,
+        payload: event.data
+      });
+
+    } catch (error) {
+
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      });
+    };
+  };
+};
+
+export const getNameEvent = (name) => {
+
+  return async function (dispatch) {
+
+    try {
+
+      const event = await axios.get(`${URL}/events?name=${name}`);
+
+      dispatch({
+
+        type: GET_NAME_EVENT,
         payload: event.data
       });
 
