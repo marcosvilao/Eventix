@@ -19,4 +19,21 @@ route.get("/",async(req,res)=>{         // GET http://localhost:3001/events
 
 });
 
+route.get("/:id",async(req,res)=>{         // GET http://localhost:3001/events
+
+    try {
+        const {id} = req.params
+        const event = await getEvents();
+        const eventId = event.filter((event) => event.id == id)
+
+        res.status(200).json(eventId);
+
+    } catch (error) {
+
+        res.status(500).send(error.message);
+        
+    };
+
+});
+
 module.exports= route;
