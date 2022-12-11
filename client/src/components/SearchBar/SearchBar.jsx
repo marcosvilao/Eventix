@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { getNameEvent } from '../../Redux/actions'
 import styles from './searchbar.module.css'
+
 
 
 export default function SearchBar() {
@@ -19,6 +21,7 @@ export default function SearchBar() {
       } 
       else{
         e.preventDefault()
+        dispatch(getNameEvent(name))
         setName('')
       }
     }
