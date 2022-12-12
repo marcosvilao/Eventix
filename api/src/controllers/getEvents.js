@@ -1,4 +1,5 @@
 const getApi = require("../../../apiDev/API");
+const {Event}= require("../db");
 
 
 const getEvents = async()=>{
@@ -7,7 +8,7 @@ const getEvents = async()=>{
     
     let id = 1;
 
-    const event = api.results.map(e => {
+    const eventApi = api.results.map(e => {
 
         return {
 
@@ -15,12 +16,19 @@ const getEvents = async()=>{
             name: e.name,
             date: e.date.length > 0 ? e.date : ["Funciones Disponibles"],
             location: e.location,
-            price: typeof e.price  === "object"? e.price.filter(e => e.includes("$") ): "Info price", 
+            // price: typeof e.price  === "object"? e.price.filter(e => e.includes("$") ): "Info price", // solo muestra un precio de entrada
+            prece: e.price,
+            description: e.description,
             image: e.image
         };
     });
 
-    return event;
+
+    const eventDB = await Event.findAll();
+
+    const events = [...eventDB, ...eventApi];
+
+    return events;
 };
 
 module.exports= getEvents;

@@ -27,6 +27,17 @@ module.exports = (sequelize) => {
     price: {
       type: DataTypes.STRING, 
       allowNull: false,
+    },
+    description: {
+      type: DataTypes.STRING, 
+      allowNull: false,
+    },
+    createInDB:{
+      type: DataTypes.BOOLEAN,
+      defaultValue: true,
+      allowNull:false
     }
+  },{
+    timestamps: false
   });
 };
