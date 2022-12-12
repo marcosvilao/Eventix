@@ -9,12 +9,14 @@ export const ORDER_BY_NAME = "ORDER_BY_NAME";
 
 export const FILTER_BY_DATE = "FILTER_BY_DATE";
 
-export const GET_EVENT_ID = "GET_EVENT_ID"
+export const GET_EVENT_ID = "GET_EVENT_ID";
 
-export const GET_NAME_EVENT = "GET_NAME_EVENT"
+export const GET_NAME_EVENT = "GET_NAME_EVENT";
+
+export const CREATE_EVENT = "CREATE_EVENT";
 
 //-------------------------------------------------
-const URL = "http://localhost:3001"
+const URL = "http://localhost:3001";
 //-------------------------------------------------
 
 
@@ -139,3 +141,28 @@ export const searchEventById = (id) => {
     }
   }
 }
+
+export const createEvent = (data) => {
+
+  return async function(dispatch){
+
+    try {
+      
+      const event = await axios.post(`${URL}/events`, data);
+
+      dispatch({
+
+        type: CREATE_EVENT,
+        payload: event.data
+      })
+
+    } catch (error) {
+
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  };
+};
