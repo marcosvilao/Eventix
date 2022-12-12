@@ -1,7 +1,12 @@
+*{
+    text-decoration: none;
+}
+
 .navbar {
+    
     display: flex;
     justify-content: space-between;
-    height: auto;
+    height: max-content;
     margin-left: 0.5%;
     margin-right: 0.5%;
     box-shadow: rgb(255, 255, 255);
@@ -10,6 +15,7 @@
 }
 
 .left {
+    color:white;
     align-items: center;
     display: flex;
     width: 20%;
@@ -17,6 +23,7 @@
 }
 
 .right {
+    
     align-items: center;
     display: flex;
     gap: 10px;
