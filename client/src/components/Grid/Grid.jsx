@@ -23,7 +23,7 @@ export default function Grid() {
     
     return (
         <div>
-        <button onClick={handleClick}>Refresh events</button> 
+        
         {
         <ul>
             {
