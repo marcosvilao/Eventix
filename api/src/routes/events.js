@@ -1,7 +1,7 @@
 const {Router} = require("express");
 const getEvents = require("../controllers/getEvents");
 const createEvent = require("../controllers/createEvent");
-
+const sort = require("../controllers/sort");
 
 const route = Router();
 
@@ -41,6 +41,26 @@ route.post("/", async(req,res) =>{
         res.status(500).send(error.message);
     }
 
+});
+
+
+route.get("/order/:order", async(req,res)=>{
+
+    try {
+        
+        const {order} = req.params;
+
+        // console.log(order);
+
+        const eventFilter = await sort(order);
+
+        res.status(200).json(eventFilter);
+
+
+    } catch (error) {
+        
+        res.status(500).send(error.message);
+    }
 });
 
 

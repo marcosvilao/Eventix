@@ -15,6 +15,8 @@ export const GET_NAME_EVENT = "GET_NAME_EVENT";
 
 export const CREATE_EVENT = "CREATE_EVENT";
 
+export const SORT = "SORT";
+
 //-------------------------------------------------
 const URL = "http://localhost:3001";
 //-------------------------------------------------
@@ -158,6 +160,31 @@ export const createEvent = (data) => {
 
     } catch (error) {
 
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  };
+};
+
+export const sort = (value) =>{
+
+  return async function (dispatch){
+
+    try {
+      
+      const eventSort = await axios.get(`${URL}/events/order/`+ value);
+
+      dispatch({
+
+        type: SORT,
+        payload: eventSort.data
+      })
+
+    } catch (error) {
+  
       dispatch({
 
         type: ERROR,
