@@ -14,18 +14,10 @@ export default function Grid() {
 
     useEffect(() => {
       dispatch(getAllEvents())
-    }, [dispatch])
-
-    const handleClick = (e) => {
-        e.preventDefault()
-        dispatch(getAllEvents())
-    }
-    
+    }, [dispatch])    
     return (
-        <div>
-        
-        {
-        <ul>
+  
+        <ul className='eventsGrid'>
             {
                 allEvents?.map((event)=>{
                     return (
@@ -33,7 +25,6 @@ export default function Grid() {
                     );
                 })
             }
-        </ul>}
-        </div>
+        </ul>
     )
 }

@@ -1,6 +1,6 @@
 .eventsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 190px); 
+    grid-template-columns: repeat(auto-fill, 400px); 
     gap: 70px;
     margin-right: 10%;
     margin-left: 10%;

@@ -1,6 +1,9 @@
 import React from 'react'
+import AboutUs from '../About Us/AboutUs'
 import Grid from '../Grid/Grid'
 import Navbar from '../Navbar/Navbar'
+import './home.css'
+
 
 
 function Home() {
@@ -9,9 +12,11 @@ function Home() {
   return (
     <div>
         <Navbar/>
-        <p>Eventix is an event marketplace whith better functionalities, cheaper servicies, and simple tu use.
-            Be free to filter the events like you want </p>
-        <Grid/>
+        <AboutUs/>
+        <div className='grid'>
+         <Grid/> 
+        </div>
+        
     </div>
 
   )
