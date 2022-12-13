@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { getNameEvent } from '../../Redux/actions'
 import styles from './searchbar.module.css'
 import search from '../../assets/search.svg'
-
+import Sort from '../Sort/Sort'
 
 
 export default function SearchBar() {
@@ -31,11 +31,27 @@ export default function SearchBar() {
 
 
   return (
-    <form className={styles.container}>
-        <input onChange={handleChange} value={name} onSubmit={handleSubmit} className={styles.searchBar} type="text" placeholder='search...'/>
-        <button  onClick={handleSubmit} className={styles.btn}>
-          <img className={styles.searchimage} src={search} alt="" />
-        </button>
-    </form>
+
+    <div>
+
+      <div>
+        {/* <Sort/>*/}
+      </div>
+
+
+      <div>
+
+        <form className={styles.container}>
+          <input onChange={handleChange} value={name} onSubmit={handleSubmit} className={styles.searchBar} type="text" placeholder='search...'/>
+          <button  onClick={handleSubmit} className={styles.btn}>
+            <img className={styles.searchimage} src={search} alt="" />
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+    
+    
   )
 }

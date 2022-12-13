@@ -1,4 +1,4 @@
-import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER_BY_DATE, GET_NAME_EVENT, GET_EVENT_ID, CREATE_EVENT } from "../actions";
+import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER_BY_DATE, GET_NAME_EVENT, GET_EVENT_ID, CREATE_EVENT, SORT } from "../actions";
 
 
 const initialState = {
@@ -53,7 +53,12 @@ function rootReducer (state = initialState, action) {
             return {
                 ...state,
                 post: action.payload
-            }      
+            }
+        case SORT:
+            return {
+                ...state,
+                events: action.payload
+            }          
         default:
             
             return {
