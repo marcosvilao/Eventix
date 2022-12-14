@@ -25,7 +25,7 @@ function rootReducer (state = initialState, action) {
             
             return {
                 ...state,
-                allevents: action.payload
+                allevent : action.payload
             }
         case ERROR:
 
