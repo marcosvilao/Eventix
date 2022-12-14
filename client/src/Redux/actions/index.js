@@ -17,19 +17,21 @@ export const CREATE_EVENT = "CREATE_EVENT";
 
 export const SORT = "SORT";
 
+export const GET_ALL_EVENT_LIST = 'GET_ALL_EVENT_LIST'
+
 //-------------------------------------------------
 const URL = "http://localhost:3001";
 //-------------------------------------------------
 
 
 
-export const getAllEvents = () => {
+export const getAllEvents = (page) => {
 
   return async function (dispatch) {
 
     try {
 
-      const event = await axios.get(`${URL}/events`);
+      const event = await axios.get(`${URL}/events/page/${page}`);
 
       dispatch({
 
@@ -48,13 +50,37 @@ export const getAllEvents = () => {
   };
 };
 
+export const getAllEventList = () => {
+  return async function (dispatch) {
+
+    try {
+
+      const event = await axios.get(`${URL}/events/allevents`);
+
+      dispatch({
+
+        type: GET_ALL_EVENT_LIST,
+        payload: event.data
+      });
+
+    } catch (error) {
+
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      });
+    };
+  };
+}
+
 export const getNameEvent = (name) => {
 
   return async function (dispatch) {
 
     try {
 
-      const event = await axios.get(`${URL}/events?name=${name}`);
+      const event = await axios.get(`${URL}/events/page/:page?name=${name}`);
 
       dispatch({
 

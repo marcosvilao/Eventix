@@ -5,9 +5,10 @@ const sort = require("../controllers/sort");
 
 const route = Router();
 
-route.get("/",async(req,res)=>{         // GET http://localhost:3001/events
+route.get(`/page/:page`,async(req,res)=>{         // GET http://localhost:3001/events
     const {name} = req.query
-    try {
+    const {page} = req.params
+        try {
         const event = await getEvents();
         if(name){
             const searchEvent = event.filter((event) => event.name.toLowerCase().includes(name.toLowerCase())) 
@@ -16,7 +17,9 @@ route.get("/",async(req,res)=>{         // GET http://localhost:3001/events
             :
             res.status(404).json({msg : `Can´t find event ${name}`})
         } else {
-            res.status(200).json(event);
+            const lastevent = page*5
+            const currentEvents = event.slice(lastevent - 5, lastevent)
+            res.status(200).json(currentEvents);
         }
     } catch (error) {
 
@@ -25,6 +28,15 @@ route.get("/",async(req,res)=>{         // GET http://localhost:3001/events
     };
 
 });
+
+route.get('/allevents', async (req, res) => {
+    try {
+        const event = await getEvents();
+        res.status(200).json(event)
+    } catch (error) {
+        res.status(500).json({msg : error.message});
+    }
+})
 
 
 route.post("/", async(req,res) =>{
