@@ -5,44 +5,47 @@ import { useEffect } from 'react'
 import { getAllEventList, getAllEvents } from '../../Redux/actions'
 import Card from '../Card/Card'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import { all } from 'axios'
+import axios, { all } from 'axios'
 
 
 
 export default function Grid() {
+    const URL = "http://localhost:3001"
     const dispatch = useDispatch()
     const [page, setPage] = useState(1)
-    const [totalPages, setTotalPages] = useState(10)
     const [hasMore, setHasMore] = useState(true)
     const Events = useSelector( (state) => state.events )
     const allEvents = useSelector((state) => state.allevent)
-    // const [currentEvents, setCurrentEvents] = useState(Events)
+    const [concatEvents, setconcatEvents] = useState([])
 
-    // console.log(Events)
-    // console.log(allEvents)    
-    // console.log(page)
-
-
-
-    
-
-    if(page === totalPages) {
-        setHasMore(false)
+    const next = () => {
+        setPage((prevPage) => prevPage + 1)
     }
 
     useEffect(() => {
-        dispatch(getAllEvents(page))
+        axios(URL + '/events/page/' + page).then((data) => {
+            setconcatEvents((prevEvents) => prevEvents.concat(data.data))
+        })
         dispatch(getAllEventList())
+        
+        
     }, [dispatch, page])    
     return (
         <InfiniteScroll
-            dataLength={allEvents.length}
+            dataLength={concatEvents.length}
             hasMore={hasMore}
-            next={() => setPage((prevPage) => prevPage + 1)}
+            next={next}
             >
            <ul className='eventsGrid'>
             {
-                Events?.map((event)=>{
+                Events.length > 0 ?
+                Events.map((event)=>{
+                    return (
+                        <Card event={event} key={event.id}/>
+                    );
+                })
+                :
+                concatEvents?.map((event)=>{
                     return (
                         <Card event={event} key={event.id}/>
                     );

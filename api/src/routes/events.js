@@ -19,6 +19,7 @@ route.get(`/page/:page`,async(req,res)=>{         // GET http://localhost:3001/e
         } else {
             const lastevent = page*5
             const currentEvents = event.slice(lastevent - 5, lastevent)
+            console.log(currentEvents)
             res.status(200).json(currentEvents);
         }
     } catch (error) {
