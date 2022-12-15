@@ -15,8 +15,8 @@ export default function Loading() {
   const Rotate = styled.div`
     width: 50px;
     height: 50px;
-    border: 10px solid #f3f3f3; /* Light grey */
-    border-top: 10px solid #383636; /* Blue */
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid #383636; 
     border-radius: 50%;
     animation: ${rotate} 1s linear infinite;
   `;
