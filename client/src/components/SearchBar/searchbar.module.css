@@ -6,7 +6,7 @@
     margin-top: 20px; */
     display: flex;
     position: absolute;
-    margin-left: 65%;
+    margin-left: 40%;
 }
 
 .searchBar{
@@ -14,8 +14,8 @@
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     border-right: none;
-    height: 40px;
-    width: 200px;
+    height: 6vh;
+    width: 15vw;
     font-size: 1rem;
     /* box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
     backdrop-filter: blur(14px); */
@@ -26,16 +26,23 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: none;
-    background-image: url(../../assets/search.png);
-    background-position: center;
+
+    /*background-position: center;
     background-size: cover; 
     /* box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); */
     /* backdrop-filter: blur(14px); */
     background-color: rgba(255, 255, 255, 0.2);
-    width: 40px;
-    height: 43px;
-
+    width: 4vw;
+    height: 6.35vh;
+    
     
     
 
 }
+
+.searchimage{
+    
+    padding: 5px 5px 6px 5px;
+    filter:brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(2%) hue-rotate(338deg) brightness(112%) contrast(101%);
+}
+

@@ -6,7 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  background-color: rgb(141, 21, 141);
+  background-color: #493477;
+}
+
+a {
+  text-decoration: none;
 }
 
 code {
