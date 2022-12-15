@@ -5,11 +5,16 @@ import { useHistory, useParams } from 'react-router-dom';
 
 
 export default function Detail() {
-  const eventShowed = useSelector(state => state.events)
+  const events = useSelector( (state) => state.events )
   const history = useHistory()
   const dispatch = useDispatch()
   const { id } = useParams()
-
+  
+  
+  const func = searchEventById(id)
+  console.log(events)
+  console.log(id)
+  console.log(func())
 
   useEffect(() => {
     dispatch(searchEventById(id))
@@ -19,7 +24,7 @@ export default function Detail() {
   function handleBack() {
     history.goBack()
   }
-  console.log(eventShowed[0].image)
+  
 
   return (
     <div>
@@ -30,12 +35,12 @@ export default function Detail() {
       </div>
       <div>
         <div>
-          <img src={eventShowed[0].image} alt= "" />
+          <img src={events[0].image} alt= "" />
         </div>
         <div>
-          <p>{eventShowed[0].name}</p>
-          <p>{eventShowed[0].location}</p>
-          <p>{eventShowed[0].price}</p>
+          <p>{events[0].name}</p>
+          <p>{events[0].location}</p>
+          <p>{events[0].price}</p>
         </div>
       </div>
     </div>

@@ -25,7 +25,8 @@ function rootReducer (state = initialState, action) {
             
             return {
                 ...state,
-                allevent : action.payload
+                allevent : action.payload,
+                events: action.payload
             }
         case ERROR:
 
@@ -54,7 +55,8 @@ function rootReducer (state = initialState, action) {
         case GET_EVENT_ID:
             return {
                 ...state,
-                events : action.payload
+                events : action.payload,
+                allevent: action.payload
             }
         case CREATE_EVENT:
             return {

@@ -14,7 +14,7 @@ export default function Grid() {
     const dispatch = useDispatch()
     const [page, setPage] = useState(1)
     const [hasMore, setHasMore] = useState(true)
-    const Events = useSelector( (state) => state.events )
+    const events = useSelector( (state) => state.events )
     const allEvents = useSelector((state) => state.allevent)
     const [concatEvents, setconcatEvents] = useState([])
 
@@ -27,8 +27,7 @@ export default function Grid() {
             setconcatEvents((prevEvents) => prevEvents.concat(data.data))
         })
         dispatch(getAllEventList())
-        
-        
+               
     }, [dispatch, page])    
     return (
         <InfiniteScroll
@@ -38,8 +37,8 @@ export default function Grid() {
             >
            <ul className='eventsGrid'>
             {
-                Events.length > 0 ?
-                Events.map((event)=>{
+                events.length > 0 ?
+                events.map((event)=>{
                     return (
                         <Card event={event} key={event.id}/>
                     );
