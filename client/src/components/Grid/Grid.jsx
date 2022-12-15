@@ -14,38 +14,25 @@ export default function Grid() {
     const dispatch = useDispatch()
     const [page, setPage] = useState(1)
     const [hasMore, setHasMore] = useState(true)
-    const Events = useSelector( (state) => state.events )
-    const allEvents = useSelector((state) => state.allevent)
-    const [concatEvents, setconcatEvents] = useState([])
+    const Events = useSelector( (state) => state.events)
 
     const next = () => {
         setPage((prevPage) => prevPage + 1)
     }
 
     useEffect(() => {
-        axios(URL + '/events/page/' + page).then((data) => {
-            setconcatEvents((prevEvents) => prevEvents.concat(data.data))
-        })
-        dispatch(getAllEventList())
-        
+        dispatch(getAllEvents(page))
         
     }, [dispatch, page])    
     return (
         <InfiniteScroll
-            dataLength={concatEvents.length}
+            dataLength={Events.length}
             hasMore={hasMore}
             next={next}
             >
            <ul className='eventsGrid'>
             {
-                Events.length > 0 ?
                 Events.map((event)=>{
-                    return (
-                        <Card event={event} key={event.id}/>
-                    );
-                })
-                :
-                concatEvents?.map((event)=>{
                     return (
                         <Card event={event} key={event.id}/>
                     );

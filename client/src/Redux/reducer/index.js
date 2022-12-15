@@ -3,7 +3,7 @@ import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER_BY_DATE, GET_NAME_EVENT, G
 
 const initialState = {
     events : [],
-    allevent : [],
+    allevents : [],
     eventsToFilter : [],
     error : {},
     post: {}
@@ -15,17 +15,17 @@ function rootReducer (state = initialState, action) {
     switch (action.type) {
 
         case GET_ALL_EVENTS:
-            
+            const events = state.events
             return {
                 ...state,
-                events: action.payload,
+                events: events.concat(action.payload),
                 eventsToFilter: action.payload
             }
         case GET_ALL_EVENT_LIST:
             
             return {
                 ...state,
-                allevent : action.payload
+                allevents : action.payload
             }
         case ERROR:
 
