@@ -15,16 +15,7 @@ function handleClick(){
 logout()
 return history.push("/")
 }
-  // if(isAuthenticated && !emailVerified){
-  //   return (
-  //   <div>
-  // <p>
-  //  "please verify your email"
-  //   </p>
-  // <button onClick={() => history.go(0)}>RELOAD</button>
-  //  </div>
-  //  )
-  // }else
+  
   if (/unauthorized/.test(window.location.href)) {
     return (
     <div>
@@ -41,23 +32,7 @@ return history.push("/")
       </div>
     </div>
   );
-
-  // return info ? (
-  //   <div>
-  //       <Navbar/>
-  //       <AboutUs/>
-  //       <div className='grid'>
-  //        <Grid/>
-  //       </div>
-
-  //   </div>
-
-  // ) : (<div>
-  //   <p>
-  //   "please verify your email"
-  //   </p>
-  //   <button onClick={() => history.go(0)}>RELOAD</button>
-  // </div>)
+  
 }
 
 export default Home;

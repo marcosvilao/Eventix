@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { LoginButton } from "./Login/LoginButton";
-import {Profile} from './Login/Profile'
+import styled from 'styled-components'
 
 import SearchBar from "../SearchBar/SearchBar";
 import "./navbar.css";
+
 
 export default function Navbar() {
   return (
