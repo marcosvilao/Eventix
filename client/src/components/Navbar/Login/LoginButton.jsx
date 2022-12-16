@@ -1,25 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { useHistory } from "react-router-dom"
-import styled from 'styled-components'
-
+import { useHistory } from "react-router-dom";
+import styled from "styled-components";
+import Modal from "react-modal";
 
 export const LoginButton = () => {
   const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
-  const history = useHistory()
+  const history = useHistory();
+  const [modalIsOpen, setIsOpen] = useState(false);
 
-  
+  const Loginbut = styled.button`
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #ab4a8c;
+    width: 5vw;
+    transition: color 0.2s ease-out;
 
-  function accountHandler(){
-    isAuthenticated ? history.push("/profile") : loginWithRedirect()
+    &:hover {
+      cursor: pointer;
+      color: white;
+      box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+      background-color: #673c77;
+    }
+  `;
+
+  function accountHandler() {
+    isAuthenticated ? openModal() : loginWithRedirect();
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
   }
 
   return (
     <div>
-      <button onClick={() => accountHandler()}>My Account</button>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+      >
+        <h2>Hello</h2>
+        <button onClick={closeModal}>close</button>
+        <div>I am a modal</div>
+        <form>
+          <input />
+          <button>tab navigation</button>
+          <button>stays</button>
+          <button>inside</button>
+          <button>the modal</button>
+        </form>
+      </Modal>
+      <Loginbut onClick={() => accountHandler()}>My Account</Loginbut>
       {isAuthenticated && (
         <div>
-          <button onClick={() => logout()}>Logout</button>
+          <Loginbut onClick={() => logout()}>Logout</Loginbut>
         </div>
       )}
     </div>

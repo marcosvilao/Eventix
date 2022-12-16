@@ -17,7 +17,8 @@ export default function Detail() {
 
 
   function handleBack() {
-    history.goBack()
+    eventShowed.shift()
+    return history.goBack()
   }
   console.log(eventShowed[0].image)
 

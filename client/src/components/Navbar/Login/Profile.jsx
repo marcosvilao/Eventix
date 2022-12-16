@@ -6,7 +6,7 @@ export const Profile = () => {
   const { user, isAuthenticated } = useAuth0();
 const history = useHistory()
   const { loginWithRedirect } = useAuth0();
-
+console.log(user)
   return isAuthenticated ? (
     <div>
       <button onClick={() => history.goBack()}>back</button>
