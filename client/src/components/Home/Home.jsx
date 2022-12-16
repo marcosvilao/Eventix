@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useHistory } from "react-router-dom";
 import "./home.css";
+import Carrousel from "../Carousel/Carrousel";
 
 function Home() {
   const history = useHistory();
@@ -26,7 +27,7 @@ return history.push("/")
   return (
     <div>
       <Navbar />
-      <AboutUs />
+      <Carrousel/>
       <div className="grid">
         <Grid />
       </div>

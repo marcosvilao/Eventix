@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import "./grid.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getAllEventList, getAllEvents } from "../../Redux/actions";
+import { getAllEvents } from "../../Redux/actions";
 import Card from "../Card/Card";
 import InfiniteScroll from "react-infinite-scroll-component";
 import styled, { keyframes } from "styled-components";
 import Loading from "../Loading/Loading";
 
 export default function Grid() {
-  const URL = "http://localhost:3001";
   const dispatch = useDispatch();
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
