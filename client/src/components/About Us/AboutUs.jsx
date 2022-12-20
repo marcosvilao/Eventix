@@ -22,10 +22,10 @@ export default function aboutUs() {
           </div>
           <div>
             <h1 className='title'>Members</h1>
-            <p className='members'>Maxi</p>
             <p className='members'>Nico</p>
             <p className='members'>Marcos</p>
             <p className='members'>Celeste</p>
+            <p className='members'>Maxi</p>
           </div>
           <Link to="/"><button>Back</button></Link>
         </div> 
