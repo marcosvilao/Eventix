@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import SearchBar from "../SearchBar/SearchBar";
 import "./navbar.css";
+// import {aboutUs} from "../About Us/AboutUs";
 
 
 export default function Navbar() {
@@ -13,7 +14,10 @@ export default function Navbar() {
         <a href="/">
           <h1>Eventix</h1>
         </a>
-        <h3>About us</h3>
+        <a href="/aboutUs">
+          <h3>About us</h3>
+          {/* <aboutUs/> */}
+        </a>
         <h3>More</h3>
         <SearchBar />
       </div>
