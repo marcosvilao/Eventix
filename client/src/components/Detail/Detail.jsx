@@ -20,7 +20,7 @@ export default function Detail() {
     eventShowed.shift()
     return history.goBack()
   }
-  console.log(eventShowed[0].image)
+  // console.log(eventShowed[0])
 
   return (
     <div>
@@ -36,7 +36,15 @@ export default function Detail() {
         <div>
           <p>{eventShowed[0].name}</p>
           <p>{eventShowed[0].location}</p>
-          <p>{eventShowed[0].price}</p>
+         {
+          eventShowed[0].price?.map((e, i) => 
+            <div key={i}>
+              <p>{e.tipoDeTicket}</p>
+              <p>{e.precio}</p>
+            </div>
+            
+          )
+         }
         </div>
       </div>
     </div>

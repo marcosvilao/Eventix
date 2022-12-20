@@ -7,7 +7,7 @@ export const ERROR = "ERROR";
 
 export const ORDER_BY_NAME = "ORDER_BY_NAME";
 
-export const FILTER_BY_DATE = "FILTER_BY_DATE";
+export const FILTER = "FILTER";
 
 export const GET_EVENT_ID = "GET_EVENT_ID";
 
@@ -124,17 +124,17 @@ export const orderByName = (order) => {
   };
 };
 
-export const filterByDate = (date) => {
+export const filter = (date) => {   
 
   return async function (dispatch) {
 
     try {
-
-      const eventDate = await axios.get(`${URL}/filterdate`, date);
+      // console.log("action",date);
+      const eventDate = await axios.post(`${URL}/filters`, date);
 
       dispatch({
 
-        type: FILTER_BY_DATE,
+        type: FILTER,
         payload: eventDate.data
       })
 

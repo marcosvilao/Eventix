@@ -17,7 +17,7 @@ const getEvents = async()=>{
             date: e.date.length > 0 ? e.date : ["Funciones Disponibles"],
             location: e.location,
             // price: typeof e.price  === "object"? e.price.filter(e => e.includes("$") ): "Info price", // solo muestra un precio de entrada
-            prece: e.price,
+            price: e.price,
             description: e.description,
             image: e.image
         };
