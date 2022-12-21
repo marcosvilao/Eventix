@@ -13,7 +13,7 @@ export default function Grid() {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const Events = useSelector((state) => state.events);
-
+  const err = useSelector(s=> s.error);
   
 
   const next = () => {
@@ -23,15 +23,30 @@ export default function Grid() {
   useEffect(() => {
     dispatch(getAllEvents(page));
   }, [dispatch, page]);
-  return Events.length ? (
+
+
+
+  if(err.length >0){
+
+    return (
+
+      <p className="err">EVENT NOT FOUND</p>
+    )
+  }
+
+
+  return (
+    Events.length ? (
     <InfiniteScroll dataLength={Events.length} hasMore={hasMore} next={next}>
       <ul className="eventsGrid">
         { 
-          Events.map((event) => {
-            return <Card event={event} key={event.id} />;
+          Events.map((event,i) => {
+            return <Card event={event} key={i} />;
           })
         }
       </ul>
     </InfiniteScroll>
   ): <Loading/>
+  
+  )
 }

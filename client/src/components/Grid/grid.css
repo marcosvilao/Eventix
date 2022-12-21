@@ -7,3 +7,9 @@
     justify-content: center;
     list-style: none;
 }
+
+
+.err{
+    display: flex;
+    justify-content: center;
+}

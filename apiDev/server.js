@@ -130,8 +130,10 @@ const initialization = async ()=>{
     
         const c = await page2.$$(".td-modify")
         
-        let daa3 = "";
+        
+        let objeto = {}
 
+        let pre = []
         if(c.length >0 ){
 
                
@@ -158,10 +160,46 @@ const initialization = async ()=>{
             let daa2 = daa.map(e => e.replace(/^\s+|\s+$|\s+(?=\s)/g, ""));
             // console.log(daa2);
 
-            daa3 = daa2.filter(e=> !e.includes("0 1"));
+            let daa3 = daa2.filter(e=> !e.includes("0 1"));
 
             // console.log(daa3);
 
+           let daa4 = daa3.filter(e => e !== "Tipo de Ticket" && e !== "Valor" && e !== "Cantidad" && e !== "")
+
+            if(daa4.length > 0){
+
+                for (let i=0; i< daa4.length ; i++){
+
+
+                 
+                    // if(objeto.hasOwnProperty("tipoDeTicket") && objeto.hasOwnProperty("precio") ){
+
+                    //     objeto.cantidad = daa4[i]  === "AGOTADO" || daa4[i] === "FINALIZADO" ? daa4[i] : "1000"
+                    // }
+
+                    if(daa4[i] !== "AGOTADO" && daa4[i] !== "FINALIZADO" && !daa4[i]?.includes("$") && daa4[i] !== "Entrada Liberada"){
+
+                        objeto.tipoDeTicket = daa4[i];
+                    }
+
+                    if(daa4[i]?.includes("$") || daa4[i] == "Entrada Liberada" ){
+
+                        objeto.precio = daa4[i]
+                    }
+
+                    if (objeto.hasOwnProperty("tipoDeTicket") && objeto.hasOwnProperty("precio") ){
+
+                        // objeto.cantidad = "1000"
+                        pre.push(objeto);
+                        objeto = {};
+                        
+                    }
+
+
+                }
+                
+                // console.log(pre);
+            }
 
             // api.push(daa3);
 
@@ -223,7 +261,7 @@ const initialization = async ()=>{
             name: nombre,
             date: arreglo2,
             location: lugar2,
-            price:daa3,
+            price: pre,
             description: arrS3,
             image: imagen
 
@@ -234,7 +272,7 @@ const initialization = async ()=>{
     // console.log(api);
 
 
-    let obj = {results: api};
+    // let obj = {results: api};
 
     // return obj;
 
@@ -248,7 +286,7 @@ const initialization = async ()=>{
 
 };
 
-initialization();
+// initialization();
 
 module.exports = initialization;
 

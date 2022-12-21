@@ -1,21 +1,17 @@
-const getEvents = require("./getEvents");
 
+const sorts = async(filter, state) =>{
 
-const filterByAlphabet = async(filter) =>{
-
-    console.log(filter);
-
-    const events = await getEvents();
+    // console.log(filter);
 
     if(filter !== "notSort"){
 
-        const eventFilter = filter === "A-Z" ? events.sort(function(a,b){
+        const eventFilter = filter === "A-Z" ? state.sort(function(a,b){
 
             if(a.name.toLowerCase() > b.name.toLowerCase()) return 1;
             if(b.name.toLowerCase() > a.name.toLowerCase()) return -1;
             return 0;
         
-        }) : events.sort(function (a,b){
+        }) : state.sort(function (a,b){
 
             if(a.name.toLowerCase() > b.name.toLowerCase()) return -1;
             if(b.name.toLowerCase() > a.name.toLowerCase()) return 1;
@@ -27,10 +23,10 @@ const filterByAlphabet = async(filter) =>{
 
     }else{
 
-        return events;
+        return state;
     };
     
 
 };
 
-module.exports = filterByAlphabet;
+module.exports = sorts;

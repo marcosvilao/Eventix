@@ -4,7 +4,7 @@ const { Router } = require('express');
 
 const api = require("./Api");
 const events = require("./events");
-const filterDate = require("./filterDate");
+const filters = require("./filters");
 
 
 const router = Router();
@@ -16,7 +16,7 @@ router.use("/api", api);
 
 router.use("/events", events);
 
-router.use("/filterdate", filterDate);
+router.use("/filters", filters);
 
 
 

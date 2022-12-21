@@ -8,628 +8,452 @@ const  getApi = async()=>{
   {
     "results": [
       {
-        "name": "Son del Sur - en vivo",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 20:30 hrs."
-        ],
-        "location": "Records.entrecasa (Coworking)\nPrimera Junta 791",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Son del Sur - En vivo Preventa",
-          "$600.-",
-          "FINALIZADO"
-        ],
-        "description": [
-          "Records.entrecasa (Coworking) Primera Junta 791",
-          "Records.entrecasa (Coworking)     Primera Junta 791",
-          "Productora musical",
-          "Son del Sur es un grupo que basa su repertorio en ritmos caribeños. Interpretando desde clásicos del son cubano y la salsa o la cumbia, como versionando y trasladando grandes canciones de la historia pop latina hacia ese género afrolatino lleno de ritmo y sabor con la intención de dar candela a la fiesta. El show se desarrollara en el hermoso espacio de Records.entrecasa donde se ofrecerá servicio de cantina. El espacio cuenta con baño.",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/son-del-sur-en-vivo-141007-min.jpg"
-      },
-      {
-        "name": "CACHENGAZO MUNDIAL OUTDOOR (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:00 hrs."
-        ],
-        "location": "Paris Chateau\nAv Piamonte 1099",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Promo 4x3 Pagás 3 entradas y te llevás la 4ta gratis",
-          "$3.600.-",
-          "FINALIZADO",
-          "Ticket General Ticket general",
-          "$1.200.-",
-          "FINALIZADO"
-        ],
-        "description": [
-          "Paris Chateau Av Piamonte 1099",
-          "Paris Chateau     Av Piamonte 1099",
-          "EVENTOS",
-          "Cachengazo Mundial Outdoor Fiesta al aire libre",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/cachengazo-mundial-outdoor-142098-min.jpg"
-      },
-      {
-        "name": "VINTAGE Celebration | Despedida de año | (+30)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:00 hrs."
-        ],
-        "location": "Complejo Forest\nBrown 3126",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "ACCESO GENERAL",
-          "$2.000.-",
-          "ACCESO PROMOCIONAL Entradas limitadas con descuento especial",
-          "$1.500.-",
-          "AGOTADO",
-          "ACCESO VIP",
-          "$4.000.-",
-          "AGOTADO",
-          "",
-          ""
-        ],
-        "description": [
-          "Complejo Forest Brown 3126",
-          "Complejo Forest     Brown 3126",
-          "Producción de espectáculos y eventos",
-          "Vintage Celebration presenta su segunda edición en la ciudad de Rosario. El lugar elegido en esta próxima incursión, es nuevamente el Complejo Forest. Luego de la amplia repercusión de la fiesta que se realizó en octubre pasado, otra vez el foco apunta a este lugar icónico para una fiesta muy especial En esta oportunidad, el valor agregado es el cierre de 2022, la despedida del año, junto con todos los seguidores que son parte de cada una de las propuestas de esta fiesta itinerante. El jueves 8 de diciembre es la fecha elegida, en la que trasladamos el centro de la celebración a la pista principal e incorporamos importantes espacios a cielo abierto, con vista a la piscina y la disposición de zonas calmas para darle un perfil multiambiental a una noche con un encanto muy especial. La primera fiesta superó ampliamente nuestras expectativas. Como nuestro deseo es que quienes quieran estar presentes tengan su lugar, en esta segunda oportunidad, optamos por ampliar la capacidad para poder recibir a más personas. Multiplicamos los puntos de atención y pusimos especial énfasis en el confort y la seguridad del evento, lo que es, como siempre, una prioridad en cada una de nuestras presentaciones. Como ya es costumbre, la apuesta prepara un line up destacado de djs invitados que irán desplegando una combinación de éxitos de las décadas de los 80, los 90 y los 2000, en un recorrido imperdible por las mejores épocas de la música. Pero en Vintage Celebration nunca está todo dicho, siempre hay una apuesta para ir más allá. Combinando la nostalgia con todo el ambiente de una verdadera fiesta, Vintage Celebration desembarca con una estructura que promete una cuidada ambientación y todos los componentes para un encuentro inolvidable. Las barras y sus bartenders; artistas y performers; y como siempre, detalles imprevistos para sorprender, serán parte de nuestro festejo. En el calendario de lo más destacado de diciembre, en la víspera de un feriado turístico, el jueves 8, Complejo Forest abrirá sus puertas para dar paso a la segunda presentación exclusiva de Vintage Celebration en la ciudad de Rosario. El mítico sitio donde brillaron discos inolvidables como Punta Brown y Madame, nos vuelve a ofrecer una experiencia sin igual. Como punto destacado entre las  celebraciones de fin de año, esta despedida ya tiene los tickets disponibles y la recomendación es reservarlos con anticipación para todos los que quieran ser parte. Seguinos en las redes para estar al tanto de todas las novedades y conseguí tu acceso en los puntos de venta habilitados o en www.passline.com. Algo bueno va a ocurrir, y vos vas a estar ahi para vivirlo",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/vintage-celebration-despedida-de-ano-173869-min.jpg"
-      },
-      {
-        "name": "La Joaqui en Vivo en Museum - Jueves 8 de Diciembre (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:55 hrs."
-        ],
-        "location": "MUSEUM\nPerú 535",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "TANDA 1 Entrada General Anticipada",
-          "$2.000.-",
-          "Early Bird Entrada General Anticipada",
-          "$1.500.-",
-          "AGOTADO",
-          "",
-          ""
-        ],
-        "description": [
-          "MUSEUM Perú 535",
-          "MUSEUM     Perú 535",
-          "La Joaqui en Vivo en Museum  Jueves 8 de Diciembre  MUSEUM  Perú 535 - San Telmo",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/la-joaqui-en-vivo-en-museum-jueves-8-de-diciembre-140616-min.jpg"
-      },
-      {
-        "name": "DHNP Presenta: NELSON - FRANCO MARPEGAN - ANILLOS DE JUPITER 08/12 MAKENA",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:00 hrs."
-        ],
-        "location": "Makena Cantina Club\nFitz Roy 1519",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "ANTICIPADAS ANILLOS DE JUPITER 08/12 MAKENA",
-          "$800.-",
-          "FINALIZADO",
-          "ANTICIPADAS FRANCO MARPEGAN 08/12 MAKENA",
-          "$800.-",
-          "FINALIZADO",
-          "ANTICIPADAS NELSON 08/12 MAKENA",
-          "$800.-",
-          "FINALIZADO"
-        ],
-        "description": [
-          "Makena Cantina Club Fitz Roy 1519",
-          "Makena Cantina Club     Fitz Roy 1519",
-          "Jueves 8 de Diciembre 23hs  En Vivo: NELSON FRANCO MARPEGAN ANILLOS DE JUPITER  DJ UOPA NACHI & DJ BUDAH  MAKENA CANTINA CLUB  PALERMO.CABA  Fitz Roy 1519",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/dhnp-presenta-nelson-franco-marpegan-anillos-de-jupiter-0812-makena-137134-min.jpg"
-      },
-      {
-        "name": "Festi Vertigo presenta El Vislumbre Del Esteko",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 20:00 hrs."
-        ],
-        "location": "Auditorio Oeste\nAv. Rivadavia 17230, Haedo",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Festi Vertigo presenta a El Vislumbre Del Esteko Festi Vertigo nos trae en su tercera edición a la mítica banda santiagueña El Vislumbre del Esteko al corazon del Oeste de la provincia de Buenos Aires. Santiago Suarez y su poder milenario vuelven a",
-          "$2.500.-",
-          "FINALIZADO"
-        ],
-        "description": [
-          "Auditorio Oeste Av. Rivadavia 17230, Haedo",
-          "Auditorio Oeste     Av. Rivadavia 17230, Haedo",
-          "Unión Latinoamericana Producciones es una Productora de variados espectáculos, con un espacio de 1500 metros cuadrados, 3 escenarios con múltiples salas ubicada en la ciudad de Haedo zona oeste del Gran Buenos Aires www.auditoriooeste.com.ar",
-          "Festi Vertigo nos trae en su tercera edición a la mítica banda santiagueña El Vislumbre del Esteko al corazon del Oeste de la provincia de Buenos Aires.  Santiago Suarez y su poder milenario vuelven a Buenos Aires luego de 3 años para presentar su nuevo disco.",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/festi-vertigo-presenta-el-vislumbre-del-esteko-131563-min.jpg"
-      },
-      {
-        "name": "08.12 | HOT SINCE 82 @ AUTODROMO ROSARIO (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 17:00 hrs."
-        ],
-        "location": "Autódromo de Rosario\nAv Jorge Newbery 8000",
-        "price": "Sin precio",
-        "description": [
-          "Autódromo de Rosario Av Jorge Newbery 8000",
-          "Autódromo de Rosario     Av Jorge Newbery 8000",
-          "Jueves 08 diciembre | Víspera de feriado  Lado B Open Air  Presents:  ➖ HOT SINCE 82 ➖  & more TBC  📍Autódromo de Rosario, Arg.  Comienzan los festivales de verano en el @autodromoros y encendemos motores con Hot Since para poner a bailar la ciudad y el país!",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/0812-hot-since-82-autodromo-rosario-128960-128960-min.jpg"
-      },
-      {
-        "name": "TAURO NENA (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:55 hrs."
-        ],
-        "location": "Requiem Club\nAv. de Mayo 948",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Entrada General Preventa 2",
-          "$1.500.-",
-          "FINALIZADO",
-          "Entrada General Preventa 3",
-          "$2.000.-",
-          "FINALIZADO",
-          "Entrada General Preventa 1",
-          "$1.000.-",
-          "AGOTADO"
-        ],
-        "description": [
-          "Requiem Club Av. de Mayo 948",
-          "Requiem Club     Av. de Mayo 948",
-          "TAURO NENA Es una fiesta queer de techno, en donde cada une puede vivir su propia fantasía.  LINE UP: TRANSA PERRO KILLTRO MCLAREN SANTI LONGO LA DIEGA SHERARD  HOTS: MISS ANGEL BRAVÍA STEPA KAUSTICA   PERFORMERS: BOSIO DEMIAN 007 UMBRELLA DE ARIES MISS ANABOLIKA FLOR   Fecha: 08 de diciembre - REQUIEM CLUB",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/tauro-nena-139703-min.jpg"
-      },
-      {
-        "name": "Nicolas Rada, Marcelo Vasami - All Night Long - La Biblioteca - Jueves 8.12 (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:55 hrs."
-        ],
-        "location": "La Biblioteca\nMéxico 524",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Lote 5",
-          "$4.500.-",
-          "Early Bird",
-          "$2.000.-",
-          "AGOTADO",
-          "Lote 1",
-          "$2.500.-",
-          "AGOTADO",
-          "Lote 2",
-          "$3.000.-",
-          "AGOTADO",
-          "Lote 3",
-          "$3.500.-",
-          "AGOTADO",
-          "Lote 4",
-          "$4.000.-",
-          "AGOTADO",
-          "",
-          ""
-        ],
-        "description": [
-          "La Biblioteca México 524",
-          "La Biblioteca     México 524",
-          "RHYTHMC  Nicolas Rada Back to Back Marcelo Vasami  All Night Long  Open Doors 00 hs  LA BIBLIOTECA  México 524 - San Telmo",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/nicolas-rada-marcelo-vasami-all-night-long-la-biblioteca-jueves-812-139744-min.jpg"
-      },
-      {
-        "name": "ESPERO QUE VUELVAS",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 20:00 hrs."
-        ],
-        "location": "CC QI\nthames 240",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "ANTICIPADAS",
-          "$700.-",
-          "",
-          ""
-        ],
-        "description": [
-          "CC QI thames 240",
-          "CC QI     thames 240",
-          "Espacio Cultural en Villa Crespo que aloja espectáculos musicales, de poesía, perfo, ferias, teatro y más.",
-          "ESPERO QU VUELVAS CICLO DE POESIA",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/espero-que-vuelvas-140583-min.jpg"
-      },
-      {
-        "name": "HOMENAJE en Vivo a DIVIDIDOS en Del Viso!! (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 21:00 hrs."
-        ],
-        "location": "Ruta 26 Rock\nAv. Madero 1343",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Entrada General Unica Entrada",
-          "$600.-",
-          "FINALIZADO"
-        ],
-        "description": [
-          "Ruta 26 Rock Av. Madero 1343",
-          "Ruta 26 Rock     Av. Madero 1343",
-          "Productora de eventos musicales",
-          "Caballos de Metal nos trae el mejor tributo a la aplanadora del Rock junto a Fatiga",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/homenaje-en-vivo-a-divididos-en-del-viso-141864-min.jpg"
-      },
-      {
-        "name": "Fiesta Capicua | Formal Outfit (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:55 hrs."
-        ],
-        "location": "Garden Bar\nAv. Hipólito Yrigoyen 4088",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "",
-          "¡Early Bird! Beneficio descuento por compra temprana.",
-          "$700.-",
-          "AGOTADO",
-          "Primera Tanda",
-          "$800.-",
-          "AGOTADO",
-          "Segunda Tanda",
-          "$1.000.-",
-          "AGOTADO",
-          "Tercera Tanda",
-          "$1.200.-",
-          "AGOTADO"
-        ],
-        "description": [
-          "Garden Bar Av. Hipólito Yrigoyen 4088",
-          "Garden Bar     Av. Hipólito Yrigoyen 4088",
-          "Quinta edición de la fiesta mas esperada por todos, Capicua vuelve a Comodoro para poder bailar los temones que siempre quisiste pero nunca pudiste esta vez en su edición \"Elegant Outfit\" Te esperamos con un dresscode sumamente elegante. ⛱EL MEJOR VERANO DE TU VIDA ESTA LLEGANDO⛱",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/fiesta-capicua-formal-outfit-136286-min.jpg"
-      },
-      {
-        "name": "Ship experiencie by BVF prod. @ Pier51 (+20)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:59 hrs."
-        ],
-        "location": "Pier 51\nCecilia Grierson 398",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Lote 3 - Hombre ENTRADA GENERAL",
-          "$2.300.-",
-          "Lote 3 - Mujer ENTRADA GENERAL",
-          "$2.300.-",
-          "Lote 1 - Hombre ENTRADA GENERAL",
-          "$1.700.-",
-          "AGOTADO",
-          "Lote 1 - Mujer ENTRADA GENERAL",
-          "$1.700.-",
-          "AGOTADO",
-          "Lote 2 - Hombre ENTRADA GENERAL",
-          "$2.000.-",
-          "AGOTADO",
-          "Lote 2 - Mujer ENTRADA GENERAL",
-          "$2.000.-",
-          "AGOTADO",
-          "",
-          ""
-        ],
-        "description": [
-          "Pier 51 Cecilia Grierson 398",
-          "Pier 51     Cecilia Grierson 398",
-          "SHIP EXPERIENCE ⛴️  Volvemos al agua, volvemos a bailar sobre el rio, volvemos a una de las zonas más icónicas de Buenos Aires, para vivir una noche unica a bordo de un barco, en el dique de Puerto Madero!  LINE UP  Matias Mareco Joel rmx Ele Dj (dj invitado)  Vivi la experiencia. Organiza BVF Producciones.❤️  📍Cecilia Grierson 398, Puerto Madero  Por mesas vip o cualquier inquietud comunicarse via Instagram @bvf.producciones",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/ship-experiencie-by-bvf-prod-pier51-139957-min.jpg"
-      },
-      {
-        "name": "Remeneo | 8 de Diciembre (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:55 hrs."
-        ],
-        "location": "Beatflow\nAv.Córdoba 5509",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Ingreso para 4 + Botella a elección + Acceso VIP",
-          "$11.000.-",
-          "Ingreso para 4 + Champagne Mumm + 2 Speed",
-          "$7.500.-",
-          "Ingreso para 4 + Champagne Novecento + 2 Speed",
-          "$7.000.-",
-          "2x1 Entrada válida hasta las 2hs.",
-          "$1.300.-",
-          "AGOTADO",
-          "Entrada general Entrada válida hasta las 2:30hs.",
-          "$1.000.-",
-          "AGOTADO",
-          "Entrada general (2da Tanda) Entrada válida hasta las 2:30hs.",
-          "$1.300.-",
-          "AGOTADO",
-          "Entrada general (3ra Tanda) Entrada válida hasta las 2:30hs.",
-          "$1.600.-",
-          "AGOTADO",
-          "Entrada VIP Entrada válida hasta las 2:30hs. Acceso al sector VIP. No incluye consumición.",
-          "$1.500.-",
-          "AGOTADO",
-          "Ingreso para 4 + Botella a elección",
-          "$9.000.-",
-          "AGOTADO",
-          "",
-          ""
-        ],
-        "description": [
-          "Beatflow Av.Córdoba 5509",
-          "Beatflow     Av.Córdoba 5509",
-          "Productora de eventos y sala de conciertos ubicada en Palermo, CABA.",
-          "Entrada válida hasta las 2:30hs.",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/remeneo-8-de-diciembre-141369-min.jpg"
-      },
-      {
-        "name": "MAMBA @ Puro Escabio Bar 08.12 (+20)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:00 hrs."
-        ],
-        "location": "Puro Escabio Bar\nColectora 12 de octubre 1212, Manuel Alberti",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Combo ABSOLUT Incluye 1 Absolut clásico c/ 4 speed + 2 Ingresos. Combo NO modificable",
-          "$10.000.-",
-          "FINALIZADO",
-          "Combo CHANDON Incluye 1 Chandon + 2 Ingresos. Combo NO modificable",
-          "$6.500.-",
-          "FINALIZADO",
-          "Combo SMIRNOFF Incluye 1 smirnoff clásico c/4 speed + 2 Ingresos. Combo NO modificable",
-          "$8.000.-",
-          "FINALIZADO",
-          "Ingreso anticipado",
-          "$1.500.-",
-          "FINALIZADO",
-          "Ingreso Free Ingreso free hasta 1:00 hs",
-          "Entrada Liberada",
-          "FINALIZADO",
-          "Carta QR Passline",
-          "",
-          "Acompañamientos",
-          "",
-          "Agua sin gas",
-          "$500.-",
-          "",
-          "Coca Cola zero 354ml",
-          "$600.-",
-          "",
-          "Speed 250ml",
-          "$600.-",
-          "",
-          "Red Bull 250ml",
-          "$800.-",
-          "",
-          "Cepita naranja 1 LT",
-          "$800.-",
-          "Mostrar más productos",
-          "Combos",
-          "",
-          "Combo Smirnoff Saborizado Smirnoff saborizado + 4 speed. Sabores a elección en barra",
-          "$9.000.-",
-          "",
-          "Combo Smirnoff sab Smirnoff saborizado + 1 jugo. Sabores a elección en barra.",
-          "$9.000.-",
-          "",
-          "Combo Hodlmoser Holdmose 750 ml + 4 speed",
-          "$13.700.-",
-          "",
-          "Combo Absolut Absolut común + 1 jugo naranja",
-          "$14.000.-",
-          "",
-          "Combo Absolut Absolut común + 4 speed",
-          "$14.000.-",
-          "",
-          "Combo Absolut sab Absolut saborizado + 1 jugo naranja",
-          "$15.000.-",
-          "",
-          "Combo Absolut sab Absolut saborizado + 4 speed",
-          "$15.000.-",
-          "Mostrar más productos",
-          "",
-          ""
-        ],
-        "description": [
-          "Puro Escabio Bar Colectora 12 de octubre 1212, Manuel Alberti",
-          "Puro Escabio Bar     Colectora 12 de octubre 1212, Manuel Alberti",
-          "Los jueves son de MAMBA 🐍🖤 By REVENGE ⚡  ⚡ Save the date 08.12 ⚡  La casa se reserva derecho de admisión y permanencia. +20",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/mamba-puro-escabio-bar-0812-183092-min.jpg"
-      },
-      {
-        "name": "El Danzón en El Padilla",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 21:00 hrs."
-        ],
-        "location": "Espacio Cultural El Padilla\nAvenida Meeks 1058",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Anticipada con descuento",
-          "$1.000.-",
-          "FINALIZADO"
-        ],
-        "description": [
-          "Espacio Cultural El Padilla Avenida Meeks 1058",
-          "Espacio Cultural El Padilla     Avenida Meeks 1058",
-          "8/12 DANZÓN EN EL PADILLA  Vamos cerrando el año con el querido ciclo \"El Danzón\" en Temperley.  Estan tod@s súper invitad@s a bailar y divertirse escuchando mambo, cha cha cha, guajira, y latin jazz.  ✨Clase de Baile con música en vivo con Marce Rock  ✨Show en vivo con la Orquesta FLEXATONS & LA JAZZ MAMBO  ✨21 hs en El Padilla - Meeks 1058 Temperley",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/el-danzon-en-el-padilla-140910-min.jpg"
-      },
-      {
-        "name": "PARA EXÓTICA en GIER (CABA)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:50 hrs."
-        ],
-        "location": "GIER MUSIC CLUB\nAv. Alvarez Thomas 1078",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Entrada General",
-          "$500.-",
-          "FINALIZADO"
-        ],
-        "description": [
-          "GIER MUSIC CLUB Av. Alvarez Thomas 1078",
-          "GIER MUSIC CLUB     Av. Alvarez Thomas 1078",
-          "Para Exótica despide el 2022 en Gier Music Club (Ciudad Autónoma de Buenos Aires) el Jueves 8 de Diciembre desde las 23:50 hs. Abrirán la noche los artistas \"Sick Mic\", \"Tato Rossi\" y \"Chino Vic\".",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/para-exotica-en-gier-caba-180303-min.jpg"
-      },
-      {
-        "name": "SANTO (+18)",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 23:55 hrs."
-        ],
-        "location": "Black belgrano\nJURAMENTO 1543",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Entrada General Chicas",
-          "$1.500.-",
-          "Entrada General Chicos",
-          "$2.000.-",
-          "Carta QR Passline",
-          "",
-          "Botellas",
-          "",
-          "Bot Hennesy",
-          "$35.000.-",
-          "",
-          "HOLDMOSER Licor Austríaco",
-          "$20.000.-",
-          "",
-          "Veuve Cliquot Rich rose",
-          "$120.000.-",
-          "",
-          ""
-        ],
-        "description": [
-          "Black belgrano JURAMENTO 1543",
-          "Black belgrano     JURAMENTO 1543",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/santo-141835-min.jpg"
-      },
-      {
-        "name": "Hombre Anécdota + Magalí Cortez",
-        "date": [
-          "Jueves 08 de Diciembre 2022 - 21:00 hrs."
-        ],
-        "location": "Ladran Sancho Espacio de Arte\nGuardia Vieja 3811",
-        "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Anticipada",
-          "$450.-",
-          "FINALIZADO"
-        ],
-        "description": [
-          "Ladran Sancho Espacio de Arte Guardia Vieja 3811",
-          "Ladran Sancho Espacio de Arte     Guardia Vieja 3811",
-          "Dos bandas en pleno crecimiento. Hombre Anécdota presentará en formato full banda canciones de su próximo disco. Magalí Cortez, también en formato completo y versión eléctrica, repasará sus canciones y nos adelantará música que saldrá a la luz en el mes de diciembre.",
-          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
-          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
-        ],
-        "image": "https://imagenes.passline.com/eventos/hombre-anecdota-magali-cortez-178919-min.jpg"
-      },
-      {
-        "name": "Cris Grey Calendario 2 0 2 3 - ARGENTINA",
+        "name": "Reci Las Pibas 17/12",
         "date": [],
-        "location": "",
+        "location": "Fat Mama\nAv. Colon 100",
         "price": [
-          "Tipo de Ticket",
-          "Valor",
-          "Cantidad",
-          "Calendario digital",
-          "$4.040.-",
-          "Calendario impreso",
-          "$6.059.-",
-          "Fotos del mes",
-          "$2.020.-",
-          "",
-          ""
+          {
+            "tipoDeTicket": "Recital Las Pibas 17/12 Giula y Pupy Nagle en vivo",
+            "precio": "$500.-"
+          }
         ],
         "description": [
-          "lgbt family that wants to bring the tomboy girls to the word",
+          "Fat Mama Av. Colon 100",
+          "Fat Mama     Av. Colon 100",
+          "Producción de contenido",
+          "Recital de Pupy Nagle y Giula junto a Dj Jade",
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/cris-grey-calendario-2-0-2-3-argentina-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/reci-las-pibas-1712-185134-min.jpg"
+      },
+      {
+        "name": "CARO DONIO QUARTET FOREVER ELLA",
+        "date": [
+          "Miércoles 15 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "BORGES 1975\nJORGE LUIS BORGES 1975",
+        "price": [
+          {
+            "tipoDeTicket": "ENTRADA GENERAL",
+            "precio": "$1.600.-"
+          }
+        ],
+        "description": [
+          "BORGES 1975 JORGE LUIS BORGES 1975",
+          "BORGES 1975     JORGE LUIS BORGES 1975",
+          "Un concierto en homenaje a la más grande de todos los tiempos \"Ella Fitzgerald\",  Caro Donio VOZ Adrián Mastrocola PIANO Germán Boco BATERÍA Nicanor Suárez CONTRABAJO",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/caro-donio-quartet-forever-ella-142611-142611-min.jpg"
+      },
+      {
+        "name": "Lupe Alvarez #música",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "Morán\nPedro Morán 2147",
+        "price": [
+          {
+            "tipoDeTicket": "a) ENTRADA GENERAL",
+            "precio": "$1.200.-"
+          },
+          {
+            "tipoDeTicket": "b) ENTRADA APOYO A LA CULTURA Es una forma de colaborar económicamente con la cultura independiente. Esta entrada no tiene beneficios extras más que el apoyo a la cultura y a les artistes",
+            "precio": "$1.800.-"
+          }
+        ],
+        "description": [
+          "Morán Pedro Morán 2147",
+          "Morán     Pedro Morán 2147",
+          "Presentación del disco LATENCIA",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/lupe-alvarez-musica-134512-min.jpg"
+      },
+      {
+        "name": "La Beatle Jam | Mié 14 Dic | Zapada Beatle en vivo",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 20:30 hrs."
+        ],
+        "location": "Lucille\nGorriti 5520",
+        "price": [
+          {
+            "tipoDeTicket": "ENTRADA GENERAL",
+            "precio": "$1.500.-"
+          },
+          {
+            "tipoDeTicket": "ENTRADA GENERAL DE PIE",
+            "precio": "$1.000.-"
+          }
+        ],
+        "description": [
+          "Lucille Gorriti 5520",
+          "Lucille     Gorriti 5520",
+          "La Beatle Jam y La Jam Nacional son zapadas temáticas en vivo donde los repertorios están compuesto por canciones de The Beatles y de Rock Nacional.",
+          "🍏 La Beatle Jam | La primera zapada en vivo donde el repertorio está compuesto únicamente por canciones de los Fab Four!  📍 Mié 14/12 - Lucille Teatro - Gorriti 5520, Palermo, CABA  🔸 Show con mesas, para COMPARTIR. Una vez ocupadas todas las mesas, habrá capacidad reducida para estar de pie en el salón y en la barra. 🔹Atención: Ubicaciones por orden de llegada! Al no haber reservas de mesas, si vienen en grupo, es importante llegar temprano así se pueden sentar juntos.  🔻 Músicos anotados para tocar entran gratis! (CUPOS LIMITADOS!) Para anotarse, pueden hacerlo mandando Mensaje de TEXTO por WhatsApp al 1162757234  HORARIOS 20:30 Puerta 21:00 Acústico Apertura 21:30 Beatle Jam  FB www.fb.com/labeatlejam / IG www.instagram.com/labeatlejam",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/la-beatle-jam-mie-14-dic-zapada-beatle-en-vivo-140149-min.jpg"
+      },
+      {
+        "name": "Maite - Nuevas canciones",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 21:30 hrs."
+        ],
+        "location": "Marquee Session Live\nScalabrini Ortiz 670",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$1.500.-"
+          }
+        ],
+        "description": [
+          "Marquee Session Live Scalabrini Ortiz 670",
+          "Marquee Session Live     Scalabrini Ortiz 670",
+          "Después de la salida de su primer disco en 2020 “Igual, NO”, \"Maite\", cantante y compositora argentina de pop, cierra el año tocando con banda completa y presentando todas las canciones de su nuevo disco que sera editado a principios del año 2023. Horario Puerta: 21:30hs",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/maite-nuevas-canciones-138816-min.jpg"
+      },
+      {
+        "name": "Talleres Cafundó en vivo - Miércoles 14",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 20:30 hrs."
+        ],
+        "location": "El Maquinal\nAnchorena 364",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada general Miércoles 14-12 Talleres Cafundó",
+            "precio": "$1.500.-"
+          }
+        ],
+        "description": [
+          "El Maquinal Anchorena 364",
+          "El Maquinal     Anchorena 364",
+          "Productora con mucho amor a la música en vivo",
+          "Una noche a puro batuque y canciones de la mano de los talleres intermedios Cafundó de Capital. Invitadxs, clásicos y sorpresas nos esperan!",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/talleres-cafundo-en-vivo-miercoles-14-137477-min.jpg"
+      },
+      {
+        "name": "Tierra incógnita, Breve descanso de nuestra propia biografía.",
+        "date": [],
+        "location": "La Fábrica\nMuñecas 1076",
+        "price": [
+          {
+            "tipoDeTicket": "Tierra Incógnita",
+            "precio": "$1.000.-"
+          },
+          {
+            "tipoDeTicket": "Anticipadas",
+            "precio": "$700.-"
+          },
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$1.000.-"
+          },
+          {
+            "tipoDeTicket": "Entrada General con Contribucion",
+            "precio": "$1.500.-"
+          }
+        ],
+        "description": [
+          "La Fábrica Muñecas 1076",
+          "La Fábrica     Muñecas 1076",
+          "Ingresa el código:",
+          "DOS ÚNICAS EXHIBICIONES MIERCOLES 14.DICIEMBRE 19 HORAS VIERNES 16.DICIEMBRE 19 HORAS En La Fábrica- Muñecas 1076-CABA-  T I E R R A I N C Ó G N I T A es la exhibición del laboratorio de entrenamiento escénico 2022 que trabajó en el marco de investigar el grado cero en la actuación. Es la expedición de siete interpretes por hallar otras cartografías posibles aún en el riesgo que supone moverse por zonas del mapa de las cuales sus antepasados nunca regresaron. En este viaje planean, en el hartazgo del fracaso de este orden de las cosas, ensayar un nuevo orden, que requiere, por supuesto, de otro modo de ser y habitar el mundo y como consecuencia un nuevo modo de vincularnos.En ese intento de alerjarse del antropocentrismo, encuentran en el fracaso la clave para devenir esos territorios hóstiles en entornos donde repensarse, revisar la propia historia, y hasta quizás poder ser una nueva humanidad.  Ficha Artística Livia Maria Bianchi Bárbara Lis Kuglien Mariana Oller Smud Greta Gurfein Dat Garcia Pablo Innocenti Ohnadia Pieza de difusión Ohnadia Agradecimientos Walter(la fábrica) ||Pablo Foladori (Ópera Periférica) Paisaje sonoro: Coil || Triple Sun Weste || Crisantemo (versión Dat Garcia) Agustín Genoud || Los Otros (Ro Stambuk Remix) Miguel Ángel Rivadeneira || Me acuerdo   Dramaturgía y dirección: Gerardo Cardozo",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/tierra-incognita-breve-descanso-de-nuestra-propia-biografia-138818-min.jpg"
+      },
+      {
+        "name": "CARLA PANTANALI Presentación de su primer disco como cantautora LA CITADINA",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "Circe Fabrica de Arte\nGral. Manuel A. Rodriguez 1559",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$1.200.-"
+          }
+        ],
+        "description": [
+          "Circe Fabrica de Arte Gral. Manuel A. Rodriguez 1559",
+          "Circe Fabrica de Arte     Gral. Manuel A. Rodriguez 1559",
+          "Las canciones de Carla reflejan distintas etapas en la vida de una mujer joven urbana, que siente en todo lo que hace el llamado de algo más. La conexión con la naturaleza y sus ciclos vitales está presente en su música; sus letras miran al cielo por encima de los edificios y escuchan la tierra por debajo del cemento. Dijo el “Club del Disco”: Carla Pantanali presenta “La citadina” (…) su primer disco de canciones de próxima aparición. Con un delicado equilibrio entre aires folklóricos y climas urbanos, Carla presenta una nueva voz en el panorama de la música argentina.  Banda:  Voz, composición y arreglos vocales:  Carla Pantanali Arreglos/Guitarras: Jerónimo Guiraud  Bajo: Nicolás Fernández Bateria: Gustavo Chenu Coros: Laura Benitez Delfi Saraví",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/carla-pantanali-presentacion-de-su-primer-disco-como-cantautora-la-citadina-135706-min.jpg"
+      },
+      {
+        "name": "Show en Moscú",
+        "date": [
+          "Miércoles 15 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "Moscú Espacio Cultural\nAvenida Cordoba 4335",
+        "price": [
+          {
+            "tipoDeTicket": "Pre-venta",
+            "precio": "$600.-"
+          }
+        ],
+        "description": [
+          "Moscú Espacio Cultural Avenida Cordoba 4335",
+          "Moscú Espacio Cultural     Avenida Cordoba 4335",
+          "El 14 de diciembre, Sofia Seijo, Que mal te sale vivir y ZOUZOU compartirán el escenario de Moscú espacio cultural para tocar sus canciones en su ultima fecha del año.  Esperemos verles ahí!  Puertas 20h Show 21h",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/show-en-moscu-183285-min.jpg"
+      },
+      {
+        "name": "Alejandro Cares y los Magos Farciar + Albertos Pegatina + Back Door Band",
+        "date": [
+          "Miércoles 15 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "La Tangente\nHonduras 5317",
+        "price": [
+          {
+            "tipoDeTicket": "Anticipada",
+            "precio": "$1.200.-"
+          }
+        ],
+        "description": [
+          "La Tangente Honduras 5317",
+          "La Tangente     Honduras 5317",
+          "Llega Noche Psicodélica a La Tangente para disfrutar lo mejor de la escena con Alejandro Cares y los Magos Farciar, Albertos Pegatina y Back Door Band (Tributo a The Doors).",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/alejandro-cares-y-los-magos-farciar-albertos-pegatina-back-door-band-142055-min.jpg"
+      },
+      {
+        "name": "Cerámica y vino mié 14/12 (+18)",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "Cocu Boulangerie\nMalabia 1510",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada general Incluye picada veggie, 1 copa de vino, todos los materiales para hacer y pintar 2 piezas de cerámica, y después incluye el horneado y esmaltado de las mismas. Se retiran dentro de 3 a 4 semanas aprox.",
+            "precio": "$7.800.-"
+          }
+        ],
+        "description": [
+          "Cocu Boulangerie Malabia 1510",
+          "Cocu Boulangerie     Malabia 1510",
+          "Es un evento donde podés hacer 2 piezas de cerámica, mientras tomás vino, escuchás música, conocés gente, y te divertís :)",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/ceramica-y-vino-mie-1412-139303-min.jpg"
+      },
+      {
+        "name": "Cositas maricas que escribo en cuadernos (Edición Carrusel)",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "casaBrandon\nLuis María Drago 236",
+        "price": [
+          {
+            "tipoDeTicket": "Cositas maricas que escribo en cuadernos (Edición Carrusel) en casaBrandon",
+            "precio": "$900.-"
+          }
+        ],
+        "description": [
+          "casaBrandon Luis María Drago 236",
+          "casaBrandon     Luis María Drago 236",
+          "Cositas maricas que escribo en cuadernos (Edición Carrusel)  En esta 5ta edición de \"Cositas maricas...\" festejamos dos años de este ciclo de mariconas. El hecho en sí está en encontrarnos, todo lo otro son excusas, en esta oportunidad Casa Brandon como trinchera y hacer todo lo que nos encanta hacer: leer poemas, cantar, hablar de nosotras, de nuestros vínculos, leer cositas, contar cositas, cantar cositas, ser veinte locas y algún fantasma, todes frente a un espejo diminuto pintándose los labios, hablar de pavadas importantes y de cosas importantes que siempre se cree que son pavadas. Habilitamos rincones, aireamos recovecos, descubrimos altillos, usamos las fajas de clausura para hacernos vestiditos psicodélicos, nos prestamos el pasado y leemos el futuro, pitonisas de cicatrices y de porvenires.  Elegante Sport (Ariel Osiris y Jorge Thefs), es un dúo que nació con el encuentro de dos maricas de generaciones diferentes, pero hermanadas por las manos del destino. Del estar en escena y compartir(se) surge un trasvasamiento generacional, atravesado por sus historias personales (y políticas). Une investigó los 80 y el otre lo pateó, uno aprende lo milenial y el otre lo construye, y así se prestan vida y el alargador de pestañas. Deseo, amor, la axila sudada de une noviecite del barrio, transmutar el alarido en palabra.  Federico Casalinuovo, Gorda Insurrecta, Agail Zevallos, Ale Borgatello, Matero Riperto, Jose Guerrero, Burlesque Lesbiano, Maik Ghioldi, Macu Rodriguez Cuello, Lucas Scott, Anita Ayala, Carmin Lupe, Victoria Duarte, Juana Finguer, Luar Pepe, Bel Gatti, Ariel Osiris, Jorge Thefs, Octavio Aita, Delia Hou y Santiago Greco",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/cositas-maricas-que-escribo-en-cuadernos-edicion-carrusel-141847-min.jpg"
+      },
+      {
+        "name": "Palabra de actor",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 21:30 hrs."
+        ],
+        "location": "Teatro La Mueca\nJ. A.Cabrera 4255",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada general Traer QR de la entrada de forma física o digital. Ser puntual. Las ubicaciones son por orden de llegada.",
+            "precio": "$1.300.-"
+          }
+        ],
+        "description": [
+          "Teatro La Mueca J. A.Cabrera 4255",
+          "Teatro La Mueca     J. A.Cabrera 4255",
+          "Organizamos, realizamos y producimos eventos en diferentes espacios culturales o gastronomicos, estamos en cada detalle y procuramos ser felices haciendo lo que nos gusta...",
+          "Actores decididos a contar sus historias. A recrear sus imprudencias, sus locuras, sus experiencias cercanas a lo inverosímil. Son ellos en primera persona quienes cuentan la creación de sus plumas. Un trabajo colectivo, difícil si los hay, lleno de bifurcaciones, cambios, descubrimientos. Una puesta a flor de piel, exponiendo no solo su actuación, sino también su creación en puño y letra. Vamos a pasar por un psiquiátrico, por un viaje de egresadas, por una reunión de consorcio, el lanzamiento de una nueva aplicación “duotinder”, una cena de amigos incómoda, un viaje de avión a Roma, la lucha para inscribir a los hijos en el colegio top, un abogado estrella en sucesión y una operación de lolas llena de infidelidades.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/palabra-de-actor-139615-min.jpg"
+      },
+      {
+        "name": "Gala de Fin de Año Academia Dreamers Dance",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 19:30 hrs."
+        ],
+        "location": "Sala Berta Vidal de Battini\nPaseo de las Artes y Av. Del Fundador",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada Anticipada",
+            "precio": "$800.-"
+          }
+        ],
+        "description": [
+          "Sala Berta Vidal de Battini Paseo de las Artes y Av. Del Fundador",
+          "Sala Berta Vidal de Battini     Paseo de las Artes y Av. Del Fundador",
+          "Academia de Ritmos Urbanos Dreamers Dance",
+          "La Academia Dreamers Dance cierra el año presentando las coreografias que han realizado y practicado durante todo este tiempo. Las categorías que participan son desde las babys hasta el grupo infantil, con coreografias de estilo ritmo urbano.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/gala-de-fin-de-ano-academia-dreamers-dance-141361-min.jpg"
+      },
+      {
+        "name": "Vamos Viendo de Pre-estreno Iniciar Sesión",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "Club Cultural Matienzo\nPringles 1249, CABA",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada Anticipada (Primera preventa)",
+            "precio": "$1.200.-"
+          }
+        ],
+        "description": [
+          "Club Cultural Matienzo Pringles 1249, CABA",
+          "Club Cultural Matienzo     Pringles 1249, CABA",
+          "La Vamos Viendo es una murga de estilo uruguayo y se encuentra pre-estrenando su espectaculo completo llamado \"iniciar sesión\". Terapia, murga y confusión, en tiempos de redes sociales.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/vamos-viendo-de-preestreno-iniciar-sesion-139093-min.jpg"
+      },
+      {
+        "name": "SILENCE DICIEMBRE - Moby Dick (+20)",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 19:00 hrs."
+        ],
+        "location": "Moby Dick - Buenos Aires\nAv. Costanera Rafael Obligado 6350, Buenos Aires",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$2.000.-"
+          },
+          {
+            "tipoDeTicket": "QR Free QR Free valido hasta las 21:00 hs. Sin Excepciones.",
+            "precio": "Entrada Liberada"
+          }
+        ],
+        "description": [
+          "Moby Dick - Buenos Aires Av. Costanera Rafael Obligado 6350, Buenos Aires",
+          "Moby Dick - Buenos Aires     Av. Costanera Rafael Obligado 6350, Buenos Aires",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/silence-diciembre-moby-dick-142068-min.jpg"
+      },
+      {
+        "name": "Downtempo Rooftop pres. Javi Urso + Delfina Bravi + Luna Daprile + Mauro Duran + Facundo Lopez (+18)",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 19:00 hrs."
+        ],
+        "location": "Downtempo Rooftop\nAv. De los Constituyentes 3552 Caba",
+        "price": [
+          {
+            "tipoDeTicket": "ACCESO FREE",
+            "precio": "Entrada Liberada"
+          }
+        ],
+        "description": [
+          "Downtempo Rooftop Av. De los Constituyentes 3552 Caba",
+          "Downtempo Rooftop     Av. De los Constituyentes 3552 Caba",
+          "Downtempo Rooftop Bar \\\\r\\\\n\\\\r\\\\nFood + Drinks + Electronic Music \\\\r\\\\n\\\\r\\\\nBoiler Room , Música en el aire",
+          "El Miércoles 14 te esperamos en el Rooftop más lindo de Baires! Se viene otra fecha de con los nuevos artistas de la escena Underground 💣  ⚡️Line Up⚡️  🎧 JAVI URSO 🎧 DELFINA BRAVI 🎧 LUNA D'APRILE 🎧 MAURO DURAN 🎧 FACUNDO LOPEZ  🎟 Accesos Free toda la jornada!  📍Av. De los Constituyentes 3552 Caba",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/downtempo-rooftop-pres-javi-urso-delfina-bravi-luna-daprile-mauro-duran-facundo-lopez-143143-min.jpg"
+      },
+      {
+        "name": "OPERA 14/12/22 (+25)",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 19:30 hrs."
+        ],
+        "location": "Punta Carrasco\nAv Rafael Obligado 2221",
+        "price": [
+          {
+            "tipoDeTicket": "Caballeros SIN CARGO H22hs Apertura 19:30hs Parking cortesía hasta las 20:30hs",
+            "precio": "Entrada Liberada"
+          },
+          {
+            "tipoDeTicket": "Damas sin cargo H22hs Apertura 19:30hs Parking cortesía hasta las 20:30hs",
+            "precio": "Entrada Liberada"
+          }
+        ],
+        "description": [
+          "Punta Carrasco Av Rafael Obligado 2221",
+          "Punta Carrasco     Av Rafael Obligado 2221",
+          "Apertura 19:30hs Parking cortesía hasta las 20:30hs Cierre 1:30 am",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/opera-141222-142897-min.jpg"
+      },
+      {
+        "name": "San Jose 14/12",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 23:55 hrs."
+        ],
+        "location": "Sunset Pilar\nEstanislao López 440",
+        "price": [
+          {
+            "tipoDeTicket": "SAN JOSE",
+            "precio": "Entrada Liberada"
+          }
+        ],
+        "description": [
+          "Sunset Pilar Estanislao López 440",
+          "Sunset Pilar     Estanislao López 440",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/san-jose-2111-131282-min.jpg"
+      },
+      {
+        "name": "CANTANDO SIN FRONTERAS",
+        "date": [
+          "Miércoles 14 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "La Boheme Live\nAV Gaona 2796",
+        "price": [],
+        "description": [
+          "La Boheme Live AV Gaona 2796",
+          "La Boheme Live     AV Gaona 2796",
+          "La Boheme, una gran familia, donde dia a dia, ponemos lo necesario para seguir apoyando a los artistas de cualquier genero, tanto a los consagrados como emergentes.Te ofrecemos un espacio donde podes realizar tu actividad desde los ensayos en nuestras salas, pasando por grabaciones en estudio, promocionando tu material en nuestra radio y presentando tu show en nuestro bar asi tambien por streaming.",
+          "SHOWS DE ARTISTAS SOLISTAS",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/cantando-sin-fronteras-139213-min.jpg"
       }
     ]
-  };
+  }
 
 
   return obj;
