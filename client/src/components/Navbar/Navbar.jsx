@@ -16,6 +16,7 @@ export default function Navbar() {
       <div className="navbar">
 
         <div className="left">
+          <SearchBar />
           <a href="/">
             <h1>Eventix</h1>
           </a>
@@ -24,9 +25,12 @@ export default function Navbar() {
             {/* <aboutUs/> */}
           </a>
           <h3>More</h3>
-        {/* <SearchBar />*/}
+          
         </div>
-
+        <div>
+          
+        </div>
+        
 
         <div className="right">
           <LoginButton />

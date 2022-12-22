@@ -1,7 +1,9 @@
 import React, { useEffect }from 'react';
 import { searchEventById } from '../../Redux/actions';
 import { useSelector, useDispatch } from 'react-redux';
-import { useHistory, useParams } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
+import Map from '../Map/Map';
+
 
 
 export default function Detail() {
@@ -20,7 +22,7 @@ export default function Detail() {
     eventShowed.shift()
     return history.goBack()
   }
-  // console.log(eventShowed[0])
+  
 
   return (
     <div>
@@ -31,20 +33,24 @@ export default function Detail() {
       </div>
       <div>
         <div>
-          <img src={eventShowed[0].image} alt= "" />
+          <img src={eventShowed.length ? eventShowed[0].image : null} alt= "" />
         </div>
         <div>
-          <p>{eventShowed[0].name}</p>
-          <p>{eventShowed[0].location}</p>
+          <p>{eventShowed.length ? eventShowed[0].name : null}</p>
+          <p>{eventShowed.length ? eventShowed[0].location : null}</p>
          {
-          eventShowed[0].price?.map((e, i) => 
+          eventShowed.length ? eventShowed[0].price?.map((e, i) => 
             <div key={i}>
               <p>{e.tipoDeTicket}</p>
               <p>{e.precio}</p>
-            </div>
-            
-          )
+            </div> 
+          ) :
+          null
          }
+        </div>
+        <Map/>
+        <div>
+          <Link to={'/event/sale'}><button>BUY TICKETS</button></Link>
         </div>
       </div>
     </div>
