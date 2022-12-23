@@ -451,6 +451,581 @@ const  getApi = async()=>{
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
         "image": "https://imagenes.passline.com/eventos/cantando-sin-fronteras-139213-min.jpg"
+      },
+      {
+        "name": "EMILIANA PICCINI",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "Circe Fábrica de Arte\nGral. Manuel A. Rodriguez 1559",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$1.200.-"
+          }
+        ],
+        "description": [
+          "Circe Fábrica de Arte Gral. Manuel A. Rodriguez 1559",
+          "Circe Fábrica de Arte     Gral. Manuel A. Rodriguez 1559",
+          "EMILIANA PICCINI La guitarrista y cantante Emiliana Piccini despide el año con un concierto en Circe. Luego de sus numerosas presentaciones solistas en el año ’22 en esta ocasión estará tocando junto a Julián Solarz en piano y a Lean Quinteros en batería. Además habrá cancionistas invitados: Laura Favazza que estará adelantando temas de su próximo disco y Daniel Campi que interpretará músicas de Onírico, su álbum más reciente. Emiliana Piccini: guitarra y voz Julián Solarz: piano Invitades: Lean Quinteros: batería Laura Favazza: guitarra y voz Daniel Campi: guitarra y voz",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/emiliana-piccini-139741-min.jpg"
+      },
+      {
+        "name": "Nacho Rodriguez / Amadeo Pasa / Cata Rec",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 20:30 hrs."
+        ],
+        "location": "911\nDorrego 911",
+        "price": [
+          {
+            "tipoDeTicket": "Nacho Rodriguez, Amadeo Pasa, Cata Rec",
+            "precio": "$800.-"
+          }
+        ],
+        "description": [
+          "911 Dorrego 911",
+          "911     Dorrego 911",
+          "Productora de eventos",
+          "Concierto de fin de año con shows de Nacho Rodriguez, Amadeo Pasa y Cata Rec. La fecha será el jueves 22 a partir de las 20.30 hs en el Club Social 911, en Dorrego 911, CABA.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/nacho-rodriguez-amadeo-pasa-cata-rec-143879-min.jpg"
+      },
+      {
+        "name": "31°GALA SHOW MUESTRA ARTÍSTICA FIN DE AÑO INSTITUTO SUPERIOR DE DANZAS SHOKRAN ALA",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 18:00 hrs."
+        ],
+        "location": "Sala de teatro Berta Vidal Puente Blanco\nPaseo de las Artes sin número/Avenida Fundador",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada general Entrada general",
+            "precio": "$900.-"
+          }
+        ],
+        "description": [
+          "Sala de teatro Berta Vidal Puente Blanco Paseo de las Artes sin número/Avenida Fundador",
+          "Sala de teatro Berta Vidal Puente Blanco     Paseo de las Artes sin número/Avenida Fundador",
+          "LOS INVITAMOS A QUE NOS ACOMPAÑEN A NUESTRA GALA ARTÍSTICA EN LA CUAL QUEREMOS QUE VEAN UNA VEZ MAS TODO LO QUE DISFRUTAMOS BAILAR Y NOS HARÍA MUY FELICES QUE ESTEN PRESENTES ❤ NOS HAN ACOMPAÑADO EN MOMENTOS MUY DIFICILES DE TRABAJO,DE ESFUERZO..NO PODES NO ESTAR ESTE DIA DONDE NOS INUNDAREMOS DE FELICIDAD💃🏽🎶",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/31gala-show-muestra-artistica-fin-de-ano-instituto-superior-de-danzas-shokran-ala-143416-min.jpg"
+      },
+      {
+        "name": "Remeneo | 22 de Diciembre (+18)",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 23:55 hrs."
+        ],
+        "location": "Beatflow\nAv.Córdoba 5509",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada general Entrada válida hasta las 2:30hs.",
+            "precio": "$1.000.-"
+          },
+          {
+            "tipoDeTicket": "Entrada VIP Entrada válida hasta las 2:30hs. Acceso al VIP. No incluye consumición.",
+            "precio": "$1.500.-"
+          },
+          {
+            "tipoDeTicket": "Ingreso para 4 + Botella a elección",
+            "precio": "$8.000.-"
+          },
+          {
+            "tipoDeTicket": "Ingreso para 4 + Botella a elección + Acceso VIP",
+            "precio": "$10.000.-"
+          },
+          {
+            "tipoDeTicket": "Ingreso para 4 + Champagne Mumm + 2 Speed",
+            "precio": "$6.500.-"
+          },
+          {
+            "tipoDeTicket": "Ingreso para 4 + Champagne Novecento + 2 Speed",
+            "precio": "$6.000.-"
+          },
+          {
+            "tipoDeTicket": "2x1 Entrada válida hasta las 2hs.",
+            "precio": "$1.300.-"
+          },
+          {
+            "tipoDeTicket": "Entrada SIN CARGO Entrada válida hasta las 1hs.",
+            "precio": "Entrada Liberada"
+          }
+        ],
+        "description": [
+          "Beatflow Av.Córdoba 5509",
+          "Beatflow     Av.Córdoba 5509",
+          "Productora de eventos y sala de conciertos ubicada en Palermo, CABA.",
+          "Entrada válida hasta las 2:30hs.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/remeneo-22-de-diciembre-143913-min.jpg"
+      },
+      {
+        "name": "Todo Aparenta Normal en Niceto Club (+18)",
+        "date": [],
+        "location": "Niceto Club\nniceto vega 5510",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$3.000.-"
+          },
+          {
+            "tipoDeTicket": "Preventa 1",
+            "precio": "$2.500.-"
+          },
+          {
+            "tipoDeTicket": "Cerveza 330 cc compra tu consumo anticipado y retiralo en la barra",
+            "precio": "$400.-"
+          },
+          {
+            "tipoDeTicket": "Agua Mineral compra tu consumo anticipado y retiralo en la barra",
+            "precio": "$500.-"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Champagne Norton compra tu consumo anticipado y retiralo en la barra"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Mostrar más productos"
+          },
+          {
+            "tipoDeTicket": "Promo VODKA NARANJA 2 Vodka naranja",
+            "precio": "$2.000.-"
+          },
+          {
+            "tipoDeTicket": "Promo CAMPARI 2 Campari con Naranja",
+            "precio": "$2.000.-"
+          },
+          {
+            "tipoDeTicket": "Champagne Mumm",
+            "precio": "$4.000.-"
+          },
+          {
+            "tipoDeTicket": "Cerveza 330 cc compra tu consumo anticipado y retiralo en la barra",
+            "precio": "$400.-"
+          },
+          {
+            "tipoDeTicket": "Agua Mineral compra tu consumo anticipado y retiralo en la barra",
+            "precio": "$500.-"
+          },
+          {
+            "tipoDeTicket": "Champagne Norton compra tu consumo anticipado y retiralo en la barra",
+            "precio": "$3.000.-"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Promo VODKA NARANJA 2 Vodka naranja"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Promo CAMPARI 2 Campari con Naranja"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Champagne Mumm"
+          },
+          {
+            "precio": "$4.000.-",
+            "tipoDeTicket": "Mostrar más productos"
+          }
+        ],
+        "description": [
+          "Niceto Club niceto vega 5510",
+          "Niceto Club     niceto vega 5510",
+          "Luego de agotar su último show en Niceto Club, Todo Aparenta Normal vuelve para cerrar el 2022 con una noche épica llena de música y canciones de todo su repertorio. Será una función única con invitadxs especiales. La cita será el jueves 22 de diciembre en Niceto Club.  Luego de su nominación a los Premios Gardel 2021 como \"Mejor Álbum Grupo de Rock\" la banda sigue despidiendo su último trabajo discográfico. \"El Último Abrazo Analógico habla acerca de las relaciones y sus cambios, de cómo fluyen como el agua, y de cómo mutan al igual que la naturaleza en sí. Cada canción es una historia desde una mirada externa. A su vez, el disco fue creado en un momento histórico personal de la banda en donde estaban sucediéndo cambios, tanto afectivas, naturales y humanas\" cuenta Nicolás Alfieri, vocalista.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/todo-aparenta-normal-en-niceto-club-178733-min.jpg"
+      },
+      {
+        "name": "F.A.N.G.O VERSUS MIRLO (+18)",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 22:00 hrs."
+        ],
+        "location": "DESEO\nChorroarin 1040",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada general",
+            "precio": "$1.500.-"
+          }
+        ],
+        "description": [
+          "DESEO Chorroarin 1040",
+          "DESEO     Chorroarin 1040",
+          "F.A.N.G.O. VERSUS MIRLO es más que un b2b. Es una batalla sonora a puro ritmo contracultural macerado durante años de oficio. Es la invocación mediante el arte de la mixologia de una tercera mente, una intersección de abundancia que se manifiesta en el puro estado de trance. La búsqueda de un punto de equilibrio (la luz y las tinieblas, el silencio y el estruendo), un delicado balance proyectado al infinito a través de las ondas sonoras y de una postura compartida de incesante antagonismo.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/fango-versus-mirlo-144321-min.jpg"
+      },
+      {
+        "name": "RICHARD LIMBO banda + RAMANEGRA dúo",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "Ladran Sancho Espacio de Arte\nGuardia Vieja 3811",
+        "price": [
+          {
+            "tipoDeTicket": "Anticipada",
+            "precio": "$500.-"
+          }
+        ],
+        "description": [
+          "Ladran Sancho Espacio de Arte Guardia Vieja 3811",
+          "Ladran Sancho Espacio de Arte     Guardia Vieja 3811",
+          "RICHARD LIMBO banda te pasea por una fusión de ritmos latinoamericanos y RAMANEGRA dúo que versiona clásicos del metal nacional en folklore.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/richard-limbo-banda-ramanegra-duo-185342-min.jpg"
+      },
+      {
+        "name": "Muevete",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "Tigre\nTigre",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General 2",
+            "precio": "$3.500.-"
+          },
+          {
+            "tipoDeTicket": "Entrada General 3",
+            "precio": "$4.000.-"
+          },
+          {
+            "tipoDeTicket": "ENTRADAS GENERALES 4x3",
+            "precio": "$12.200.-"
+          },
+          {
+            "tipoDeTicket": "4x3 ENTRADAS GENERALES",
+            "precio": "$10.500.-"
+          },
+          {
+            "tipoDeTicket": "Early Bird Capacidad Limitada",
+            "precio": "$2.500.-"
+          },
+          {
+            "tipoDeTicket": "Entrada General 1",
+            "precio": "$3.000.-"
+          }
+        ],
+        "description": [
+          "Tigre Tigre",
+          "Tigre     Tigre",
+          "Ubicacion: Tigre Horario: 23:30-6:30",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/muevete-185269-min.jpg"
+      },
+      {
+        "name": "LA H NO MURIÓ - 22 de Diciembre de 2022",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 19:00 hrs."
+        ],
+        "location": "El Teatro Flores\nAv, Rivadavia 7806",
+        "price": [
+          {
+            "tipoDeTicket": "LA H NO MURIÓ",
+            "precio": "$3.500.-"
+          },
+          {
+            "tipoDeTicket": "LA H NO MURIÓ",
+            "precio": "$4.000.-"
+          }
+        ],
+        "description": [
+          "El Teatro Flores Av, Rivadavia 7806",
+          "El Teatro Flores     Av, Rivadavia 7806",
+          "Malon se presenta en lo que será su último show del año y último en Bs. As. en su espectáculo homenaje a su vieja banda HERMETICA, en El Teatro Flores y para despedir el año con un sabor navideño metalero!! Los esperanos!!! Primeras 500 entradas a precio promocional de navidad!",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/la-h-no-murio-22-de-diciembre-de-2022-126942-min.jpg"
+      },
+      {
+        "name": "Gala Fire Kings",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 20:30 hrs."
+        ],
+        "location": "Centro Cultural Puente Blanco Hugo del Carril\nAv. del Fundador",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General Fire Kings Entrada online",
+            "precio": "$800.-"
+          }
+        ],
+        "description": [
+          "Centro Cultural Puente Blanco Hugo del Carril Av. del Fundador",
+          "Centro Cultural Puente Blanco Hugo del Carril     Av. del Fundador",
+          "Gala de “Fin de Año” del grupo Fire Kings",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/gala-fire-kings-141040-min.jpg"
+      },
+      {
+        "name": "Heroicos Sobrevivientes en Club Lucille (+18)",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 21:30 hrs."
+        ],
+        "location": "Club Lucille\nGorriti 5520, Buenos Aires",
+        "price": [
+          {
+            "tipoDeTicket": "Heroicos en Lucille Pre-Venta Anticipada Pre-Venta Anticipada",
+            "precio": "$3.000.-"
+          }
+        ],
+        "description": [
+          "Club Lucille Gorriti 5520, Buenos Aires",
+          "Club Lucille     Gorriti 5520, Buenos Aires",
+          "Colaborar con amigos y colegas generando espacios y momentos para compartir música",
+          "Heroicos Sobrevivientes cierra el año con un show íntimo en el Teatro de Club Lucille. Una oportunidad única para disfrutar de una noche diferente, con sorpresas, algunas novedades y los clásicos de siempre. No te quedes afuera.... CAPACIDAD LIMITADA",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/heroicos-sobrevivientes-en-club-lucille-183304-min.jpg"
+      },
+      {
+        "name": "Polgar 3 + Foco en vivo!",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "lalalá\nAlvarez Thomas 1541",
+        "price": [
+          {
+            "tipoDeTicket": "Anticipadas",
+            "precio": "$800.-"
+          }
+        ],
+        "description": [
+          "lalalá Alvarez Thomas 1541",
+          "lalalá     Alvarez Thomas 1541",
+          "Productora de eventos culturales",
+          "Polgar 3 es un grupo creado por Gustavo Monsalvo - EMAUPM(Niño Elefante), Sué Mon Mont y Suarez- y Micaela García -Las Ligas Menores- durante el aislamiento del año 2020 en Buenos Aires. Originado como dúo de batería y guitarra se completó como banda desde sus primeros recitales con la incorporación de Lu Glass y Marcos Díaz en teclados y bajo respectivamente.  En la actualidad se encuentran produciendo su primer EP cuya publicación se espera para finales de 2022.  Las canciones de Polgar 3 navegan entre diálogos melódicos de instrumentación suave y pastoril, derivan hacia arpegios veloces con pulso motorik y desembocan en un caudaloso y policromático crescendo de rock espacial. En la regulación de las intensidades se renueva la amistad con la disonancia y la textura análogica con vocación no wave de los elementos percusivos. En el grave registro de la voz se manifiesta una declamación tal vez disconforme, atribulada.  Polgar 3 recombina elementos de tradiciones que vienen desde muy lejos en el tiempo y de las corrientes menos transitadas del rock alternativo.  FOCO Juan Mariano Castro presenta su nuevo perfil musical tras ser co-fundador y letrista de Mi Amigo Invencible hasta su disco (\"Dutsiland\") En Foco la canción aflora con los elementos de la pasión que él arrastra desde su infancia: la música de la radio cuya melodía se prende a la educación sentimental de una generación. Aquello que es el pop dentro del rock. Mariano diseñó este proyecto junto a Matías Bevacqua, quien co-produjo las canciones de su primer EP: (A) cuático. La banda está compuesta por Joel Carrazana en batería, Malena Vera en teclado, Daniel Toro en guitarras y Matías Bevacqua en bajo.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/polgar-3-foco-en-vivo-184809-min.jpg"
+      },
+      {
+        "name": "Monstruos Felices Vol.9 - Rabia Bar",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "Rabia Bar\nCosta Rica 4901",
+        "price": [
+          {
+            "tipoDeTicket": "Monstruos Felices Vol.9 - Rabia bAR",
+            "precio": "$1.000.-"
+          }
+        ],
+        "description": [
+          "Rabia Bar Costa Rica 4901",
+          "Rabia Bar     Costa Rica 4901",
+          "Somos una agencia que impulsa el desarrollo de proyectos musicales. Ayudamos a nuestrxs artistxs a implementar estrategias efectivas para sus lanzamientos, redes sociales, prensa, conciertos, etc",
+          "El ciclo itinerante \"Monstruos Felices\" llega a Rabia Bar con su volumen número 9.  Esta edición se realizará en Rabia Bar.  Contaremos con la música en vivo de:  Las Cosas Invisibles  Detroit DTT  Emi Tapia (La Rioja)  Totem & Tabú  Evento producido por Cactus! Música.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/monstruos-felices-vol9-rabia-bar-141611-min.jpg"
+      },
+      {
+        "name": "GUILLERMO DE PALERMO",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 20:00 hrs."
+        ],
+        "location": "CC QI\nthames 240",
+        "price": [
+          {
+            "tipoDeTicket": "ANTICIPADAS",
+            "precio": "$1.000.-"
+          }
+        ],
+        "description": [
+          "CC QI thames 240",
+          "CC QI     thames 240",
+          "Espacio Cultural en Villa Crespo que aloja espectáculos musicales, de poesía, perfo, ferias, teatro y más.",
+          "Guillermo de Palermo (Banda Completa) + El Nube + Los Raquetazos + DJ Sebas Ruiz",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/guillermo-de-palermo-143073-min.jpg"
+      },
+      {
+        "name": "Sunset #3 (+20)",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 15:00 hrs."
+        ],
+        "location": "Los cascos polo cub\nRuta provincial 6, km 168, provincia de Buenos Aires",
+        "price": [
+          {
+            "tipoDeTicket": "Backstage Dama",
+            "precio": "$6.000.-"
+          },
+          {
+            "tipoDeTicket": "Last Chance",
+            "precio": "$5.000.-"
+          },
+          {
+            "tipoDeTicket": "Preventa 2 Entrada general, incluye barra libre",
+            "precio": "$4.000.-"
+          },
+          {
+            "tipoDeTicket": "Backstage Hombre",
+            "precio": "$7.000.-"
+          },
+          {
+            "tipoDeTicket": "Early birds Entrada general, incluye barra libre",
+            "precio": "$3.000.-"
+          },
+          {
+            "tipoDeTicket": "Preventa 1 Entrada general, incluye barra libre",
+            "precio": "$3.500.-"
+          }
+        ],
+        "description": [
+          "Los cascos polo cub Ruta provincial 6, km 168, provincia de Buenos Aires",
+          "Los cascos polo cub     Ruta provincial 6, km 168, provincia de Buenos Aires",
+          "Aybåk es una productora especializada en la organización de eventos sociales y fiestas comerciales. Con experiencia en el mercado, contamos con todos los equipamientos técnicos necesarios y servicios de alta calidad.",
+          "AYBÅK - RANK Sunset #3 (BOHO STYLE)  Estamos muy felices de anunciar nuestro último after del año, este 20 de diciembre bailaremos con un increíble line up sobre una cancha de polo. Será un evento totalmente exclusivo y únicamente se obtendrá acceso con la invitación de un organizador.  Como los sunsets anteriores, nuestro objetivo es lograr la combinación de la música y el ambiente perfecto con fin de garantizar una experiencia única para todos los invitados.  Que es el estilo BOHO?  El estilo boho chic es una variante del estilo bohemio, donde se combina lo antiguo con lo moderno, expresando la creatividad gracias a la ausencia de normas, sin dejar a un lado la elegancia y la sofisticación de lo moderno.  Información importante  Inicio: 15hs Cierre de puertas: 17hs Lugar: la ubicación del evento será enviada a los invitados el día del evento.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/sunset-3-182751-min.jpg"
+      },
+      {
+        "name": "Mederos Trío + Falú - Moguilevsky",
+        "date": [],
+        "location": "Torquato Tasso\nDefensa 1575",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada general (Apertura de puerta 20:00hs)",
+            "precio": "$3.500.-"
+          }
+        ],
+        "description": [
+          "Torquato Tasso Defensa 1575",
+          "Torquato Tasso     Defensa 1575",
+          "Rodolfo Mederos Trío y el prestigioso Dúo de Juan Falú y Marcelo Moguilevsky, vuelven al Torquarto Tasso el Jueves 22 de Diciembre, en el 21° Festival de Música! Otro encuentro de lujo que no te podés perder.  APERTURA DE SALA 20:00HS / SHOW 22:00HS  NO SE ACEPTAN CAMBIOS NI DEVOLUCIONES DE ENTRADAS.  La ubicación de los lugares es por orden de llegada.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/mederos-trio-falu-moguilevsky-171832-min.jpg"
+      },
+      {
+        "name": "Frescura #140: Cumple n° 9 (+18)",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "Club Cultural Matienzo\nPringles 1249",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$1.000.-"
+          },
+          {
+            "tipoDeTicket": "Entrada Preventa",
+            "precio": "$800.-"
+          }
+        ],
+        "description": [
+          "Club Cultural Matienzo Pringles 1249",
+          "Club Cultural Matienzo     Pringles 1249",
+          "\"Ey no te pierdas la edición 140 de uno de los pocos ciclos que han sobrevivido a todo esto de cultura independiente, sí, Frescura cumple sus primeros 9 años, así que Club Cultural Matienzo recibirá toda la impronta agitadora y autogestiva de este impulso Indie-Under comandado por Gonzalo Aguerrido, un rejunte bien piola y amiguero para sentirnos un poco más fresquites y cerrar el 2022 a pura improcracia poético surfer extrim wtf ke cringe. ................................................................................................................................................. VAN A ESTAR ROMPIÉNDOLA LAS SIGUIENTES BESTIAS DE LA CANCIÓN::::::::::: - BASUAL - @basual_ - JERÁN - @jeran.musica - GABY COLMAN - @soygabycolman - RABIA DE HOY - @rabiadehoy  Imperdible noche amigues!! Visuales a cargo de OVJ: @vj.ovj Flyer: @martinelfliman\"",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/frescura-140-cumple-n-9-184193-min.jpg"
+      },
+      {
+        "name": "UOPA DELUXE 22/12 MAKENA CLUB",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "Makena Cantina Club\nFitz Roy 1519",
+        "price": [
+          {
+            "tipoDeTicket": "ANTICIPADAS ELTON FONK UOPA",
+            "precio": "$800.-"
+          },
+          {
+            "tipoDeTicket": "ANTICIPADAS JUNKERE UOPA",
+            "precio": "$800.-"
+          },
+          {
+            "tipoDeTicket": "ANTICIPADAS LA MEDIA DOCENA UOPA",
+            "precio": "$800.-"
+          },
+          {
+            "tipoDeTicket": "ANTICIPADAS SONICO VIVO UOPA",
+            "precio": "$800.-"
+          }
+        ],
+        "description": [
+          "Makena Cantina Club Fitz Roy 1519",
+          "Makena Cantina Club     Fitz Roy 1519",
+          "Jueves 22 de Diciembre 21hs  JUNKERE ELTON FONK LA MEDIA DOCENA SONICO VIVO  DJ UOPA NACHI & DJ BUDAH  MAKENA CANTINA CLUB. FITZ ROY 1519 PALERMO. CABA",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/uopa-deluxe-2212-makena-club-143095-min.jpg"
+      },
+      {
+        "name": "PORCELLI ACOUSTIC BAND",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "BORGES 1975\nJORGE LUIS BORGES 1975",
+        "price": [
+          {
+            "tipoDeTicket": "ENTRADA GENERAL",
+            "precio": "$1.600.-"
+          }
+        ],
+        "description": [
+          "BORGES 1975 JORGE LUIS BORGES 1975",
+          "BORGES 1975     JORGE LUIS BORGES 1975",
+          "Pablo Porcelli presenta nuevamente su show Winds of Beatles acompañado por su banda integrada por Nicolás Radicchi: Contrabajo, Matias Dabanch: Piano, Alfredo Storti: Guitarra y Martin Vicente en Bateria.  Pablo Porcelli es saxofonista, compositor, director musical, docente y escritor que transita géneros como la música popular, tango, folclore, jazz, free jazz, clásico y contemporáneo y en esta oportunidad reinventa lostemas de los 4 de Liverpool a través de la sonoridad inigualable de su saxo.  Ha grabado en innumerables proyectos, entre los que se destacan los discos: Winds of Beatles - Piazzolla 100 años despues... - Diálogos - Sin Rodeo - Distancias - Vientos de Cambio - Cada uno, cada cual - Sincronía - Lo nuevo y lo viejo.  Ha tocado en paises como Estados Unidos, China, Francia, España, Chile, Bolivia y Uruguay. Es artista Internacional D´Addario y especialista en productos D´Addario Woodwinds.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/porcelli-acoustic-band-142619-min.jpg"
+      },
+      {
+        "name": "PASTA - 22/12",
+        "date": [
+          "Jueves 22 de Diciembre 2022 - 20:30 hrs."
+        ],
+        "location": "Piantao Club Cultural\nJorge Newbery 1467",
+        "price": [
+          {
+            "tipoDeTicket": "Socios Abner",
+            "precio": "$750.-"
+          },
+          {
+            "tipoDeTicket": "Entrada general",
+            "precio": "$1.000.-"
+          }
+        ],
+        "description": [
+          "Piantao Club Cultural Jorge Newbery 1467",
+          "Piantao Club Cultural     Jorge Newbery 1467",
+          "Ingresa el código:",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/pasta-2212-142835-min.jpg"
       }
     ]
   }

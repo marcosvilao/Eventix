@@ -17,8 +17,9 @@ export const CREATE_EVENT = "CREATE_EVENT";
 
 export const SORT = "SORT";
 
-export const GET_ALL_EVENT_LIST = 'GET_ALL_EVENT_LIST'
+export const GET_ALL_EVENT_LIST = 'GET_ALL_EVENT_LIST';
 
+export const PAY_CRYPTO = "PAY_CRYPTO";
 //-------------------------------------------------
 const URL = "http://localhost:3001";
 //-------------------------------------------------
@@ -213,6 +214,25 @@ export const sort = (value) =>{
   
       dispatch({
 
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  };
+};
+
+export const payCrypto = (data) =>{
+
+  return async function (dispatch){
+
+    try {
+      // console.log("action", data);
+      
+      await axios.post(`${URL}/paycrypto/create-charge`,data );
+
+    } catch (error) {
+     
+      dispatch({
         type: ERROR,
         payload: error.message
       })
