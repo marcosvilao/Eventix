@@ -1,31 +1,54 @@
-import React from 'react'
-import { compose, withProps } from "recompose"
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
-const mapUrl = `https://maps.googleapis.com/maps/api/js?key=AIzaSyADc2MLZNlRKuETh2QEaDYA49aqZa9pNIU&v=3.exp&libraries=geometry,drawing,places`
+import React, {useState, useEffect} from 'react'
+import {useJsApiLoader, GoogleMap, Marker, DirectionsRenderer} from '@react-google-maps/api'
+import Loading from '../Loading/Loading'
+import axios from 'axios'
 
-const MyMapComponent = compose(
-    withProps({
-      googleMapURL: mapUrl,
-      loadingElement: <div style={{ height: `100%` }} />,
-      containerElement: <div style={{ height: `70vh`, width: '50vw' }} />,
-      mapElement: <div style={{ height: `100%` }} />,
-    }),
-    withScriptjs,
-    withGoogleMap
-  )((props) =>
-    <GoogleMap
-    //   apiKey={"AIzaSyADc2MLZNlRKuETh2QEaDYA49aqZa9pNIU"}
-      defaultZoom={11}
-      defaultCenter={{ lat: -34.6037, lng: -58.3816 }}
-    >
-      {props.isMarkerShown && <Marker position={{ lat: -34.6037, lng: -58.3816 }} />}
-    </GoogleMap>
-  )
+const center = {lat: -34.6037, lng: -58.3816}
 
-export default function Map() {
+export default function Map({direction}) {
+  const {isLoaded} = useJsApiLoader({
+    googleMapsApiKey : "AIzaSyADc2MLZNlRKuETh2QEaDYA49aqZa9pNIU",  
+  })
+  const [directionResponse, setDirectionResponse] = useState(null)
+
+  async function getCoordinates(address) {
+    const response = await axios(
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=AIzaSyADc2MLZNlRKuETh2QEaDYA49aqZa9pNIU`
+    )
+    const data = response.data.results[0] ? response.data.results[0] : null;
+      console.log(data)
+    return setDirectionResponse(data !== null ? data.geometry.location : center)
+  }
+    useEffect(() => {
+      console.log(direction)
+      setDirectionResponse(getCoordinates(direction))
+      
+    }, [direction])
+
+
+    
+  
+
+
+
+  if(!isLoaded){
+    return <Loading/>
+  }
+
   return (
-    <div>
-      <MyMapComponent isMarkerShown/>
+    <div style={{width: "60vw", height: "70vh"}}>
+      <GoogleMap
+      center={directionResponse}
+      zoom={14}
+      mapContainerStyle={{width: "100%", height: "100%"}}
+      options={{
+        zoomControl:false,
+        streetViewControl:false,
+        mapTypeControl:false,
+        fullscreenControl:false
+      }}>
+        <Marker position={directionResponse}/>
+      </GoogleMap>
     </div>
   )
 }
