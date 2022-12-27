@@ -91,12 +91,12 @@ export default function Detail() {
         <div>
 
           
-          <p>{eventShowed.length ? eventShowed[0].name : null}</p>
+          <p>{eventShowed.length ? eventShowed[0].name : null}</p> 
           <p>{eventShowed.length ? eventShowed[0].location : null}</p>
 
 
          {
-          eventShowed[0].price.length > 0? eventShowed[0].price.map((e, i) => 
+          eventShowed[0].price.length > 0 ? eventShowed[0].price.map((e, i) => 
             <div key={i}>
               
               <p>Type Ticket: {e.tipoDeTicket}</p>
@@ -118,7 +118,7 @@ export default function Detail() {
         <p>Description event: {eventShowed[0].description}</p>
       </div>
 
-      <Map/>
+      <Map direction={eventShowed.length ? eventShowed[0].location : null}/>
 
       {/* 
       <div>

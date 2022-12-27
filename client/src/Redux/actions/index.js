@@ -155,7 +155,7 @@ export const searchEventById = (id) => {
     try {
     
       const eventDetailed = await axios.get(URL + `/events/${id}`)
-      console.log(eventDetailed.data)
+      // console.log(eventDetailed.data)
       dispatch({
         type: GET_EVENT_ID,
         payload: eventDetailed.data

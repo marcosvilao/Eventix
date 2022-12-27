@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import {Link} from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -10,10 +11,12 @@ export default function Carrousel() {
   useEffect(() => {
     dispatch(getAllEventList());
   }, [dispatch]);
+  
 
   return (
     <div className="carousel">
       <Carousel>
+          <Link to={'/home/' + (Events.length ? Events[0].id : null)}>
         <div>
           <img
             src={Events.length ? Events[0].image : null}
@@ -21,6 +24,8 @@ export default function Carrousel() {
           />
           <p className="legend">{Events.length ? Events[0].name : null}</p>
         </div>
+          </Link>
+          <Link to={'/home/' + (Events.length ? Events[1].id : null)}>
         <div>
           <img
             src={Events.length ? Events[1].image : null}
@@ -28,6 +33,8 @@ export default function Carrousel() {
           />
           <p className="legend">{Events.length ? Events[1].name : null}</p>
         </div>
+        </Link>
+        <Link to={'/home/' + (Events.length ? Events[2].id : null)}>
         <div>
           <img
             src={Events.length ? Events[2].image : null}
@@ -35,6 +42,7 @@ export default function Carrousel() {
           />
           <p className="legend">{Events.length ? Events[2].name : null}</p>
         </div>
+        </Link>
       </Carousel>
     </div>
   );
