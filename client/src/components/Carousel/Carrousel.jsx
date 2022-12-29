@@ -19,28 +19,28 @@ export default function Carrousel() {
           <Link to={'/home/' + (Events.length ? Events[0].id : null)}>
         <div>
           <img
-            src={Events.length ? Events[0].image : null}
+            src={Events.length ? Events[0].imageBanner : null}
             alt={Events.length ? Events[0].name : null}
           />
-          <p className="legend">{Events.length ? Events[0].name : null}</p>
+          {/*<p className="legend">{Events.length ? Events[0].name : null}</p>*/}
         </div>
           </Link>
           <Link to={'/home/' + (Events.length ? Events[1].id : null)}>
         <div>
           <img
-            src={Events.length ? Events[1].image : null}
+            src={Events.length ? Events[1].imageBanner : null}
             alt={Events.length ? Events[1].name : null}
           />
-          <p className="legend">{Events.length ? Events[1].name : null}</p>
+          {/*<p className="legend">{Events.length ? Events[1].name : null}</p>*/}
         </div>
         </Link>
         <Link to={'/home/' + (Events.length ? Events[2].id : null)}>
         <div>
           <img
-            src={Events.length ? Events[2].image : null}
+            src={Events.length ? Events[2].imageBanner : null}
             alt={Events.length ? Events[2].name : null}
           />
-          <p className="legend">{Events.length ? Events[2].name : null}</p>
+          {/*<p className="legend">{Events.length ? Events[2].name : null}</p>*/}
         </div>
         </Link>
       </Carousel>

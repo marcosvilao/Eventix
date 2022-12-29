@@ -14,7 +14,7 @@ export default function Grid() {
   const [hasMore, setHasMore] = useState(true);
   const Events = useSelector((state) => state.events);
   const err = useSelector(s=> s.error);
-  
+  const filtered = useSelector(s => s.filtrado);
 
   const next = () => {
     setPage((prevPage) => prevPage + 1);
@@ -32,8 +32,25 @@ export default function Grid() {
 
       <p className="err">EVENT NOT FOUND</p>
     )
-  }
+  };
 
+  if(filtered.length > 0){
+
+    return (
+      filtered.length ? (
+        <InfiniteScroll dataLength={filtered.length} hasMore={hasMore} >
+          <ul className="eventsGrid">
+            { 
+              filtered.map((event,i) => {
+                return <Card event={event} key={i} />;
+              })
+            }
+          </ul>
+        </InfiniteScroll>
+      ): <Loading/>
+    
+    )
+  };
 
   return (
     Events.length ? (

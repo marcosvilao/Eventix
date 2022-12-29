@@ -1,4 +1,4 @@
-import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER, GET_NAME_EVENT, GET_EVENT_ID, CREATE_EVENT, SORT, GET_ALL_EVENT_LIST } from "../actions";
+import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER, GET_NAME_EVENT, GET_EVENT_ID, CREATE_EVENT, GET_ALL_EVENT_LIST } from "../actions";
 
 
 const initialState = {
@@ -16,10 +16,10 @@ function rootReducer (state = initialState, action) {
     switch (action.type) {
 
         case GET_ALL_EVENTS:
-            const events = state.events
+            const events = state.events  
             return {
                 ...state,
-                events: events.concat(action.payload),
+                events: events.concat(action.payload) ,
                 eventsToFilter: action.payload,
                 error:[]
             }
@@ -46,7 +46,7 @@ function rootReducer (state = initialState, action) {
             return {
                 ...state,
                 filtrado: action.payload,
-                events: action.payload,
+                // events: action.payload,
                 error: []
             }
         
@@ -64,12 +64,7 @@ function rootReducer (state = initialState, action) {
             return {
                 ...state,
                 post: action.payload
-            }
-        case SORT:
-            return {
-                ...state,
-                events: action.payload
-            }          
+            }         
         default:
             
             return {

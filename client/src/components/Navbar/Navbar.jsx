@@ -9,6 +9,16 @@ import "./navbar.css";
 import Filters from "../Filters/Filters";
 
 export default function Navbar() {
+
+  let checkBox = false;
+
+  function handleCheck(e){
+
+    let checkbox = document.getElementById(`${e.target.value}`);
+    // console.log("chee",checkbox.checked);
+    checkBox = checkbox.checked;
+  };
+
   return (
 
     <div>
@@ -42,10 +52,10 @@ export default function Navbar() {
 
 
       <div id="menu">
-        <input type={"checkbox"} id="mostrar-menu"/>
+        <input type={"checkbox"} id={"1"} value={1} onClick={e=>handleCheck(e)} className="mostrar-menu"/>
         <label>Search</label>
         <div id="filter">
-          <Filters/>
+          <Filters check={checkBox}/>
         </div> 
       </div>
 

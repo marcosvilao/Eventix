@@ -50,7 +50,7 @@
 
 
 
-#mostrar-menu:checked ~#filter{
+.mostrar-menu:checked ~#filter{
 
     right: 0%;
 

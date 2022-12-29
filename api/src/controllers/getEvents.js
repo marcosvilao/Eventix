@@ -16,7 +16,7 @@ const getEvents = async()=>{
             name: e.name,
             date: e.date.length > 0 ? e.date : ["Funciones Disponibles"],
             location: e.location,
-            // price: typeof e.price  === "object"? e.price.filter(e => e.includes("$") ): "Info price", // solo muestra un precio de entrada
+            locationMap: e.location.slice( e.location.indexOf("\n",0) + 1, e.location.length),
             price: e.price?.map(el=>{
 
                 return {
@@ -25,7 +25,8 @@ const getEvents = async()=>{
                 }
             }),
             description: e.description.map( e => e.replace("Passline.", "Eventix.").replace("Passline", "Eventix")).filter(e=> !e.includes("  ")),
-            image: e.image
+            image: e.image,
+            imageBanner: e.imageBanner
         };
     });
 
