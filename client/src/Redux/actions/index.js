@@ -15,8 +15,6 @@ export const GET_NAME_EVENT = "GET_NAME_EVENT";
 
 export const CREATE_EVENT = "CREATE_EVENT";
 
-export const SORT = "SORT";
-
 export const GET_ALL_EVENT_LIST = 'GET_ALL_EVENT_LIST';
 
 export const PAY_CRYPTO = "PAY_CRYPTO";
@@ -187,31 +185,6 @@ export const createEvent = (data) => {
 
     } catch (error) {
 
-      dispatch({
-
-        type: ERROR,
-        payload: error.message
-      })
-    }
-  };
-};
-
-export const sort = (value) =>{
-
-  return async function (dispatch){
-
-    try {
-      
-      const eventSort = await axios.get(`${URL}/events/order/`+ value);
-
-      dispatch({
-
-        type: SORT,
-        payload: eventSort.data
-      })
-
-    } catch (error) {
-  
       dispatch({
 
         type: ERROR,

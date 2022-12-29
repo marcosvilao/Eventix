@@ -8,6 +8,69 @@ const  getApi = async()=>{
   {
     "results": [
       {
+        "name": "HUMAN NEW YEAR´S EVE",
+        "date": ["Domingo 01 Enero 2023 - 01:00 hrs."],
+        "location": "Fat Mama\nAv. Colon 100",
+        "price": [
+          {
+            "tipoDeTicket": "Recital Las Pibas 17/12 Giula y Pupy Nagle en vivo",
+            "precio": "$500.-"
+          }
+        ],
+        "description": [
+          "Fat Mama Av. Colon 100",
+          "Fat Mama     Av. Colon 100",
+          "Producción de contenido",
+          "Recital de Pupy Nagle y Giula junto a Dj Jade",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/human-new-years-eve-sabado-3112-open-01hs-2-music-rooms-complejocrobar-186895-min.jpg",
+        "imageBanner": "https://imagenes.passline.com/slider/slide-5918-7315.jpg"
+      },
+      {
+        "name": "AÑO NUEVO EN LA CARPA - DJ Kelo en vivo (+18)",
+        "date": ["Domingo 01 Enero 2023 - 01:00 hrs."],
+        "location": "Fat Mama\nAv. Colon 100",
+        "price": [
+          {
+            "tipoDeTicket": "Recital Las Pibas 17/12 Giula y Pupy Nagle en vivo",
+            "precio": "$5000.-"
+          }
+        ],
+        "description": [
+          "Fat Mama Av. Colon 100",
+          "Fat Mama     Av. Colon 100",
+          "Producción de contenido",
+          "Recital de Pupy Nagle y Giula junto a Dj Jade",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/3112-ano-nuevo-en-la-carpa-dj-kelo-en-vivo-139095-139095-min.jpg",
+        "imageBanner": "https://imagenes.passline.com/slider/slide-5865-9982.jpg"
+      },
+      {
+        "name": "BRUDA (+23)",
+        "date": ["Domingo 01 Enero 2023 - 01:00 hrs."],
+        "location": "Fat Mama\nAv. Colon 100",
+        "price": [
+          {
+            "tipoDeTicket": "Mesa Backstage",
+            "precio": "$20000.-"
+          }
+        ],
+        "description": [
+          "Fat Mama Av. Colon 100",
+          "Fat Mama     Av. Colon 100",
+          "Producción de contenido",
+          "Recital de Pupy Nagle y Giula junto a Dj Jade",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/burda-178172-min.jpg",
+        "imageBanner": "https://imagenes.passline.com/slider/slide-5877-3252.jpg"
+      },
+      {
         "name": "Reci Las Pibas 17/12",
         "date": [],
         "location": "Fat Mama\nAv. Colon 100",

@@ -47,7 +47,7 @@ export default function Detail() {
 
     const datosPago = {
       
-      total: (Number(e.precio) * cantidad / 335).toPrecision(3),
+      total: (Number(e.precio) * cantidad / 400).toPrecision(3),
       name: eventShowed[0].name,
       description: arr.join(" "),
 
@@ -100,7 +100,7 @@ export default function Detail() {
             <div key={i}>
               
               <p>Type Ticket: {e.tipoDeTicket}</p>
-              {e.precio === "Entrada Liberada" ? <p>Price: Free</p> :<p>Price: ${Number(e.precio) * cantidad} | U$D {(Number(e.precio) * cantidad / 335).toPrecision(3)}</p>}
+              {e.precio === "Entrada Liberada" ? <p>Price: Free</p> :<p>Price: ${Number(e.precio) * cantidad} | U$D {(Number(e.precio) * cantidad / 400).toPrecision(3)}</p>}
               <button onClick={()=>submitData(e)}>comprar</button>
               <button hidden={cantidad > 1 ? false : true} onClick={()=>buttonRest()}>-</button>
               <button onClick={()=>buttonSum()}>+</button>
@@ -118,7 +118,7 @@ export default function Detail() {
         <p>Description event: {eventShowed[0].description}</p>
       </div>
 
-      <Map direction={eventShowed.length ? eventShowed[0].location : null}/>
+      <Map direction={eventShowed.length ? eventShowed[0].locationMap : null}/>
 
       {/* 
       <div>
