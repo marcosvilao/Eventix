@@ -26,7 +26,8 @@ const getEvents = async()=>{
             }),
             description: e.description.map( e => e.replace("Passline.", "Eventix.").replace("Passline", "Eventix")).filter(e=> !e.includes("  ")),
             image: e.image,
-            imageBanner: e.imageBanner
+            imageBanner: e.imageBanner,
+            typeEvent: e.typeEvent
         };
     });
 

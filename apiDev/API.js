@@ -26,7 +26,8 @@ const  getApi = async()=>{
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
         "image": "https://imagenes.passline.com/eventos/human-new-years-eve-sabado-3112-open-01hs-2-music-rooms-complejocrobar-186895-min.jpg",
-        "imageBanner": "https://imagenes.passline.com/slider/slide-5918-7315.jpg"
+        "imageBanner": "https://imagenes.passline.com/slider/slide-5918-7315.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Rock"}
       },
       {
         "name": "AÑO NUEVO EN LA CARPA - DJ Kelo en vivo (+18)",
@@ -47,7 +48,8 @@ const  getApi = async()=>{
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
         "image": "https://imagenes.passline.com/eventos/3112-ano-nuevo-en-la-carpa-dj-kelo-en-vivo-139095-139095-min.jpg",
-        "imageBanner": "https://imagenes.passline.com/slider/slide-5865-9982.jpg"
+        "imageBanner": "https://imagenes.passline.com/slider/slide-5865-9982.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Rock"}
       },
       {
         "name": "BRUDA (+23)",
@@ -68,7 +70,8 @@ const  getApi = async()=>{
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
         "image": "https://imagenes.passline.com/eventos/burda-178172-min.jpg",
-        "imageBanner": "https://imagenes.passline.com/slider/slide-5877-3252.jpg"
+        "imageBanner": "https://imagenes.passline.com/slider/slide-5877-3252.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Rock"}
       },
       {
         "name": "Reci Las Pibas 17/12",
@@ -88,7 +91,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/reci-las-pibas-1712-185134-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/reci-las-pibas-1712-185134-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Rock"}
       },
       {
         "name": "CARO DONIO QUARTET FOREVER ELLA",
@@ -109,7 +113,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/caro-donio-quartet-forever-ella-142611-142611-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/caro-donio-quartet-forever-ella-142611-142611-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Rock"}
       },
       {
         "name": "Lupe Alvarez #música",
@@ -134,7 +139,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/lupe-alvarez-musica-134512-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/lupe-alvarez-musica-134512-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Rock"}
       },
       {
         "name": "La Beatle Jam | Mié 14 Dic | Zapada Beatle en vivo",
@@ -160,7 +166,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/la-beatle-jam-mie-14-dic-zapada-beatle-en-vivo-140149-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/la-beatle-jam-mie-14-dic-zapada-beatle-en-vivo-140149-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Reggeaton"}
       },
       {
         "name": "Maite - Nuevas canciones",
@@ -181,7 +188,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/maite-nuevas-canciones-138816-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/maite-nuevas-canciones-138816-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Reggeaton"}
       },
       {
         "name": "Talleres Cafundó en vivo - Miércoles 14",
@@ -203,7 +211,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/talleres-cafundo-en-vivo-miercoles-14-137477-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/talleres-cafundo-en-vivo-miercoles-14-137477-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Reggeaton"}
       },
       {
         "name": "Tierra incógnita, Breve descanso de nuestra propia biografía.",
@@ -235,7 +244,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/tierra-incognita-breve-descanso-de-nuestra-propia-biografia-138818-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/tierra-incognita-breve-descanso-de-nuestra-propia-biografia-138818-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Reggeaton"}
       },
       {
         "name": "CARLA PANTANALI Presentación de su primer disco como cantautora LA CITADINA",
@@ -256,7 +266,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/carla-pantanali-presentacion-de-su-primer-disco-como-cantautora-la-citadina-135706-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/carla-pantanali-presentacion-de-su-primer-disco-como-cantautora-la-citadina-135706-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Reggeaton"}
       },
       {
         "name": "Show en Moscú",
@@ -277,7 +288,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/show-en-moscu-183285-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/show-en-moscu-183285-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Electronica"}
       },
       {
         "name": "Alejandro Cares y los Magos Farciar + Albertos Pegatina + Back Door Band",
@@ -298,7 +310,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/alejandro-cares-y-los-magos-farciar-albertos-pegatina-back-door-band-142055-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/alejandro-cares-y-los-magos-farciar-albertos-pegatina-back-door-band-142055-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Electronica"}
       },
       {
         "name": "Cerámica y vino mié 14/12 (+18)",
@@ -319,7 +332,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/ceramica-y-vino-mie-1412-139303-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/ceramica-y-vino-mie-1412-139303-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Electronica"}
       },
       {
         "name": "Cositas maricas que escribo en cuadernos (Edición Carrusel)",
@@ -340,7 +354,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/cositas-maricas-que-escribo-en-cuadernos-edicion-carrusel-141847-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/cositas-maricas-que-escribo-en-cuadernos-edicion-carrusel-141847-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Electronica"}
       },
       {
         "name": "Palabra de actor",
@@ -362,7 +377,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/palabra-de-actor-139615-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/palabra-de-actor-139615-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Electronica"}
       },
       {
         "name": "Gala de Fin de Año Academia Dreamers Dance",
@@ -384,7 +400,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/gala-de-fin-de-ano-academia-dreamers-dance-141361-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/gala-de-fin-de-ano-academia-dreamers-dance-141361-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Cumbia"}
       },
       {
         "name": "Vamos Viendo de Pre-estreno Iniciar Sesión",
@@ -405,7 +422,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/vamos-viendo-de-preestreno-iniciar-sesion-139093-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/vamos-viendo-de-preestreno-iniciar-sesion-139093-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Cumbia"}
       },
       {
         "name": "SILENCE DICIEMBRE - Moby Dick (+20)",
@@ -429,7 +447,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/silence-diciembre-moby-dick-142068-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/silence-diciembre-moby-dick-142068-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Cumbia"}
       },
       {
         "name": "Downtempo Rooftop pres. Javi Urso + Delfina Bravi + Luna Daprile + Mauro Duran + Facundo Lopez (+18)",
@@ -451,7 +470,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/downtempo-rooftop-pres-javi-urso-delfina-bravi-luna-daprile-mauro-duran-facundo-lopez-143143-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/downtempo-rooftop-pres-javi-urso-delfina-bravi-luna-daprile-mauro-duran-facundo-lopez-143143-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Cumbia"}
       },
       {
         "name": "OPERA 14/12/22 (+25)",
@@ -476,7 +496,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/opera-141222-142897-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/opera-141222-142897-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Cumbia"}
       },
       {
         "name": "San Jose 14/12",
@@ -496,7 +517,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/san-jose-2111-131282-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/san-jose-2111-131282-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Tango"}
       },
       {
         "name": "CANTANDO SIN FRONTERAS",
@@ -513,7 +535,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/cantando-sin-fronteras-139213-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/cantando-sin-fronteras-139213-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Tango"}
       },
       {
         "name": "EMILIANA PICCINI",
@@ -534,7 +557,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/emiliana-piccini-139741-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/emiliana-piccini-139741-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Tango"}
       },
       {
         "name": "Nacho Rodriguez / Amadeo Pasa / Cata Rec",
@@ -556,7 +580,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/nacho-rodriguez-amadeo-pasa-cata-rec-143879-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/nacho-rodriguez-amadeo-pasa-cata-rec-143879-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Tango"}
       },
       {
         "name": "31°GALA SHOW MUESTRA ARTÍSTICA FIN DE AÑO INSTITUTO SUPERIOR DE DANZAS SHOKRAN ALA",
@@ -577,7 +602,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/31gala-show-muestra-artistica-fin-de-ano-instituto-superior-de-danzas-shokran-ala-143416-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/31gala-show-muestra-artistica-fin-de-ano-instituto-superior-de-danzas-shokran-ala-143416-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Folklore"}
       },
       {
         "name": "Remeneo | 22 de Diciembre (+18)",
@@ -627,7 +653,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/remeneo-22-de-diciembre-143913-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/remeneo-22-de-diciembre-143913-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Folklore"}
       },
       {
         "name": "Todo Aparenta Normal en Niceto Club (+18)",
@@ -706,7 +733,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/todo-aparenta-normal-en-niceto-club-178733-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/todo-aparenta-normal-en-niceto-club-178733-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Folklore"}
       },
       {
         "name": "F.A.N.G.O VERSUS MIRLO (+18)",
@@ -727,7 +755,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/fango-versus-mirlo-144321-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/fango-versus-mirlo-144321-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Folklore"}
       },
       {
         "name": "RICHARD LIMBO banda + RAMANEGRA dúo",
@@ -748,7 +777,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/richard-limbo-banda-ramanegra-duo-185342-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/richard-limbo-banda-ramanegra-duo-185342-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Folklore"}
       },
       {
         "name": "Muevete",
@@ -789,7 +819,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/muevete-185269-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/muevete-185269-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Pop"}
       },
       {
         "name": "LA H NO MURIÓ - 22 de Diciembre de 2022",
@@ -814,7 +845,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/la-h-no-murio-22-de-diciembre-de-2022-126942-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/la-h-no-murio-22-de-diciembre-de-2022-126942-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Pop"}
       },
       {
         "name": "Gala Fire Kings",
@@ -835,7 +867,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/gala-fire-kings-141040-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/gala-fire-kings-141040-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Pop"}
       },
       {
         "name": "Heroicos Sobrevivientes en Club Lucille (+18)",
@@ -857,7 +890,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/heroicos-sobrevivientes-en-club-lucille-183304-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/heroicos-sobrevivientes-en-club-lucille-183304-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Pop"}
       },
       {
         "name": "Polgar 3 + Foco en vivo!",
@@ -879,7 +913,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/polgar-3-foco-en-vivo-184809-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/polgar-3-foco-en-vivo-184809-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Pop"}
       },
       {
         "name": "Monstruos Felices Vol.9 - Rabia Bar",
@@ -901,7 +936,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/monstruos-felices-vol9-rabia-bar-141611-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/monstruos-felices-vol9-rabia-bar-141611-min.jpg",
+        "typeEvent":{"type":"Concert", "genre":"Pop"}
       },
       {
         "name": "GUILLERMO DE PALERMO",
@@ -923,7 +959,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/guillermo-de-palermo-143073-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/guillermo-de-palermo-143073-min.jpg",
+        "typeEvent":{"type":"Exhibitions", "genre":"Art"}
       },
       {
         "name": "Sunset #3 (+20)",
@@ -965,7 +1002,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/sunset-3-182751-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/sunset-3-182751-min.jpg",
+        "typeEvent":{"type":"Exhibitions", "genre":"Art"}
       },
       {
         "name": "Mederos Trío + Falú - Moguilevsky",
@@ -984,7 +1022,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/mederos-trio-falu-moguilevsky-171832-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/mederos-trio-falu-moguilevsky-171832-min.jpg",
+        "typeEvent":{"type":"Exhibitions", "genre":"Art"}
       },
       {
         "name": "Frescura #140: Cumple n° 9 (+18)",
@@ -1009,7 +1048,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/frescura-140-cumple-n-9-184193-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/frescura-140-cumple-n-9-184193-min.jpg",
+        "typeEvent":{"type":"Exhibitions", "genre":"Art"}
       },
       {
         "name": "UOPA DELUXE 22/12 MAKENA CLUB",
@@ -1042,7 +1082,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/uopa-deluxe-2212-makena-club-143095-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/uopa-deluxe-2212-makena-club-143095-min.jpg",
+        "typeEvent":{"type":"Theater", "genre":"Ballet"}
       },
       {
         "name": "PORCELLI ACOUSTIC BAND",
@@ -1063,7 +1104,8 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/porcelli-acoustic-band-142619-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/porcelli-acoustic-band-142619-min.jpg",
+        "typeEvent":{"type":"Theater", "genre":"Ballet"}
       },
       {
         "name": "PASTA - 22/12",
@@ -1088,7 +1130,607 @@ const  getApi = async()=>{
           "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
           "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
         ],
-        "image": "https://imagenes.passline.com/eventos/pasta-2212-142835-min.jpg"
+        "image": "https://imagenes.passline.com/eventos/pasta-2212-142835-min.jpg",
+        "typeEvent":{"type":"Theater", "genre":"Ballet"}
+      },
+      {
+        "name": "CRUZA DOWNTOWN (+21)",
+        "date": [],
+        "location": "Cruza Dowtown\nVicente Lopez 2050",
+        "price": [
+          {
+            "tipoDeTicket": "INGRESO FREE (22 a 00hs)",
+            "precio": "Entrada Liberada"
+          }
+        ],
+        "description": [
+          "Cruza Dowtown Vicente Lopez 2050",
+          "Cruza Dowtown     Vicente Lopez 2050",
+          "Veni a bailar con el zorro al mejor point de Recoleta <3",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": null,
+        "typeEvent":{"type":"Theater", "genre":"Ballet"}
+      },
+      {
+        "name": "DANI RIBBA @ GROOVE",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 19:00 hrs."
+        ],
+        "location": "Groove\nAv Santa Fé 4389",
+        "price": [
+          {
+            "tipoDeTicket": "General",
+            "precio": "$3.000.-"
+          },
+          {
+            "tipoDeTicket": "Meet & Greet",
+            "precio": "$5.000.-"
+          }
+        ],
+        "description": [
+          "Groove Av Santa Fé 4389",
+          "Groove     Av Santa Fé 4389",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/dani-ribbas-groove-142013-min.jpg",
+        "typeEvent":{"type":"Theater", "genre":"Ballet"}
+      },
+      {
+        "name": "Sueño de Pescado | Diciembre 2022 XLR club (+18)",
+        "date": [],
+        "location": "XLR Club\nTribulato 449, San Miguel",
+        "price": [
+          {
+            "tipoDeTicket": "General",
+            "precio": "$3.000.-"
+          },
+          {
+            "tipoDeTicket": "General PROMO",
+            "precio": "$5.000.-"
+          }
+        ],
+        "description": [
+          "XLR Club Tribulato 449, San Miguel",
+          "XLR Club     Tribulato 449, San Miguel",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/sueno-de-pescado-diciembre-2022-xlr-club-181528-min.jpg",
+        "typeEvent":{"type":"Theater", "genre":"Orchestra"}
+      },
+      {
+        "name": "FIESTA DE HOY NO PASA 29/12 MAKENA CANTINA CLUB",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "Makena Cantina Club\nFitz Roy 1519",
+        "price": [
+          {
+            "tipoDeTicket": "ANTICIPADAS ENZO LUPO & LA TRIBU GITANA",
+            "precio": "$700.-"
+          },
+          {
+            "tipoDeTicket": "ANTICIPADAS SEWER",
+            "precio": "$700.-"
+          },
+          {
+            "tipoDeTicket": "ANTICIPADAS VHS",
+            "precio": "$700.-"
+          }
+        ],
+        "description": [
+          "Makena Cantina Club Fitz Roy 1519",
+          "Makena Cantina Club     Fitz Roy 1519",
+          "Jueves 29 de Diciembre  ENZO LUPO & LA TRIBU GITANA VHS LA NARIGONA SEWER  DJ BUDAH B-DAY  MAKENA CANTINA CLUB. FITZ ROY 1519 PALERMO. CABA",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/fiesta-de-hoy-no-pasa-2912-makena-cantina-club-143105-min.jpg",
+        "typeEvent":{"type":"Theater", "genre":"Orchestra"}
+      },
+      {
+        "name": "Ligia Piro",
+        "date": [],
+        "location": "Torquato Tasso\nDefensa 1575",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada general (Apertura de puerta 20:00hs)",
+            "precio": "$3.500.-"
+          }
+        ],
+        "description": [
+          "Torquato Tasso Defensa 1575",
+          "Torquato Tasso     Defensa 1575",
+          "Ligia Piro, una de las mejores voces de Argentina, se presenta el Jueves 29 de Diciembre, en el 21° Festival de Música del Tasso, con un selecto repaso de su discografía, en un encuentro imperdible!  NUEVAS FUNCIONES POR ENTRADAS AGOTADAS!!! SABADOS 18 Y 25 DE MARZO!!!   APERTURA DE SALA 20:00HS / SHOW 22:00HS  NO SE ACEPTAN CAMBIOS NI DEVOLUCIONES DE ENTRADAS.  LA UBICACIÓN ES POR ORDEN DE LLEGADA.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/ligia-piro-171845-min.jpg",
+        "typeEvent":{"type":"Theater", "genre":"Orchestra"}
+      },
+      {
+        "name": "Amanecer Entre Gaitas y Tambores",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 23:00 hrs."
+        ],
+        "location": "DUNN\nCalle 11 #781 E/ 47 y 48",
+        "price": [
+          {
+            "tipoDeTicket": "GENERAL",
+            "precio": "$2.000.-"
+          }
+        ],
+        "description": [
+          "DUNN Calle 11 #781 E/ 47 y 48",
+          "DUNN     Calle 11 #781 E/ 47 y 48",
+          "Organización de eventos musicales",
+          "Dale Play Producciones les invita al \"Amanecer Entre Gaitas y Tambores\" un evento imperdible para dar fin a este año 2022, con la participación de la agrupación \"Migración Gaitera\" y la agrupación \"Tambor Palenke\". También contamos con la participación de Dj \"Eigbert\" encargado de la música de este gran evento.  Fecha: Jueves 29-12-22 Lugar: DUNN - La Plata Calle 11 #781 E/ 47 y 48 Hora: 23:00 PM  Reservas: 221-3148433 Instagram: @Daleplay_producciones",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/amanecer-entre-gaitas-y-tambores-184550-min.jpg",
+        "typeEvent":{"type":"Theater", "genre":"Orchestra"}
+      },
+      {
+        "name": "BAHIA X HEREDERO",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 23:55 hrs."
+        ],
+        "location": "Almas de Río\nAugusto Bravard S/N",
+        "price": [
+          {
+            "tipoDeTicket": "TICKET GENERAL",
+            "precio": "$1.000.-"
+          }
+        ],
+        "description": [
+          "Almas de Río Augusto Bravard S/N",
+          "Almas de Río     Augusto Bravard S/N",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/bahia-x-heredero-145983-min.jpg",
+        "typeEvent":{"type":"Night Club", "genre":"Varied"}
+      },
+      {
+        "name": "Desmadre dia de los inocentes (+18)",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 18:00 hrs."
+        ],
+        "location": "CENTRO DE CONVENCIONES\nAV. PARAGUAY 2900",
+        "price": [
+          {
+            "tipoDeTicket": "entrada general primer tanda",
+            "precio": "$4.500.-"
+          },
+          {
+            "precio": "$70.000.-",
+            "tipoDeTicket": "EARLY BIRD GENERAL ENTRADA GENERAL SUNSET"
+          },
+          {
+            "precio": "$3.500.-",
+            "tipoDeTicket": "PACK 4 x 3"
+          },
+          {
+            "precio": "$13.500.-",
+            "tipoDeTicket": "vip standing tanda 1 acceso a sector vip con barra y baños difrenciados."
+          }
+        ],
+        "description": [
+          "CENTRO DE CONVENCIONES AV. PARAGUAY 2900",
+          "CENTRO DE CONVENCIONES     AV. PARAGUAY 2900",
+          "eventos en ruta del vino.. vino + entretenimiento",
+          "*SUNSET DIA DE LOS INOCENTES*  FESTIVAL AL AIRE LIBRE CON UN WARM DE PRIMER NIVEL A CARGO DE ALEJO FOCHI (SGO DEL ESTERO), PAULA OS CON UN LIVE UNICO Y EL CIERRE ESTELAR DEL DJ EZEQUIEL ARIAS (ESTAMOS FELICES).  *CENTRO DE CONVENCIONES SALTA*",
+          "18 A 20 ALEJO FOCHI  20 A 21.30 PAULA OS (LIVE)  21.30 TO END EZEQUIEL ARIAS",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/desmadre-dia-de-los-inocentes-182324-min.jpg",
+        "typeEvent":{"type":"Night Club", "genre":"Varied"}
+      },
+      {
+        "name": "jueves 29.12 | TULUM EXPERIENCE ARGENTINA (+18)",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 00:00 hrs."
+        ],
+        "location": "Pinamar\nAvenida Del Mar & Tobías",
+        "price": [
+          {
+            "tipoDeTicket": "LAST TULUM Ingreso al evento valido para hombre o mujer.",
+            "precio": "$3.500.-"
+          },
+          {
+            "tipoDeTicket": "TULUM EXPERIENCE 1 Ingreso al evento valido para hombre o mujer.",
+            "precio": "$2.500.-"
+          },
+          {
+            "tipoDeTicket": "TULUM EXPERIENCE 2 ingreso al evento valido para hombre o mujer.",
+            "precio": "$3.000.-"
+          },
+          {
+            "tipoDeTicket": "EARLY BIRD TULUM EXPERIENCE PRE-VENTA 1",
+            "precio": "$1.500.-"
+          },
+          {
+            "tipoDeTicket": "TULUM EXPERIENCE PRE-VENTA 2",
+            "precio": "$2.000.-"
+          }
+        ],
+        "description": [
+          "Pinamar Avenida Del Mar & Tobías",
+          "Pinamar     Avenida Del Mar & Tobías",
+          "TULUM EXPERIENCE  Let´s celebrate on the beach. Tulum Style. Dress to Impress.  TICKETS & TABLES AVAILABLE  LINE UP  CONI CATARDI SANTI ROBLES  UFO POINT Avenida Tobías & El Mar",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/2912-tulum-experience-180460-min.jpg",
+        "typeEvent":{"type":"Night Club", "genre":"Varied"}
+      },
+      {
+        "name": "Starry Night: s0fy – ConanKid – Kude – Brokechoco - Incendio Kid (+18)",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 22:00 hrs."
+        ],
+        "location": "Gier Music Club\nAv. Álvarez Thomas 1078",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General Entrada general",
+            "precio": "$500.-"
+          }
+        ],
+        "description": [
+          "Gier Music Club Av. Álvarez Thomas 1078",
+          "Gier Music Club     Av. Álvarez Thomas 1078",
+          "Nicho&Bicho está orientado a producir y dar a conocer artistas emergentes del género urbano",
+          "S0fy anticipa los temas de su próximo EP, Herida abierta, en el que fusiona reguetón con sonidos electrónicos y experimentales y que saldrá en enero. La cantante de trap-fusión repasará también temas de su primera producción Animé, Love and Death, y sus lanzamiento más recientes, como Tiro face y Shiki, en una noche que va desde el trap-emo, hyperpop y lo más movido del género urbano. Conan Kid es músico, compositor y productor y ya es uno de los proyectos musicales más consolidados de la escena emo-pop en Argentina. Es mejor conocido por sus letras emocionales y sus instrumentales de fondo que las contrastan para crear su propio estilo. Conan lanzó recientemente Odio verte llorar. Kude es un artista, productor musical y cantante argentino. En él se puede encontrar una fusión de influencias electrónicas, y voces melódicas altamente procesadas. Este año presentó “Para qué”, “Estupidez” y “2002”. Brokechoco transita estilos como el trap sad y glitchcore y otras fusiones que pueden escucharse en canciones como “I´m strong”, su último sencillo, o \"Donde estás?\" y \"No Pensarte\". Incendio Kid, músico y cantautor que explora los sonidos del emo hyperpop y el emo punk. Este año lanzó su EP llamado Virtual Disorder.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/starry-night-s0fy-conankid-kude-brokechoco-incendio-kid-182321-min.jpg",
+        "typeEvent":{"type":"Night Club", "genre":"Varied"}
+      },
+      {
+        "name": "Esto es Tulum - José Ignacio 29.12 (UY) (+18)",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 18:00 hrs."
+        ],
+        "location": "Pavilion VIK - José Ignacio\nRuta 10 km 182.500",
+        "price": [
+          {
+            "tipoDeTicket": "GENERAL 1ra Tanda Acceso a la pista general",
+            "precio": "$24.500.-"
+          },
+          {
+            "tipoDeTicket": "VIP 1er tanda Acceso a pista vip y pista general",
+            "precio": "$40.000.-"
+          },
+          {
+            "tipoDeTicket": "EARLY BIRDS Acceso a la pista general",
+            "precio": "$19.500.-"
+          }
+        ],
+        "description": [
+          "Pavilion VIK - José Ignacio Ruta 10 km 182.500",
+          "Pavilion VIK - José Ignacio     Ruta 10 km 182.500",
+          "Producciones",
+          "El próximo 29.12 la magia y la mística de la selva se apoderará de José Ignacio. La marca internacional Esto es Tulum presenta a NU y JO-KE, dos leyendas de Ibiza en su nueva edición en Pavilion VIK José Ignacio.  Pavilion sun set sessions",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/esto-es-tulum-jose-ignacio-2912-uy-185484-min.jpg",
+        "typeEvent":{"type":"Night Club", "genre":"Varied"}
+      },
+      {
+        "name": "Ana Prada #música",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "Morán\nPedro Morán 2147",
+        "price": [
+          {
+            "tipoDeTicket": "a) ENTRADA GENERAL",
+            "precio": "$1.500.-"
+          },
+          {
+            "tipoDeTicket": "b) ENTRADA APOYO A LA CULTURA Es una forma de colaborar económicamente con la cultura independiente. Esta entrada no tiene beneficios extras más que el apoyo a la cultura y a les artistes",
+            "precio": "$2.000.-"
+          }
+        ],
+        "description": [
+          "Morán Pedro Morán 2147",
+          "Morán     Pedro Morán 2147",
+          "Ana Prada en El Moran presenta “No +”. Año nuevo, disco nuevo.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/ana-prada-musica-142292-min.jpg",
+        "typeEvent":{"type":"Night Club", "genre":"Varied"}
+      },
+      {
+        "name": "Club 69 Super Jueves Diciembre en Niceto Club (+18)",
+        "date": [],
+        "location": "Niceto Club\nniceto vega 5510",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$2.000.-"
+          },
+          {
+            "tipoDeTicket": "Agua Mineral compra tu consumo anticipado y retiralo en la barra",
+            "precio": "$500.-"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Cerveza 330 cc compra tu consumo anticipado y retiralo en la barra"
+          },
+          {
+            "precio": "$400.-",
+            "tipoDeTicket": "Champagne Norton compra tu consumo anticipado y retiralo en la barra"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Mostrar más productos"
+          },
+          {
+            "tipoDeTicket": "Promo VODKA NARANJA 2 Vodka naranja",
+            "precio": "$2.000.-"
+          },
+          {
+            "tipoDeTicket": "Promo CAMPARI 2 Campari con Naranja",
+            "precio": "$2.000.-"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Promo VODKA NARANJA 2 Vodka naranja"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Champagne Mumm"
+          },
+          {
+            "precio": "$4.000.-",
+            "tipoDeTicket": "Cerveza 330 cc compra tu consumo anticipado y retiralo en la barra"
+          },
+          {
+            "precio": "$400.-",
+            "tipoDeTicket": "Agua Mineral compra tu consumo anticipado y retiralo en la barra"
+          },
+          {
+            "precio": "$500.-",
+            "tipoDeTicket": "Champagne Norton compra tu consumo anticipado y retiralo en la barra"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Promo CAMPARI 2 Campari con Naranja"
+          },
+          {
+            "precio": "$2.000.-",
+            "tipoDeTicket": "Champagne Mumm"
+          },
+          {
+            "precio": "$4.000.-",
+            "tipoDeTicket": "Mostrar más productos"
+          }
+        ],
+        "description": [
+          "Niceto Club niceto vega 5510",
+          "Niceto Club     niceto vega 5510",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/club-69-super-jueves-diciembre-en-niceto-club-188357-min.jpg",
+        "typeEvent":{"type":"Night Club", "genre":"Varied"}
+      },
+      {
+        "name": "Gran Noche de Gala EL FACÓN",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 20:30 hrs."
+        ],
+        "location": "Sala Hugo del Carril\nCentro Cultural Puente Blanco",
+        "price": [
+          {
+            "tipoDeTicket": "Gran Noche de Gala Entradas Anticipadas",
+            "precio": "$650.-"
+          }
+        ],
+        "description": [
+          "Sala Hugo del Carril Centro Cultural Puente Blanco",
+          "Sala Hugo del Carril     Centro Cultural Puente Blanco",
+          "Cierre anual de la Escuela de Danza y Malambo \"EL FACÓN\".",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/gran-noche-de-gala-el-facon-140752-min.jpg",
+        "typeEvent":{"type":"Family", "genre":"Family-Varied"}
+      },
+      {
+        "name": "EL BORDO - 29 de Diciembre de 2022",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 19:00 hrs."
+        ],
+        "location": "El Teatro Flores\nAv, Rivadavia 7806",
+        "price": [
+          {
+            "tipoDeTicket": "General",
+            "precio": "$2.500.-"
+          }
+        ],
+        "description": [
+          "El Teatro Flores Av, Rivadavia 7806",
+          "El Teatro Flores     Av, Rivadavia 7806",
+          "Atención! Reprogramamos la fecha de fin de año del 18-12 para el 29-12. Las entradas adquiridas para el 18 son válidas.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/el-bordo-29-de-diciembre-de-2022-185139-min.jpg",
+        "typeEvent":{"type":"Family", "genre":"Family-Varied"}      
+      },
+      {
+        "name": "Sin Genero Presents Mariano Mellino",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 00:00 hrs."
+        ],
+        "location": "Medellin Polo Club - Punta del Este\nMedellin Polo Club",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General II - 50 USD Entrada General II - 50 USD",
+            "precio": "$17.500.-"
+          },
+          {
+            "tipoDeTicket": "Last Chance - 70 USD Last Chance - 70 USD",
+            "precio": "$23.800.-"
+          },
+          {
+            "tipoDeTicket": "VIP STANDING II - 70 USD VIP STANDING II - 70 USD",
+            "precio": "$23.800.-"
+          },
+          {
+            "tipoDeTicket": "COMBO 4x3 COMBO 4x3 - 120 USD",
+            "precio": "$39.000.-"
+          },
+          {
+            "tipoDeTicket": "Early Bird Early Bird Ticket - 30 USD",
+            "precio": "$9.700.-"
+          },
+          {
+            "tipoDeTicket": "Entrada General I Entrada General I - 40 USD",
+            "precio": "$12.800.-"
+          },
+          {
+            "tipoDeTicket": "Vip Standing I Entrada con acceso backstage - 60 USD",
+            "precio": "$19.200.-"
+          }
+        ],
+        "description": [
+          "Medellin Polo Club - Punta del Este Medellin Polo Club",
+          "Medellin Polo Club - Punta del Este     Medellin Polo Club",
+          "Productora de eventos de musica electrónica.",
+          "• LINEUP COMPLETO •  Mariano Mellino TINGA B2B Gian Tano This&That Anto Uria  - BOOK YOUR TABLE - TICKETS EN BIO - DISPONIBILIDAD DE MESAS POR MENSAJE DIRECTO  @estamosfelices @flama_bookings @turn.agency",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/sin-genero-presents-mariano-mellino-184683-min.jpg",
+        "typeEvent":{"type":"Family", "genre":"Family-Varied"}
+      },
+      {
+        "name": "HIDALGO FEST (+18)",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 23:55 hrs."
+        ],
+        "location": "KOPHIPHI LA PLAYA\nAvenida del mar y de la retama",
+        "price": [
+          {
+            "tipoDeTicket": "Early Birds Hombre Entrada General Hombre",
+            "precio": "$2.000.-"
+          },
+          {
+            "tipoDeTicket": "Early Birds Mujer Entrada General Mujer",
+            "precio": "$1.500.-"
+          }
+        ],
+        "description": [
+          "KOPHIPHI LA PLAYA Avenida del mar y de la retama",
+          "KOPHIPHI LA PLAYA     Avenida del mar  y de la retama",
+          "Ultrapinamar es una empresa dedicada a la organización de eventos en el partido de Pinamar. Contamos con dos sucursales av. Bunge 64 y avenida del mar; de la retama. KOPHIPHI LA PLAYA. \\\\r\\\\n\\\\r\\\\n",
+          "VUELVE A PINAMAR LA HIDALGO FEST.  CON LA PARTICIPACION DE GUSTY DJ PARA VOS !!  NICO HIDALGO EL MEJOR DJ RESIDENTE DE PINAMAR ..   SACA TU ANTICIPADA  JUEVES 29 VIVIMOS LA HIDALGO FEST",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/hidalgo-fest-144680-min.jpg",
+        "typeEvent":{"type":"Family", "genre":"Family-Varied"}
+      },
+      {
+        "name": "NATANIEL EDELMAN TRIO",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "BORGES 1975\nJORGE LUIS BORGES 1975",
+        "price": [
+          {
+            "tipoDeTicket": "entrada general",
+            "precio": "$1.600.-"
+          }
+        ],
+        "description": [
+          "BORGES 1975 JORGE LUIS BORGES 1975",
+          "BORGES 1975     JORGE LUIS BORGES 1975",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/nataniel-edelman-trio-145011-min.jpg",
+        "typeEvent":{"type":"Family", "genre":"Family-Varied"}
+      },
+      {
+        "name": "Remeneo | 29 de Diciembre. (+18)",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 23:55 hrs."
+        ],
+        "location": "Beatflow\nAv.Córdoba 5509",
+        "price": [
+          {
+            "tipoDeTicket": "Ingreso para 4 + Botella a elección + Acceso VIP",
+            "precio": "$10.000.-"
+          },
+          {
+            "tipoDeTicket": "Ingreso para 4 + Botella a elección",
+            "precio": "$8.000.-"
+          },
+          {
+            "tipoDeTicket": "Ingreso para 4 + Champagne Novecento + 2 Speed",
+            "precio": "$6.000.-"
+          },
+          {
+            "tipoDeTicket": "Entrada VIP Entrada válida hasta las 2:30hs. Acceso al sector VIP. No incluye consumición.",
+            "precio": "$1.500.-"
+          },
+          {
+            "tipoDeTicket": "2x1 Entrada válida hasta las 2hs.",
+            "precio": "$1.300.-"
+          },
+          {
+            "tipoDeTicket": "Entrada general Entrada válida hasta las 2:30hs.",
+            "precio": "$1.000.-"
+          },
+          {
+            "tipoDeTicket": "Entrada SIN CARGO Entrada válida hasta las 1s.",
+            "precio": "Entrada Liberada"
+          }
+        ],
+        "description": [
+          "Beatflow Av.Córdoba 5509",
+          "Beatflow     Av.Córdoba 5509",
+          "Productora de eventos y sala de conciertos ubicada en Palermo, CABA.",
+          "Entrada válida hasta las 2:30hs.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/remeneo-29-de-diciembre-145068-min.jpg",
+        "typeEvent":{"type":"Family", "genre":"Family-Varied"}
+      },
+      {
+        "name": "Shadow People en vivo (+18)",
+        "date": [
+          "Jueves 29 de Diciembre 2022 - 21:00 hrs."
+        ],
+        "location": "Club Cultural Matienzo\nPringles 1249",
+        "price": [
+          {
+            "tipoDeTicket": "Entrada General",
+            "precio": "$1.000.-"
+          }
+        ],
+        "description": [
+          "Club Cultural Matienzo Pringles 1249",
+          "Club Cultural Matienzo     Pringles 1249",
+          "Shadow People, proyecto de rock cinematico orquestal se presenta por última vez en el año, en el CCMatienzo el dia 29/12/22 con 11 músicos arriba del escenario, nuevas canciones y un show renovado. Acompañan Bestiario, power trio de hard rock con un set lleno de energia.",
+          "Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. Passline no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley.",
+          "Importante: Passline no se hace responsable de la calidad o satisfacción de los eventos publicados. Passline es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 Passline."
+        ],
+        "image": "https://imagenes.passline.com/eventos/shadow-people-en-vivo-182117-min.jpg",
+        "typeEvent":{"type":"Family", "genre":"Family-Varied"}
       }
     ]
   }
