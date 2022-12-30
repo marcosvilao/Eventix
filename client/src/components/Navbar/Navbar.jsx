@@ -34,7 +34,7 @@ export default function Navbar() {
             <h3>About us</h3>
             {/* <aboutUs/> */}
           </a>
-          <h3>More</h3>
+          <a href="/createevents">Create Events</a>
           
         </div>
         <div>
