@@ -2,10 +2,13 @@ import React, {useState, useEffect} from 'react'
 import {useJsApiLoader, GoogleMap, Marker, DirectionsRenderer} from '@react-google-maps/api'
 import Loading from '../Loading/Loading'
 import axios from 'axios'
+const key = process.env.REACT_APP_GOOGLE_MAPS_KEY
+
 
 const center = {lat: -34.6037, lng: -58.3816}
 
 export default function Map({direction}) {
+  console.log(key)
   const {isLoaded} = useJsApiLoader({
     googleMapsApiKey : "AIzaSyADc2MLZNlRKuETh2QEaDYA49aqZa9pNIU",  
   })
