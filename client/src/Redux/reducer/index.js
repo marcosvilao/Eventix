@@ -7,7 +7,7 @@ const initialState = {
     eventsToFilter : [],
     error : [],
     post: {},
-    filtrado:[]
+    filtrado:[],
 };
 
 
@@ -19,7 +19,8 @@ function rootReducer (state = initialState, action) {
             const events = state.events  
             return {
                 ...state,
-                events: events.concat(action.payload) ,
+                // events: events.concat(action.payload) ,
+                
                 eventsToFilter: action.payload,
                 error:[]
             }
@@ -27,7 +28,8 @@ function rootReducer (state = initialState, action) {
             
             return {
                 ...state,
-                allevents : action.payload
+                allevents : action.payload,
+                events: action.payload,
             }
         case ERROR:
 

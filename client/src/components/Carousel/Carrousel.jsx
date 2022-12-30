@@ -15,7 +15,7 @@ export default function Carrousel() {
 
   return (
     <div className="carousel">
-      <Carousel>
+      <Carousel infiniteLoop={true} interval={5000} autoPlay={true}>
           <Link to={'/home/' + (Events.length ? Events[0].id : null)}>
         <div>
           <img
