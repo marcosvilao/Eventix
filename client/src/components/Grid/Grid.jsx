@@ -29,21 +29,17 @@ export default function Grid() {
   const [hasMore, setHasMore] = useState(true);
   const Events = useSelector((state) => state.events);
   const err = useSelector(s=> s.error);
+  const filtered = useSelector(s => s.filtrado);
 
   const eventsFilter18 = Events.filter( e => e.name?.includes("(+"));
   const eventsFilter17 = Events.filter( e => !e.name?.includes("(+"));
 
-  let arrGenre = Events.map(e => e.typeEvent.genre);
+  let arrGenre = Events.map(e => e.typeEvent?.genre);
   const genres = new Set(arrGenre.flat());
   let arrayGenres = [...genres];
  
 
-  if(err.length >0){
-
-    return (
-      <p className="err">EVENT NOT FOUND</p>
-    )
-  };
+  
 
   //-----------------------------------------------------
   let Events2 = []
@@ -72,10 +68,54 @@ export default function Grid() {
   // console.log("Arreglo: ", Events2);
 
   //-----------------------------------------------------
- 
+  let EventsFiltered = []
 
+  for (let i = 0; i < filtered.length; i += 5) {
+    let arr = filtered.slice(i, i + 5);
+    EventsFiltered?.push(arr);
+  }
+  // console.log("Arreglo: ", Events2);
+
+  //-----------------------------------------------------
+ 
+  if(err.length >0){
+
+    return (
+      <p className="err">EVENT NOT FOUND</p>
+    )
+  };
+
+
+  if(filtered.length > 0){
+
+    return (
+      filtered.length ? (
+      <Carousel>
+        {
+          EventsFiltered.map( (eventos,i) => 
+            
+            <div key={i} className="contenedor">
+      
+              { 
+                eventos.map((event,i) => {
+                  return <Card event={event} key={i} />
+                })
+              }
+            
+            </div>
+          )
+        
+        }
+      </Carousel>
+      ): <Loading/>
+    )
+    
+    
+  };
   //----------------------------------------------------
   return(
+
+    Events.length ? (
     <div>
       
       
@@ -147,7 +187,7 @@ export default function Grid() {
       {
         arrayGenres.map(genero => {
           
-          let eventFil = Events.filter( e => e.typeEvent.genre === genero);
+          let eventFil = Events.filter( e => e.typeEvent?.genre === genero);
           // console.log( "eventmap",eventFil);
           let EventsGenre = []
 
@@ -160,7 +200,7 @@ export default function Grid() {
 
           return(<div>
 
-            <p>{eventFil[0]?.typeEvent.type} - {eventFil[0]?.typeEvent.genre}</p>
+            <p>{eventFil[0]?.typeEvent? eventFil[0]?.typeEvent.type : "Event Created"} - {eventFil[0]?.typeEvent? eventFil[0]?.typeEvent.genre : null}</p>
 
             <Carousel>
               {
@@ -187,27 +227,11 @@ export default function Grid() {
       }
        
     </div>
-    
+    ): <Loading/>
   )
 
 
-  // if(filtered.length > 0){
 
-  //   return (
-  //     filtered.length ? (
-  //       <InfiniteScroll dataLength={filtered.length} hasMore={hasMore} >
-  //         <ul className="eventsGrid">
-  //           { 
-  //             filtered.map((event,i) => {
-  //               return <Card event={event} key={i} />;
-  //             })
-  //           }
-  //         </ul>
-  //       </InfiniteScroll>
-  //     ): <Loading/>
-    
-  //   )
-  // };
 
 
 

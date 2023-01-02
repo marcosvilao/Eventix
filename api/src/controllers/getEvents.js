@@ -55,7 +55,7 @@ const getEvents = async()=>{
 
     
 
-    const events = [...eventDb, ...eventApi];
+    const events = [...eventApi, ...eventDb];
 
     return events;
 };
