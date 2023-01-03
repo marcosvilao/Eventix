@@ -65,22 +65,6 @@ export const LoginButton = () => {
         <p>{user?.email}</p>
         </div>
       </Modal>
-      {/* <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Example Modal"
-      >
-        <h2>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab naasdasdvigation</button>
-          <button>stayasdasdasds</button>
-          <button>insi11111de</button>
-          <button>the modal</button>
-        </form>
-      </Modal> */}
     </div>
   );
 };
