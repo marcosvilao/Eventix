@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useHistory } from "react-router-dom";
+import { Avatar, IconButton, Modal } from '@mui/material';
+import LogoutIcon from '@mui/icons-material/Logout';
+import LoginIcon from '@mui/icons-material/Login';
 import styled from "styled-components";
-import Modal from "react-modal";
+//import Modal from "react-modal";
 
 export const LoginButton = () => {
-  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
   const history = useHistory();
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  const Loginbut = styled.button`
+  const Logbut = styled.button`
     color: black;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid #ab4a8c;
@@ -35,31 +38,33 @@ export const LoginButton = () => {
   function closeModal() {
     setIsOpen(false);
   }
-
+  console.log(user)
   return (
     <div>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Example Modal"
-      >
-        <h2>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
-      </Modal>
-      <Loginbut onClick={() => accountHandler()}>My Account</Loginbut>
-      {isAuthenticated && (
+
+      {!isAuthenticated ? (<IconButton  onClick={() => accountHandler()}>
+            <LoginIcon sx={{ fontSize: 45, color: "white" }} color="primary"/>
+          </IconButton>) : (
         <div>
-          <Loginbut onClick={() => logout()}>Logout</Loginbut>
+          <IconButton onClick={() => accountHandler()}>
+            <Avatar alt="p" src={user?.picture} size="lg" />
+          </IconButton>
+          <IconButton  onClick={() => logout()}>
+            <LogoutIcon sx={{ fontSize: 45, color: "white" }} />
+          </IconButton>
         </div>
       )}
+      <Modal
+      style={{display:'flex',alignItems:'center',justifyContent:'center'}}
+        open={modalIsOpen}
+        onClose={closeModal}
+      >
+        <div>
+        <img src={user?.picture}/>
+        <h3>{user?.name}</h3>
+        <p>{user?.email}</p>
+        </div>
+      </Modal>
     </div>
   );
 };
