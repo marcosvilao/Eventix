@@ -49,8 +49,8 @@ export const LoginButton = () => {
         <form>
           <input />
           <button>tab naasdasdvigation</button>
-          <button>stays</button>
-          <button>inside</button>
+          <button>stayasdasdasds</button>
+          <button>insi11111de</button>
           <button>the modal</button>
         </form>
       </Modal>
