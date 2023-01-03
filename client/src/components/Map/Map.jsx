@@ -28,12 +28,6 @@ export default function Map({direction}) {
       
     }, [direction])
 
-
-    
-  
-
-
-
   if(!isLoaded){
     return <Loading/>
   }
