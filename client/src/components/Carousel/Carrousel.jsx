@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { getAllEventList } from "../../Redux/actions";
 import "./carousel.css";
+import { H1 } from "../Styles/Styles";
 export default function Carrousel() {
   const dispatch = useDispatch();
   const Events = useSelector((state) => state.allevents);
@@ -15,7 +16,8 @@ export default function Carrousel() {
 
   return (
     <div className="carousel">
-      <Carousel infiniteLoop={true} interval={5000} autoPlay={true}>
+      <H1>Popular Events</H1>
+      <Carousel infiniteLoop={true} interval={2500} autoPlay={true}>
           <Link to={'/home/' + (Events.length ? Events[0].id : null)}>
         <div>
           <img

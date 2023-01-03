@@ -37,7 +37,7 @@ const getEvents = async()=>{
             name: e.name,
             date: e.date.length > 0 ? e.date : ["Funciones Disponibles"],
             location: e.location,
-            locationMap: e.location.slice( e.location.indexOf("\n",0) + 1, e.location.length),
+            locationMap: e.location.slice( e.location.indexOf("\n",0) + 1, e.location.length) || e.location,
             price: e.price?.map(el=>{
 
                 return {

@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { filter } from '../../Redux/actions';
+import { MenuFilter } from '../Styles/Styles';
 
 
 export default function Filters(check) {    //npm i react-datepicker
@@ -221,57 +222,63 @@ export default function Filters(check) {    //npm i react-datepicker
 
   // console.log("estado",state);
 
- 
+  // let checkBox = false;
+
+  // function handleCheck(e){
+
+  //   let checkbox = document.getElementById(`${e.target.value}`);
+  //   // console.log("chee",checkbox.checked);
+  //   checkBox = checkbox.checked;
+  // };
 
 
   return (
-    <div className='filter'>
+    <MenuFilter>
+      {/* <input type={"checkbox"} id={"1"} value={1} onClick={e=>handleCheck(e)} className="mostrar-menu"/> */}
+      {/* <label>Search</label> */}
+        <div>
+          <input type={"text"} placeholder={`search...`} onChange={(e)=>submitName(e)}  value={state.name}   />
+        {/* <button onChange={submitNmae}>name</button>*/}
+        </div>
 
-       <div>
-        <input type={"text"} placeholder={`search...`} onChange={(e)=>submitName(e)}  value={state.name}   />
-       {/* <button onChange={submitNmae}>name</button>*/}
-      </div>
+        <div>
 
-      <div>
+          <DatePicker selected={stateDate}  onChange={(e) =>onChangeDate(e)}/>
 
-        <DatePicker selected={stateDate}  onChange={(e) =>onChangeDate(e)}/>
+          <button onClick={()=>handleDate(stateDate)}>Filtrar</button>
+          <button onClick={(e)=>handleDeleteFilterDate(e)}>x</button>
+        </div>
+        
+        <div>
 
-        <button onClick={()=>handleDate(stateDate)}>Filtrar</button>
-        <button onClick={(e)=>handleDeleteFilterDate(e)}>x</button>
-      </div>
-      
-      <div>
+          <select onChange={(e)=>handleAge(e)}>
 
-        <select onChange={(e)=>handleAge(e)}>
+            <option value={"false"}>Todas las edades</option>
+            <option value={"mayores"}>Mayores de edad</option>
+            <option value={"atp"}>Apto para menores</option>
+          </select>
+        </div>
 
-          <option value={"false"}>Todas las edades</option>
-          <option value={"mayores"}>Mayores de edad</option>
-          <option value={"atp"}>Apto para menores</option>
-        </select>
-      </div>
+        <div>
+        <input  type={"text"} name={"location"} placeholder={`Location...`} value={stateLocation} onChange={(e)=>handleChangeLocation(e)} />
+        <button onClick={handleSubmitLocation}>Filtrar</button>
+        <button onClick={deleteFilterLocation}>x</button>
+        </div>
 
-      <div>
-      <input  type={"text"} name={"location"} placeholder={`Location...`} value={stateLocation} onChange={(e)=>handleChangeLocation(e)} />
-      <button onClick={handleSubmitLocation}>Filtrar</button>
-      <button onClick={deleteFilterLocation}>x</button>
-      </div>
+        <div>
+        <input  type={"text"} name={"min"} placeholder={`min`} value={statePrice.min} onChange={(e)=>handleChangePrice(e)} />
+        <input  type={"text"} name={"max"} placeholder={`max`} value={statePrice.max} onChange={(e)=>handleChangePrice(e)} />
+        <button onClick={handleSubmitPrice}>Filtrar</button>
+        <button onClick={deleteFilterPrice}>x</button>
+        </div>
 
-      <div>
-      <input  type={"text"} name={"min"} placeholder={`min`} value={statePrice.min} onChange={(e)=>handleChangePrice(e)} />
-      <input  type={"text"} name={"max"} placeholder={`max`} value={statePrice.max} onChange={(e)=>handleChangePrice(e)} />
-      <button onClick={handleSubmitPrice}>Filtrar</button>
-      <button onClick={deleteFilterPrice}>x</button>
-      </div>
-
-      <div>
-            <select onChange={(e)=> handleSort(e)}>
-                <option value={"notSort"}>Not Sort</option>
-                <option value={"A-Z"}>A-Z</option>
-                <option value={"Z-A"}>Z-A</option>
-            </select>
-      </div>
-     
-
-    </div>
+        <div>
+              <select onChange={(e)=> handleSort(e)}>
+                  <option value={"notSort"}>Not Sort</option>
+                  <option value={"A-Z"}>A-Z</option>
+                  <option value={"Z-A"}>Z-A</option>
+              </select>
+        </div>
+    </MenuFilter>
   )
 }
