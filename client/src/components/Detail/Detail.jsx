@@ -117,7 +117,7 @@ export default function Detail() {
         <p>Description event: {eventShowed[0]?.description}</p>
       </div>
 
-      <Map direction={eventShowed.length ? eventShowed[0].locationMap : null}/>
+      <Map direction={eventShowed[0]?.locationMap}/>
 
       {/* 
       <div>

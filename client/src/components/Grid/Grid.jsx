@@ -8,6 +8,8 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import styled, { keyframes } from "styled-components";
 import Loading from "../Loading/Loading";
 import { Carousel } from "react-responsive-carousel";
+import { Cube, NotFound, H1 } from "../Styles/Styles";
+import Filters from "../Filters/Filters";
 
 
 
@@ -81,51 +83,44 @@ export default function Grid() {
   if(err.length >0){
 
     return (
-      <p className="err">EVENT NOT FOUND</p>
+      <NotFound>EVENT NOT FOUND</NotFound>
     )
   };
 
 
   if(filtered.length > 0){
-
     return (
       filtered.length ? (
       <Carousel>
         {
           EventsFiltered.map( (eventos,i) => 
-            
-            <div key={i} className="contenedor">
-      
+            <Cube key={i} className="contenedor">
               { 
                 eventos.map((event,i) => {
                   return <Card event={event} key={i} />
                 })
               }
-            
-            </div>
-          )
-        
+            </Cube>
+          )    
         }
       </Carousel>
       ): <Loading/>
-    )
-    
-    
+    ) 
   };
   //----------------------------------------------------
   return(
 
     Events.length ? (
     <div>
-      
-      
+      <H1>EVENTS</H1>
+      <Filters/>
       <p>All events</p>
 
-      <Carousel>
+      <Carousel scroll={true}>
         {
           Events2.map( (eventos,i) => 
             
-            <div key={i} className="contenedor">
+            <Cube key={i} className="contenedor">
       
               { 
                 eventos.map((event,i) => {
@@ -133,7 +128,7 @@ export default function Grid() {
                 })
               }
             
-            </div>
+            </Cube>
           )
         
         }
@@ -147,7 +142,7 @@ export default function Grid() {
             {
               Events18.map( (eventos,i) => 
                 
-                <div key={i} className="contenedor">
+                <Cube key={i} className="contenedor">
           
                   { 
                     eventos.map((event,i) => {
@@ -155,7 +150,7 @@ export default function Grid() {
                     })
                   }
                 
-                </div>
+                </Cube>
               )
             
             }
@@ -170,7 +165,7 @@ export default function Grid() {
         {
           Event17.map( (eventos,i) => 
             
-            <div key={i} className="contenedor">
+            <Cube key={i} className="contenedor">
       
               { 
                 eventos.map((event,i) => {
@@ -178,7 +173,7 @@ export default function Grid() {
                 })
               }
             
-            </div>
+            </Cube>
           )
         
         }
@@ -206,7 +201,7 @@ export default function Grid() {
               {
                 EventsGenre.map( (eventos,i) => 
                   
-                  <div key={i} className="contenedor">
+                  <Cube key={i} className="contenedor">
             
                     { 
                       eventos.map((event,i) => {
@@ -214,7 +209,7 @@ export default function Grid() {
                       })
                     }
                   
-                  </div>
+                  </Cube>
                 )
               
               }

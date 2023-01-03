@@ -1,4 +1,11 @@
 .eventCard {
     width: 400px;
     height: 400px;
+    margin-right: 20px;  
+}
+
+.img {
+    border-radius: 5px;
+    width: 230px; 
+    height: 145px
 }

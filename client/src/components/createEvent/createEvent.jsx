@@ -39,6 +39,28 @@ export default function CreateEvent() {
       dispatch(createEvent(data))
       reset()
   }
+
+  const priceform = price.map((item, index) => (
+    <div key={index}>
+      <div>
+        <label>Ticket Type</label>
+        <input
+        name={`price[${index}].tipoDeTicket`}
+        {...register(`price[${index}].tipoDeTicket`)}
+        defaultValue={item.tipoDeTicket}
+      />
+      </div>
+      <div>
+        <label>Price</label>
+      <input
+        name={`price[${index}].precio`}
+        {...register(`price[${index}].precio`)}
+        defaultValue={item.precio}
+      />
+      </div>
+      
+    </div>
+  ))
   
   return (
     <div>
@@ -70,27 +92,7 @@ export default function CreateEvent() {
       </div>
       <div>
       <button type="button" onClick={handleAddItem}>Add Price type</button>
-      {price.map((item, index) => (
-        <div key={index}>
-          <div>
-            <label>Ticket Type</label>
-            <input
-            name={`price[${index}].tipoDeTicket`}
-            {...register(`price[${index}].tipoDeTicket`)}
-            defaultValue={item.tipoDeTicket}
-          />
-          </div>
-          <div>
-            <label>Price</label>
-          <input
-            name={`price[${index}].precio`}
-            {...register(`price[${index}].precio`)}
-            defaultValue={item.precio}
-          />
-          </div>
-          
-        </div>
-      ))}
+      {priceform}
       </div>
       <div>
         <label>Description</label>
