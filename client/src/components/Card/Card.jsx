@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import { EventCard, EventImg } from '../Styles/Styles';
+import { EventCard, EventImg, ECard, CardImage, CardTitle, CardDate, H5, BuyBtn } from '../Styles/Styles';
 import './card.css'
 
 
@@ -13,18 +13,16 @@ export default function Card({event}) {
 
 
   return (
-    <EventCard>
+    <ECard>
         <Link to={'/home/' + event.id}>
-          <div>
-            <EventImg src={event.image} alt={event.name} />
-          </div>
-          <div>
-            <h3>{event.name}</h3>
-            <h5>{event.date}</h5>
-            {typeof minPrice === "string"? <h5>Price: {minPrice}</h5> : <h5>Price: $ {minPrice}</h5>}
-          </div>
-          
+            <CardImage src={event.image} alt={event.name} />
+            <CardTitle>{event.name}</CardTitle>
+            <div className='bottom'>
+            <CardDate>{event.date}</CardDate>
+            {typeof minPrice === "string"? <H5>Price: {minPrice}</H5> : <H5>Price: $ {minPrice}</H5>}
+            <BuyBtn>Buy Ticket</BuyBtn>
+            </div>
         </Link>
-    </EventCard>
+    </ECard>
   )
 }
