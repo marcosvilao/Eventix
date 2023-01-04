@@ -68,6 +68,60 @@ width: 230px;
 height: 145px
 `
 
+export const ECard = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid black;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+  }
+`;
+
+export const CardImage = styled.img`
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+`;
+
+export const CardTitle = styled.h3`
+  margin: 8px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  height: 20%;
+  overflow: hidden;
+`;
+
+export const CardDate = styled.p`
+  font-size: 16px;
+  text-align: center;
+  color: white;
+`;
+
+export const H5 = styled.h5`
+
+`
+
+export const BuyBtn = styled.button`
+border-radius: 5px;
+background-color: transparent;
+width: 100%;
+height: 50px;
+
+&:hover {
+    background-color: green
+}
+`
+
 
 
 

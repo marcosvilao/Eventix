@@ -91,7 +91,9 @@ export default function Grid() {
   if(filtered.length > 0){
     return (
       filtered.length ? (
-      <Carousel>
+      <div>
+        <Filters/>
+        <Carousel slidesToShow={1}>
         {
           EventsFiltered.map( (eventos,i) => 
             <Cube key={i} className="contenedor">
@@ -104,6 +106,8 @@ export default function Grid() {
           )    
         }
       </Carousel>
+      </div>  
+      
       ): <Loading/>
     ) 
   };
@@ -116,7 +120,7 @@ export default function Grid() {
       <Filters/>
       <p>All events</p>
 
-      <Carousel scroll={true}>
+      <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} slidesToShow={1} scroll={true}>
         {
           Events2.map( (eventos,i) => 
             
@@ -138,7 +142,7 @@ export default function Grid() {
 
           <p>events +18</p>
 
-          <Carousel>
+          <Carousel slidesToShow={1}>
             {
               Events18.map( (eventos,i) => 
                 
@@ -161,7 +165,7 @@ export default function Grid() {
 
       <p>events -18</p>
 
-      <Carousel>
+      <Carousel slidesToShow={1}>
         {
           Event17.map( (eventos,i) => 
             
@@ -197,7 +201,7 @@ export default function Grid() {
 
             <p>{eventFil[0]?.typeEvent? eventFil[0]?.typeEvent.type : "Event Created"} - {eventFil[0]?.typeEvent? eventFil[0]?.typeEvent.genre : null}</p>
 
-            <Carousel>
+            <Carousel slidesToShow={1}>
               {
                 EventsGenre.map( (eventos,i) => 
                   
