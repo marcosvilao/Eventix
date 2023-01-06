@@ -38,24 +38,21 @@ const filterByAge = async (age, state)=> {
 const filterByDate = async(day, month, year, state) =>{
 
     const events = state;
-    // console.log(store);
     const events2 = events.map(e => {
         
         return {  
             id: e.id,
             name: e.name,
-            date: e.date[0].split(" "),
+            date: e.date.split(" "),
             location: e.location,
             price: e.price, 
             image: e.image
         }
     
     });
-
+    
     if(day && month && year){
-
-        const eventsFilterDate = events2.filter( e => e.date[1] === day.toString() && e.date[3] === month.toString() && e.date[4] === year.toString());
-
+        const eventsFilterDate = events2.filter( e => e.date[1] === day.toString() && e.date[2] === month.toString() && e.date[3] === year.toString());
         if(eventsFilterDate.length > 0){
 
             const eventsDate = eventsFilterDate.map(e => {

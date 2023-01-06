@@ -1,7 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import { EventCard, EventImg, ECard, CardImage, CardTitle, CardDate, H5, BuyBtn } from '../Styles/Styles';
+import { EventCard, EventImg, ECard, CardImage, CardTitle, CardDate, H5, BuyBtn, CardE } from '../Styles/Styles';
 import './card.css'
+import {FiShoppingCart} from 'react-icons/fi'
 
 
 export default function Card({event}) {
@@ -13,16 +14,27 @@ export default function Card({event}) {
 
 
   return (
-    <ECard>
+      <CardE>
         <Link to={'/home/' + event.id}>
-            <CardImage src={event.image} alt={event.name} />
-            <CardTitle>{event.name}</CardTitle>
-            <div className='bottom'>
-            <CardDate>{event.date}</CardDate>
-            {typeof minPrice === "string"? <H5>Price: {minPrice}</H5> : <H5>Price: $ {minPrice}</H5>}
-            <BuyBtn>Buy Ticket</BuyBtn>
-            </div>
+          <div>
+            <img src={event.image} alt={event.name}/>
+          </div>
+          <div className='title'>
+            <p>{event.name}</p>
+          </div>
+          
+          <div className='text'>
+              <div className='bottom'>
+              <CardDate>{event.date}</CardDate>
+              <div className='shop'>
+                {typeof minPrice === "string"? <H5>Price: {minPrice}</H5> : <H5>Price: $ {minPrice}</H5>}
+                <FiShoppingCart/>
+              </div>
+              
+              {/* <BuyBtn>Buy Ticket</BuyBtn> */}
+              </div>
+          </div>
         </Link>
-    </ECard>
-  )
+      </CardE>
+    )
 }

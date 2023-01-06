@@ -6,6 +6,9 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useHistory } from "react-router-dom";
 import "./home.css";
 import Carrousel from "../Carousel/Carrousel";
+import Filters from "../Filters/Filters";
+import { H1 } from "../Styles/Styles";
+
 
 function Home() {
   const history = useHistory();
@@ -29,6 +32,8 @@ return history.push("/")
       <Navbar />
       <Carrousel/>
       <div className="grid">
+      <H1>EVENTS</H1>
+      <Filters/>
         <Grid />
       </div>
     </div>

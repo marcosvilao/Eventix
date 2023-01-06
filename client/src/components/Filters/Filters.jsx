@@ -41,7 +41,6 @@ export default function Filters(check) {    //npm i react-datepicker
     sort:""
 
   });
-
   //---------------------------------------------------
 
   useEffect(()=>{
@@ -96,6 +95,9 @@ export default function Filters(check) {    //npm i react-datepicker
     ]
 
     let dia = date.getDate();
+    if(dia < 10){
+      dia = "0" + dia
+    }
     let mes = date.getMonth();
     let yyy = date.getFullYear();
 
@@ -236,6 +238,8 @@ export default function Filters(check) {    //npm i react-datepicker
     <MenuFilter>
       {/* <input type={"checkbox"} id={"1"} value={1} onClick={e=>handleCheck(e)} className="mostrar-menu"/> */}
       {/* <label>Search</label> */}
+
+
         <div>
           <input type={"text"} placeholder={`search...`} onChange={(e)=>submitName(e)}  value={state.name}   />
         {/* <button onChange={submitNmae}>name</button>*/}

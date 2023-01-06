@@ -124,17 +124,15 @@ export const orderByName = (order) => {
 };
 
 export const filter = (date) => {   
-
   return async function (dispatch) {
 
     try {
-      // console.log("action",date);
       const eventDate = await axios.post(`${URL}/filters`, date);
-
       dispatch({
 
         type: FILTER,
         payload: eventDate.data
+        
       })
 
     } catch (error) {
