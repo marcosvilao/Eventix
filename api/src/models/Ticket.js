@@ -8,10 +8,6 @@ module.exports = (sequelize) => {
       allowNull: true,
       primaryKey: true
     },
-    QR: {
-      type: DataTypes.STRING, 
-      allowNull: false,
-    },
     event: {
       type: DataTypes.INTEGER, 
       allowNull: false,
@@ -20,6 +16,37 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING, 
       allowNull: false,
     },  
+    price: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    typeTicket: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    usersId: {
+      type: DataTypes.INTEGER
+    },
+    paymentMade: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+      allowNull:false
+    },
+    pendingPayment: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+      allowNull:false
+    }
+    // date: {
+    //   type: DataTypes.STRING,
+    //   // allowNull: false
+    // },
+    // description: {
+    //   type: DataTypes.STRING, 
+    //   allowNull: false,
+    // },  
+  },{
+    timestamps: false
   });
 };
 

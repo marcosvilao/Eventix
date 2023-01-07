@@ -1,4 +1,4 @@
-const getApi = require("../../../apiDev/API");
+const getApi = require("./API");
 const {Event}= require("../db");
 
 

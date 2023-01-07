@@ -6,7 +6,7 @@ import Detail from "./components/Detail/Detail";
 import { Profile } from "./components/Navbar/Login/Profile";
 import aboutUs from './components/About Us/AboutUs';
 import createEvent from './components/createEvent/createEvent';
-
+import Perfil from './components/Perfil/Perfil';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route exact path={"/profile"} component={Profile} />
         <Route exact path={"/aboutUs"} component={aboutUs} />
         <Route exact path={"/createevents"} component={createEvent} />
+        <Route exact path={"/perfil"} component={Perfil} />
       </Switch>
     </div>
   );

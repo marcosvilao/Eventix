@@ -18,6 +18,8 @@ export const CREATE_EVENT = "CREATE_EVENT";
 export const GET_ALL_EVENT_LIST = 'GET_ALL_EVENT_LIST';
 
 export const PAY_CRYPTO = "PAY_CRYPTO";
+
+export const PAYMENT_HANDLER = "PAYMENT_HANDLER";
 //-------------------------------------------------
 const URL = "http://localhost:3001";
 //-------------------------------------------------
@@ -123,11 +125,11 @@ export const orderByName = (order) => {
   };
 };
 
-export const filter = (date) => {   
+export const filter = (info) => {   
   return async function (dispatch) {
 
     try {
-      const eventDate = await axios.post(`${URL}/filters`, date);
+      const eventDate = await axios.post(`${URL}/filters`, info);
       dispatch({
 
         type: FILTER,
@@ -209,4 +211,29 @@ export const payCrypto = (data) =>{
       })
     }
   };
+};
+
+export const paymentHandler = (userId) => {
+
+  return async function (dispatch){
+
+    try {
+      // console.log(userId);
+      
+      const info = await axios.get("ticket/" + userId);
+
+      // console.log("action info:", info.data);
+      dispatch({
+        type: PAYMENT_HANDLER,
+        payload: info.data
+      })
+
+    } catch (error) {
+      
+      dispatch({
+        type:ERROR,
+        payload: error.message
+      })
+    }
+  }
 };

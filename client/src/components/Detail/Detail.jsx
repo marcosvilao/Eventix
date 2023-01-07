@@ -4,14 +4,22 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import Map from '../Map/Map';
 import { payCrypto } from '../../Redux/actions';
-
+import Modal from 'react-modal';
+import "./Detail.css";
 
 export default function Detail() {
-  const eventShowed = useSelector(state => state.events)
+
+  const eventShowed = useSelector(state => state.events);
+  const url = useSelector( s => s.payCryptoURL);
+
   const history = useHistory()
   const dispatch = useDispatch()
   const { id } = useParams()
+
   const [cantidad, setCantidad] = useState(1);
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(false);
+  const [info, setInfo] = useState({tipoTicket: "", precio:0 })
 
   useEffect(() => {
     dispatch(searchEventById(id))
@@ -43,18 +51,27 @@ export default function Detail() {
     };
 
 
-    console.log(arr.join(" ").length);
+    // console.log(arr.join(" ").length);
 
     const datosPago = {
       
       total: (Number(e.precio) * cantidad / 400).toPrecision(3),
       name: eventShowed[0].name,
       description: arr.join(" "),
-
+      typeTicket: e.tipoDeTicket,
+      price: e.precio,
+      cantidad: cantidad
       // img: eventShowed[0].image,
       // user:
       // id_user:
     };
+
+    setInfo({
+      tipoTicket: e.tipoDeTicket,
+      precio: e.precio 
+    });
+
+    openModal();
 
     return dispatch(payCrypto(datosPago));
 
@@ -73,6 +90,20 @@ export default function Detail() {
     return setCantidad( cantidad +1);
   };
 
+  function openModal() {
+    setIsOpen(true);
+    timer();
+  };
+
+  function closeModal() {
+    setIsOpen(false);
+  };
+
+  function timer() {setTimeout(function (){
+
+    setIndex(true)
+   
+  }, 5000)};
 
   return (
     <div>
@@ -118,6 +149,36 @@ export default function Detail() {
       </div>
 
       <Map direction={eventShowed.length ? eventShowed[0].location : null}/>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal">
+
+        <div className='modal' >
+
+          <h2>Eventix</h2>
+          <h3>{eventShowed[0]?.name}</h3>
+          <p>Type Ticket: {info.tipoTicket}</p>
+          {cantidad > 1 ? <span> {cantidad} Tickets</span>: <span> {cantidad} Ticket</span>}
+          <p>ARS$ {info.precio * cantidad}</p>
+          <p>US$ {Number(info.precio) * cantidad / 400}</p>
+          <p>You will be redirected to the Coinbase payment gateway</p>
+
+          { 
+            index? <div>
+
+            <a href={`${url}`}><button>Buy Ticket</button></a>
+            <button onClick={closeModal}>cancel</button>
+    
+            </div> : <p>Generating payment link</p>
+
+          }
+
+        </div>
+          
+      </Modal>   
+
 
       {/* 
       <div>
