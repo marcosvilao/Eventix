@@ -31,14 +31,24 @@ display: flex;
 gap: 10px;
 `
 
-export const MenuFilter = styled.div`
+export const MenuFilter = styled.nav`
 text-align: center;
 display: flex;
 position: relative;
 height: 50px;
 width: auto;
 background-color: transparent;
-justify-content: center
+justify-content: center;
+
+`
+export const Searchbar = styled.input`
+    width: 20vw;
+    max-with: 400px;
+    background: rgba(255,255,255, 0.2);
+    display: flex;
+    align-items:center;
+    border-radius: 60px;
+    padding: 10px 20px;
 `
 
 ///////////////GRID////////////////
@@ -72,6 +82,7 @@ export const ECard = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 300px;
+  height: 500px;
   border-radius: 5px;
   overflow: hidden;
   display: flex;
@@ -87,18 +98,19 @@ export const ECard = styled.div`
 `;
 
 export const CardImage = styled.img`
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 `;
 
-export const CardTitle = styled.h3`
-  margin: 8px;
-  font-size: 22px;
-  text-align: center;
-  font-weight: bold;
-  height: 20%;
-  overflow: hidden;
+export const CardTitle = styled.h4`
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height:15vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 `;
 
 export const CardDate = styled.p`
@@ -120,6 +132,44 @@ height: 50px;
 &:hover {
     background-color: green
 }
+`
+
+export const CardE = styled.div`
+    position: relative;
+    display: inline-block;
+    height: 480px;
+    width: 25vw;
+  
+  p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
+  
+
+  img {
+    width: 100%;
+    height: 278px;
+    
+  }
+
+  .text {
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.8s linear;
+  }
+
+  &:hover .text {
+    visibility: visible;
+    opacity: 1;
+  }
 `
 
 

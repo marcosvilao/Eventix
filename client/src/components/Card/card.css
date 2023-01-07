@@ -10,6 +10,17 @@
     height: 145px
 }
 
-.bottom {
-    margin-bottom: 0px;
+.title {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10vh;
+
 }

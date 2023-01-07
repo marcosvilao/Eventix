@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
       allowNull: true,
       primaryKey: true
     },
-    username: {                   // cambie user por username. Me rompia por colicion de nombres. el atributo user con el nombre de la tabla user.
+    title: {                   // cambie user por username. Me rompia por colicion de nombres. el atributo user con el nombre de la tabla user.
       type: DataTypes.STRING, 
       allowNull: false,
     },

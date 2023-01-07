@@ -15,7 +15,11 @@ import Filters from "../Filters/Filters";
 
 export default function Grid() {
   const dispatch = useDispatch();
-
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(true);
+  const Events = useSelector((state) => state.events);
+  const err = useSelector(s=> s.error);
+  const filtered = useSelector(s => s.filtrado);
 
   // const next = () => {
   //   setPage((prevPage) => prevPage + 1);
@@ -25,13 +29,6 @@ export default function Grid() {
     dispatch(getAllEventList());
 
   }, [dispatch]);
-
-
-  const [page, setPage] = useState(1);
-  const [hasMore, setHasMore] = useState(true);
-  const Events = useSelector((state) => state.events);
-  const err = useSelector(s=> s.error);
-  const filtered = useSelector(s => s.filtrado);
 
   const eventsFilter18 = Events.filter( e => e.name?.includes("(+"));
   const eventsFilter17 = Events.filter( e => !e.name?.includes("(+"));
@@ -55,8 +52,8 @@ export default function Grid() {
   //-----------------------------------------------------
   let Events18 = []
 
-  for (let i = 0; i < eventsFilter18.length; i += 3) {
-    let arr = eventsFilter18.slice(i, i + 3);
+  for (let i = 0; i < eventsFilter18.length; i += 5) {
+    let arr = eventsFilter18.slice(i, i + 5);
     Events18?.push(arr);
   }
   // console.log("Arreglo: ", Events18);
@@ -92,8 +89,7 @@ export default function Grid() {
     return (
       filtered.length ? (
       <div>
-        <Filters/>
-        <Carousel slidesToShow={1}>
+        <Carousel showThumbs={false}>
         {
           EventsFiltered.map( (eventos,i) => 
             <Cube key={i} className="contenedor">
@@ -116,11 +112,9 @@ export default function Grid() {
 
     Events.length ? (
     <div>
-      <H1>EVENTS</H1>
-      <Filters/>
       <p>All events</p>
 
-      <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} slidesToShow={1} scroll={true}>
+      <Carousel showThumbs={false}>
         {
           Events2.map( (eventos,i) => 
             

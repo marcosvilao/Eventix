@@ -1,4 +1,5 @@
 const getEvents = require("./getEvents");
+const {Event} = require('../db')
 const {filterByDate, filterByAge, filterByLocation, filterByPrice} = require("./filters");
 const sorts = require("./sort");
 
@@ -19,10 +20,10 @@ const storeFiltered = async(body)=>{
 
         const {day, month, year} = body;
 
-        state = state.length > 0 ? state : await getEvents();
+        state = state.length > 0 ? state : await Event.findAll();
 
         state = await filterByDate(day, month, year, state); 
-
+        console.log(state)
         if(typeof state === "string") return state
     };
 
@@ -35,7 +36,7 @@ const storeFiltered = async(body)=>{
             return "name not entered"
         }
         // console.log(name);
-        state = state.length > 0 ? state : await getEvents();
+        state = state.length > 0 ? state : await Event.findAll();
 
         
         state = await state.filter((event) => event.name.toLowerCase().includes(name.toLowerCase()))
@@ -50,7 +51,7 @@ const storeFiltered = async(body)=>{
 
         const {price} = body;
 
-        state = state.length > 0 ? state : await getEvents();
+        state = state.length > 0 ? state : await Event.findAll();
 
         state = await filterByPrice(price, state);
 
@@ -63,7 +64,7 @@ const storeFiltered = async(body)=>{
 
         const {age} = body;
 
-        state = state.length > 0 ? state : await getEvents();
+        state = state.length > 0 ? state : await Event.findAll();
 
         state = await filterByAge(age, state);
 
@@ -76,7 +77,7 @@ const storeFiltered = async(body)=>{
 
         const {location} = body;
 
-        state = state.length > 0 ? state : await getEvents();
+        state = state.length > 0 ? state : await Event.findAll();
 
         state = await filterByLocation(location, state);
 

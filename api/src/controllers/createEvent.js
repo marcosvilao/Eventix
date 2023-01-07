@@ -2,7 +2,7 @@ const {Event} = require("../db");
 
 const createEvent = async(req) =>{
 
-    const {name, date, image, location, price, description} = req;
+    const {name, date, image, location, price, description, reviews} = req;
 
     await Event.create({
 
@@ -11,7 +11,8 @@ const createEvent = async(req) =>{
         image,
         location,
         price,
-        description
+        description,
+        reviews
     })
 };
 
