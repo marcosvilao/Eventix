@@ -153,9 +153,14 @@ export const CardE = styled.div`
     
   }
 
+  .shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   .text {
     height: 20vh;
     position: absolute;
+    align-items: center
     bottom: 0;
     left: 0;
     right: 0;

@@ -7,6 +7,7 @@ const events = require("./events");
 const filters = require("./filters");
 const paycrypto = require("./paycrypto");
 const ticket = require("./ticket");
+const review = require("./reviews")
 
 const router = Router();
 
@@ -22,6 +23,8 @@ router.use("/filters", filters);
 router.use("/paycrypto", paycrypto);
 
 router.use("/ticket", ticket);
+
+router.use("/review", review);
 
 
 module.exports = router;

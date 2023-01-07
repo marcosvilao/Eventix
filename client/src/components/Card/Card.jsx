@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import { EventCard, EventImg, ECard, CardImage, CardTitle, CardDate, H5, BuyBtn, CardE } from '../Styles/Styles';
+import {CardDate, H5, CardE } from '../Styles/Styles';
 import './card.css'
 import {FiShoppingCart} from 'react-icons/fi'
 
@@ -19,7 +19,8 @@ export default function Card({event}) {
           <div>
             <img src={event.image} alt={event.name}/>
           </div>
-          <div className='title'>
+          <div className='shadow'>
+            <div className='title'>
             <p>{event.name}</p>
           </div>
           
@@ -34,6 +35,8 @@ export default function Card({event}) {
               {/* <BuyBtn>Buy Ticket</BuyBtn> */}
               </div>
           </div>
+          </div>
+          
         </Link>
       </CardE>
     )
