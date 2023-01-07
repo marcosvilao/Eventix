@@ -90,7 +90,7 @@ const storeFiltered = async(body)=>{
 
         const {sort} = body;
 
-        state = state.length > 0 ? state : await getEvents();
+        state = state.length > 0 ? state : await Event.findAll();
 
         state = await sorts(sort, state);
     }

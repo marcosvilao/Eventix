@@ -1,6 +1,6 @@
 const {Router} = require("express");
 // const initialization = require("../../../apiDev/server");
-const getApi = require("../../../apiDev/API");
+const getApi = require("../controllers/API");
 
 const route = Router();
 
