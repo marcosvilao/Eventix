@@ -40,8 +40,9 @@ User.belongsToMany(Event, {through : 'user_event'});
 Event.belongsToMany(User, {through : 'user_event'});
 
 //uno a muchos 
-User.hasMany(Review);         // las relaciones que no sean de muchos a muchos no es necesario designarles tabla intermedia. :v
-Review.belongsTo(User);
+// User.hasMany(Review);         // las relaciones que no sean de muchos a muchos no es necesario designarles tabla intermedia. :v
+// Review.belongsTo(User);
+Event.hasMany(Review)
 
 //uno a muchos
 User.hasMany(Ticket);
