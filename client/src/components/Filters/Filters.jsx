@@ -17,6 +17,9 @@ export default function Filters(check) {    //npm i react-datepicker
 
   const [statePrice, setStatePrice] = useState({min:"", max:""});
 
+  const events = useSelector( s => s.allevents); 
+
+  // console.log("eventos front", events);<----------------- borrar
   const [state, setState] = useState({
 
     day:  "",
@@ -36,6 +39,9 @@ export default function Filters(check) {    //npm i react-datepicker
     
     fLocation:false,
     location:"",
+
+    fTypeEvent: false,
+    typeEvent: "",
 
     fSort: false,
     sort:""
@@ -72,6 +78,9 @@ export default function Filters(check) {    //npm i react-datepicker
       
       fLocation:false,
       location:"",
+
+      fTypeEvent: false,
+      typeEvent: "",
 
       fSort: false,
       sort:""
@@ -167,6 +176,40 @@ export default function Filters(check) {    //npm i react-datepicker
   };
   //------------PRICE----------------------------
 
+  const prices = events.map( e => e.price?.map( el=> el.precio ));
+
+  const setPrice = new Set(prices.flat());
+
+  const priceArr = [...setPrice];
+
+  const price = priceArr.sort(function (a, b){return a - b });
+
+  price.splice( 0, 0, "Entrada Liberada");
+
+
+  function handleFilterPrice (e){
+
+    // console.log("eeeeeeeeeeee", e.target.value);
+
+    e.preventDefault();
+    
+    if( e.target.value === "Todo"){
+
+      return setState({
+        ...state,
+        fPrice: false,
+        // price: e.target.value,
+      })
+    };
+
+    setState({
+      ...state,
+      fPrice: true,
+      price: e.target.value,
+    })
+  };
+
+  //-------------------
   function handleChangePrice(e){
 
     setStatePrice({
@@ -207,6 +250,39 @@ export default function Filters(check) {    //npm i react-datepicker
     })
     
   };
+
+  //----------------TYPE EVENT-----------------------------
+
+  
+
+  const genre = events.map( e => e.typeEvent.genre);
+
+  const setgenres = new Set(genre.flat());
+
+  const genres = [...setgenres];
+
+  function handleFilterTypeEvent (e){
+
+    // console.log("eeeeeeeeeeee", e.target.value);
+
+    e.preventDefault();
+    
+    if( e.target.value === "Todo"){
+
+      return setState({
+        ...state,
+        fTypeEvent: false,
+        // price: e.target.value,
+      })
+    };
+
+    setState({
+      ...state,
+      fTypeEvent: true,
+      typeEvent: e.target.value,
+    })
+  };
+
 
  //--------------SORT---------------
 
@@ -269,18 +345,44 @@ export default function Filters(check) {    //npm i react-datepicker
         <button onClick={deleteFilterLocation}>x</button>
         </div>
 
-        <div>
+        {/*<div>
         <input  type={"text"} name={"min"} placeholder={`min`} value={statePrice.min} onChange={(e)=>handleChangePrice(e)} />
         <input  type={"text"} name={"max"} placeholder={`max`} value={statePrice.max} onChange={(e)=>handleChangePrice(e)} />
         <button onClick={handleSubmitPrice}>Filtrar</button>
         <button onClick={deleteFilterPrice}>x</button>
+        </div>*/}
+
+        <div>
+          <select onChange={(e)=>handleFilterPrice(e)}>
+
+            <option value="Todo"  >Price</option>
+
+                {price.map((e) =>
+
+                  <option key={e} value={e} >{e}</option>
+                )}
+
+          </select>
+        </div>
+
+       <div>
+          <select onChange={(e)=>handleFilterTypeEvent(e)}>
+
+            <option value="Todo"  >Type-Events</option>
+
+                {genres.map((e) =>
+
+                  <option key={e} value={e} >{e}</option>
+                )}
+
+          </select>
         </div>
 
         <div>
               <select onChange={(e)=> handleSort(e)}>
                   <option value={"notSort"}>Not Sort</option>
                   <option value={"A-Z"}>A-Z</option>
-                  <option value={"Z-A"}>Z-A</option>
+                  <option value={"Z-A"}>Z-A</option> 
               </select>
         </div>
     </MenuFilter>
