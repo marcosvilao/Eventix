@@ -20,6 +20,10 @@ export const GET_ALL_EVENT_LIST = 'GET_ALL_EVENT_LIST';
 export const PAY_CRYPTO = "PAY_CRYPTO";
 
 export const PAYMENT_HANDLER = "PAYMENT_HANDLER";
+
+export const CREATE_REVIEW = "CREATE_REVIEW";
+
+export const GET_REVIEW = "GET_REVIEW";
 //-------------------------------------------------
 const URL = "http://localhost:3001";
 //-------------------------------------------------
@@ -181,6 +185,31 @@ export const createEvent = (data) => {
       dispatch({
 
         type: CREATE_EVENT,
+        payload: event.data
+      })
+
+    } catch (error) {
+
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  };
+};
+
+export const createReview = (data) => {
+
+  return async function(dispatch){
+
+    try {
+      
+      const event = await axios.post(`${URL}/review`, data);
+
+      dispatch({
+
+        type: CREATE_REVIEW,
         payload: event.data
       })
 

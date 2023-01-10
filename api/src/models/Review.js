@@ -8,17 +8,19 @@ module.exports = (sequelize) => {
       allowNull: true,
       primaryKey: true
     },
-    title: {                   // cambie user por username. Me rompia por colicion de nombres. el atributo user con el nombre de la tabla user.
+    title: {                  
       type: DataTypes.STRING, 
       allowNull: false,
     },
     stars: {
-      type: DataTypes.INTEGER, 
+      type: DataTypes.FLOAT, 
       allowNull: false,
     },
     text: {
       type: DataTypes.STRING, 
       allowNull: false,
-    },  
+    }
+  }, {
+    timestamps: false
   });
 };

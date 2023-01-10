@@ -22,7 +22,6 @@ export default function CreateEvent() {
     e.preventDefault();
     setPrice([...price, { tipoDeTicket: '', precio: '' }]);
     setValue('price', [...price, { tipoDeTicket: '', precio: '' }]);
-    
   }
 
   const handleDateChange = (date) => {

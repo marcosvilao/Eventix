@@ -19,11 +19,9 @@ export default function Map({direction}) {
       `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=AIzaSyADc2MLZNlRKuETh2QEaDYA49aqZa9pNIU`
     )
     const data = response.data.results[0] ? response.data.results[0] : null;
-      // console.log("data",data)
     return setDirectionResponse(data !== null ? data.geometry.location : center)
   }
     useEffect(() => {
-      console.log("direction",direction)
       getCoordinates(direction)
       
     }, [direction])

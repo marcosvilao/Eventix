@@ -158,7 +158,7 @@ export const CardE = styled.div`
   }
 
   .text {
-    height: 20vh;
+    // height: 10vh;
     position: absolute;
     align-items: center
     bottom: 0;

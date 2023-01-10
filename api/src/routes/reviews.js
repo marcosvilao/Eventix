@@ -1,9 +1,10 @@
 const {Router} = require("express");
-const addReview = require('../controllers/reviews')
+const {addReview} = require('../controllers/reviews')
+const {Review} = require("../db")
 
 const route = Router();
 
-route.post("/", async(req,res) =>{
+route.post("/", async(req,res) => {
 
     try {
         

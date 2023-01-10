@@ -10,7 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  background-image: url(./assets/background.jpg);
+  /* background-image: url(./assets/background.jpg); */
+  background-color: rgb(0, 0, 0);
   
 }
 

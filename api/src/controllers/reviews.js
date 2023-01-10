@@ -21,7 +21,18 @@ const addReview = async (req) => {
             where : {name : eventName}
         })
         await event.addReview(review)
+        await updateEventRating(event.name)
     
 }
 
-module.exports = addReview
+const updateEventRating = async (eventName) => {
+    const event = await Event.findOne({ where: { name: eventName } });
+    const reviews = await Review.findAll({ where: { eventId: event.id } });
+    const totalStars = reviews.reduce((total, review) => total + review.stars, 0);
+    const averageStars = totalStars / reviews.length;
+    event.rating = averageStars;
+    await event.save();
+  }
+  
+
+module.exports = {addReview, updateEventRating}
