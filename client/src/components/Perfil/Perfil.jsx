@@ -1,26 +1,25 @@
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { paymentHandler } from "../../Redux/actions";
-
+import { paymentHandler, notificationPayment } from "../../Redux/actions";
 
 export default function Perfil () {
 
     const dispatch = useDispatch();
     const userId = 1
+    const ticket = useSelector(s => s.dataPago);
 
 
     useEffect(()=> {
         dispatch(paymentHandler(userId));
+        dispatch(notificationPayment(userId))
 
     },[dispatch]);
 
-
-    const ticket = useSelector(s => s.dataPago);
     
     const ticketsPurchased = ticket.filter(e => e.ticket.pendingPayment === true || e.ticket.paymentMade === true )
 
-    console.log("infoticket", ticketsPurchased);
+    // console.log("infoticket", ticketsPurchased);
 
     return (
 

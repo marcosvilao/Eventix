@@ -4,6 +4,7 @@ const {COINBASE_API_KEY, DOMAIN, COINBASE_WEBHOOK_SECRET} = process.env;
 const {Client, resources, Webhook} = require("coinbase-commerce-node"); // resources son los servicios que ofrece coinbase. Si queremos crear una orden de pago, lo inficamos en resources
 const {Ticket} = require("../db");
 const { Op } = require("sequelize");
+const {v4: uuidv4} = require("uuid");
 
 
 Client.init(COINBASE_API_KEY);  // conectamos a coinbase
@@ -21,7 +22,13 @@ route.post("/create-charge", async(req,res)=>{   // ruta de pago http://localhos
     
     // creo el ticket y lo guardo en la BD ---------------------------
 
+    let ticketId = [];
+
     for(let i = 0; i< cantidad; i++){
+
+        let uuid = uuidv4();
+
+        ticketId.push(uuid);
 
         await Ticket.create({
             event: name,
@@ -29,12 +36,12 @@ route.post("/create-charge", async(req,res)=>{   // ruta de pago http://localhos
             typeTicket: typeTicket,
             usersId: 01,
             paymentMade:false,
-            pendingPayment:false
+            pendingPayment:false,
+            invoiceTicketId: uuid
         })
     };
     
-    const ticket = await Ticket.findAll({where:{usersId: 01}}); // me traigo el ticket que creé recien para tomar el id y pasarlo a los datos del pago
-    // console.log("ticketsPay", ticket);   
+    // console.log("tikcetid", ticketId);  
     
     //------------------------------------------------------------------------------------------------------
 
@@ -51,7 +58,7 @@ route.post("/create-charge", async(req,res)=>{   // ruta de pago http://localhos
         metadata: {                        // info del comprador. para guardar en la base de datos.
             customer_id: "idusuaro",
             customer_name: "Maxi Meder",
-            customer_id_ticket: ticket.map(e => e.id)  //guardo el id de cada ticket
+            customer_id_ticket: ticketId  //guardo el id de cada ticket
         },
         redirect_url: `${DOMAIN}/perfil`, // ${DOMAIN}/perfilusuario/pago   cuando el pago se finaliza le sale un boton para continuar. Esa url es donde lo va a redirigir el boton. NOTA: tiene que ser un dominio https. Si no coinbase no redirecciona. 
         cancel_url: `${DOMAIN}/perfil`,  // cuando se calcele el pago, va a redireccionar a esta ruta.
