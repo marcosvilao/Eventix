@@ -40,6 +40,10 @@ module.exports = (sequelize) => {
       type: DataTypes.JSONB, 
       allowNull: true,
     },
+    rating: {
+      type: DataTypes.FLOAT, 
+      allowNull: true,
+    },
     createInDB:{
       type: DataTypes.BOOLEAN,
       defaultValue: true,

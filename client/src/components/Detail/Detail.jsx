@@ -6,6 +6,9 @@ import Map from '../Map/Map';
 import { payCrypto } from '../../Redux/actions';
 import Modal from 'react-modal';
 import "./Detail.css";
+import Review from '../Reviews/createReview';
+import Reviews from '../Reviews/Reviews';
+import { Rating } from 'react-simple-star-rating';
 
 export default function Detail() {
 
@@ -16,14 +19,20 @@ export default function Detail() {
   const dispatch = useDispatch()
   const { id } = useParams()
 
+  const [reload, setReload] = useState(false);
   const [cantidad, setCantidad] = useState(1);
   const [modalIsOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(false);
   const [info, setInfo] = useState({tipoTicket: "", precio:0 })
 
+  const updateComponent = (message) => {
+    setReload(message)
+  }
+  console.log(reload)
   useEffect(() => {
     dispatch(searchEventById(id))
-  }, [id, dispatch])
+    setReload(false)
+  }, [id, reload, dispatch])
 
 
   function handleBack() {
@@ -117,15 +126,14 @@ export default function Detail() {
       <div>
         <div>
           <img src={eventShowed.length ? eventShowed[0].image : null} alt= "" />
+          <Rating readonly={true} initialValue={eventShowed.length ? Math.round(eventShowed[0].rating) : null}/>
         </div>
 
         <div>
 
-          
           <p>{eventShowed.length ? eventShowed[0].name : null}</p> 
           <p>{eventShowed.length ? eventShowed[0].location : null}</p>
 
-          {console.log(eventShowed)}
          {
           eventShowed[0] ? eventShowed[0].price.map((e, i) => 
             <div key={i}>
@@ -147,6 +155,9 @@ export default function Detail() {
       <div>
         <p>Description event: {eventShowed[0]?.description}</p>
       </div>
+
+      <Review updateComponent={updateComponent} event={eventShowed.length ? eventShowed[0].name : null}/>
+      <Reviews reviews={eventShowed.length ? eventShowed[0].reviews : null}/>
 
       <Map direction={eventShowed.length ? eventShowed[0].location : null}/>
 

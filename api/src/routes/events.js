@@ -36,6 +36,7 @@ route.get('/allevents', async (req, res) => {
         const event = await Event.findAll({
             include : Review
         });
+
         res.status(200).json(event)
     } catch (error) {
         res.status(500).json({msg : error.message});
