@@ -25,7 +25,7 @@ export const CREATE_REVIEW = "CREATE_REVIEW";
 
 export const GET_REVIEW = "GET_REVIEW";
 //-------------------------------------------------
-const URL = "http://localhost:3001";
+// const URL = "http://localhost:3001";
 //-------------------------------------------------
 
 
@@ -36,7 +36,7 @@ export const getAllEvents = (page) => {
 
     try {
 
-      const event = await axios.get(`${URL}/events/page/${page}`);
+      const event = await axios.get(`/events/page/${page}`);
 
       dispatch({
 
@@ -60,7 +60,7 @@ export const getAllEventList = () => {
 
     try {
 
-      const event = await axios.get(`${URL}/events/allevents`);
+      const event = await axios.get(`/events/allevents`);
 
       dispatch({
 
@@ -85,7 +85,7 @@ export const getNameEvent = (name) => {
 
     try {
 
-      const event = await axios.get(`${URL}/events/page/:page?name=${name}`);
+      const event = await axios.get(`/events/page/:page?name=${name}`);
 
       dispatch({
 
@@ -110,7 +110,7 @@ export const orderByName = (order) => {
 
     try {
 
-      const eventOrder = await axios.get(`${URL}/order`, order);
+      const eventOrder = await axios.get(`/order`, order);
 
       dispatch({
 
@@ -134,7 +134,7 @@ export const filter = (info) => {
 
     // console.log("infoo",info);
     try {
-      const eventDate = await axios.post(`${URL}/filters`, info);
+      const eventDate = await axios.post(`/filters`, info);
       dispatch({
 
         type: FILTER,
@@ -157,7 +157,7 @@ export const searchEventById = (id) => {
   return async function (dispatch){
     try {
     
-      const eventDetailed = await axios.get(URL + `/events/${id}`)
+      const eventDetailed = await axios.get(`/events/${id}`)
       // console.log(eventDetailed.data)
       dispatch({
         type: GET_EVENT_ID,
@@ -180,7 +180,7 @@ export const createEvent = (data) => {
 
     try {
       
-      const event = await axios.post(`${URL}/events`, data);
+      const event = await axios.post(`/events`, data);
 
       dispatch({
 
@@ -205,7 +205,7 @@ export const createReview = (data) => {
 
     try {
       
-      const event = await axios.post(`${URL}/review`, data);
+      const event = await axios.post(`/review`, data);
 
       dispatch({
 
@@ -231,7 +231,7 @@ export const payCrypto = (data) =>{
     try {
       // console.log("action", data);
       
-      await axios.post(`${URL}/paycrypto/create-charge`,data );
+      await axios.post(`/paycrypto/create-charge`,data );
 
     } catch (error) {
      
