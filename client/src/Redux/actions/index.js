@@ -128,6 +128,7 @@ export const orderByName = (order) => {
 export const filter = (info) => {   
   return async function (dispatch) {
 
+    // console.log("infoo",info);
     try {
       const eventDate = await axios.post(`${URL}/filters`, info);
       dispatch({

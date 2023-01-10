@@ -1,6 +1,6 @@
 const getEvents = require("./getEvents");
 const {Event} = require('../db')
-const {filterByDate, filterByAge, filterByLocation, filterByPrice} = require("./filters");
+const {filterByDate, filterByAge, filterByLocation, filterByPrice, filterByTypeEvent} = require("./filters");
 const sorts = require("./sort");
 
 const storeFiltered = async(body)=>{
@@ -9,7 +9,7 @@ const storeFiltered = async(body)=>{
 
     let filter = true;
 
-    if(!body.fDate && !body.fName && !body.fAge && !body.fPrice && !body.fLocation && !body.fSort){
+    if(!body.fDate && !body.fName && !body.fAge && !body.fPrice && !body.fLocation && !body.fSort && !body.fTypeEvent){
 
         // const events = await getEvents();
         // return events;
@@ -23,7 +23,7 @@ const storeFiltered = async(body)=>{
         state = state.length > 0 ? state : await Event.findAll();
 
         state = await filterByDate(day, month, year, state); 
-        console.log(state)
+        // console.log(state)
         if(typeof state === "string") return state
     };
 
@@ -85,6 +85,19 @@ const storeFiltered = async(body)=>{
 
         if(typeof state === "string") return state
     }
+
+    if(body.fTypeEvent === true){
+
+        const {typeEvent} = body;
+
+        state = state.length > 0 ? state : await Event.findAll();
+
+        state = await filterByTypeEvent(typeEvent, state);
+
+        if(!state.length > 0) return "no events found typeEvent"
+
+        if(typeof state === "string") return state
+    };
 
     if(body.fSort === true){
 
