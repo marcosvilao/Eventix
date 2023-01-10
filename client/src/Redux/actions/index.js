@@ -267,3 +267,26 @@ export const paymentHandler = (userId) => {
     }
   }
 };
+
+
+export const notificationPayment = (infoPago) => {
+
+  return async function (dispatch){
+
+    try {
+      // console.log("info action:", infoPago);
+      
+      const info = await axios.get(`ticket/notification/`+ infoPago);
+
+      // console.log("action info.data:", info.data);
+      
+
+    } catch (error) {
+      
+      dispatch({
+        type:ERROR,
+        payload: error.message
+      })
+    }
+  }
+};

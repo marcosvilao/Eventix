@@ -9,13 +9,9 @@ module.exports = (sequelize) => {
       primaryKey: true
     },
     event: {
-      type: DataTypes.INTEGER, 
-      allowNull: false,
-    },
-    text: {
       type: DataTypes.STRING, 
       allowNull: false,
-    },  
+    },
     price: {
       type: DataTypes.STRING,
       allowNull: false
@@ -36,6 +32,16 @@ module.exports = (sequelize) => {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
       allowNull:false
+    },
+    emailSent: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+      allowNull:false
+    },
+    invoiceTicketId: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
+      allowNull: true,
     }
     // date: {
     //   type: DataTypes.STRING,

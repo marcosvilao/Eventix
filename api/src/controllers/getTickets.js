@@ -8,6 +8,12 @@ const getTickets = async(userId) =>{
         where:{usersId: userId}
     });
 
+    if(!ticket.length > 0){
+
+        // console.log("ticketget::", ticket);
+        return "No tickets"
+    };
+
     return ticket;
 
 };
