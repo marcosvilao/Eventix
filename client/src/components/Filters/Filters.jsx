@@ -15,7 +15,7 @@ export default function Filters(check) {    //npm i react-datepicker
 
   const [stateLocation, setStateLocation]= useState("");
 
-  const [statePrice, setStatePrice] = useState({min:"", max:""});
+  // const [statePrice, setStatePrice] = useState({min:"", max:""});
 
   const events = useSelector( s => s.allevents); 
 
@@ -210,35 +210,35 @@ export default function Filters(check) {    //npm i react-datepicker
   };
 
   //-------------------
-  function handleChangePrice(e){
+  // function handleChangePrice(e){
 
-    setStatePrice({
+  //   setStatePrice({
 
-      ...statePrice,
-      [e.target.name]: e.target.value
-    })
+  //     ...statePrice,
+  //     [e.target.name]: e.target.value
+  //   })
 
-  };
+  // };
 
-  function handleSubmitPrice(){
+  // function handleSubmitPrice(){
 
-    setState({
-      ...state,
-      fPrice: true,
-      price:[statePrice.min, statePrice.max],
-    })
-  };
+  //   setState({
+  //     ...state,
+  //     fPrice: true,
+  //     price:[statePrice.min, statePrice.max],
+  //   })
+  // };
 
-  function deleteFilterPrice(){
+  // function deleteFilterPrice(){
 
-    setState({
-      ...state,
-      fPrice: false,
-      price:[],
-    })
+  //   setState({
+  //     ...state,
+  //     fPrice: false,
+  //     price:[],
+  //   })
 
-    setStatePrice({min:"",max:""})
-  };
+  //   setStatePrice({min:"",max:""})
+  // };
 
   //--------------NAME-------------
   function submitName(e){

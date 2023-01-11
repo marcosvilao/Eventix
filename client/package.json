@@ -28,12 +28,13 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
-    "react-simple-star-rating": "^4.1.1",
+    "react-simple-star-rating": "^5.1.7",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack-dev-middleware": "^6.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

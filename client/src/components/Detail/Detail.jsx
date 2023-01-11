@@ -1,7 +1,7 @@
 import React, { useEffect, useState }from 'react';
 import { searchEventById } from '../../Redux/actions';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link, useHistory, useParams } from 'react-router-dom';
+import {  useHistory, useParams } from 'react-router-dom';
 import Map from '../Map/Map';
 import { payCrypto } from '../../Redux/actions';
 import Modal from 'react-modal';

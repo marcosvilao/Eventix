@@ -8,7 +8,7 @@ import { createReview } from '../../Redux/actions'
 
 export default function Review({event, updateComponent}) {
     const dispatch = useDispatch();
-    const {register, setValue, handleSubmit, reset, formState: {errors}} = useForm();
+    const {register, setValue, handleSubmit, reset} = useForm();
 
     const [stars, setStars] = useState(0);
     

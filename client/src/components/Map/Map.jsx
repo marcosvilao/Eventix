@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import {useJsApiLoader, GoogleMap, Marker, DirectionsRenderer} from '@react-google-maps/api'
+import {useJsApiLoader, GoogleMap, Marker} from '@react-google-maps/api'
 import Loading from '../Loading/Loading'
 import axios from 'axios'
-const key = process.env.REACT_APP_GOOGLE_MAPS_KEY
+// const key = process.env.REACT_APP_GOOGLE_MAPS_KEY
 
 
 const center = {lat: -34.6037, lng: -58.3816}

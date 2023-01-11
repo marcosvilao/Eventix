@@ -177,6 +177,45 @@ export const CardE = styled.div`
   }
 `
 
+//////////////Profile/////////////////
+
+export const PersonalContainer = styled.section`
+  display : flex;
+  width : 100vw;
+  justify-content : space-around;
+
+  nav {
+    background-color : gray;
+    opacity : 0.6;
+    border-radius : 20px;
+    display: flex;
+    justify-content : space-around;
+    flex-direction : column;
+    width : 15vw;
+    height : 20vh;
+    align-items : center;
+  }
+
+  button {
+    background-color : black;
+    color : white;
+    font-family: 'Poppins', sans-serif;
+    width : 10vw;
+    height : 4vh;
+    border-radius : 10px;
+    border : none
+  }
+
+  section {
+    background-color : gray;
+    opacity : 0.6;
+    border-radius : 20px;
+    width : 75vw;
+    height : 70vh;
+    justify-content: space-around;
+  }
+`
+
 
 
 
