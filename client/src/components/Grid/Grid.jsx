@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getAllEventList, getAllEvents } from "../../Redux/actions";
 import Card from "../Card/Card";
-import InfiniteScroll from "react-infinite-scroll-component";
 import styled, { keyframes } from "styled-components";
 import Loading from "../Loading/Loading";
 import { Carousel } from "react-responsive-carousel";
@@ -229,18 +228,5 @@ export default function Grid() {
 
 
 
-  // return (
-  //   Events.length ? (
-  //   <InfiniteScroll dataLength={Events.length} hasMore={hasMore} next={next}>
-  //     <ul className="eventsGrid">
-  //       { 
-  //         Events.map((event,i) => {
-  //           return <Card event={event} key={i} />;
-  //         })
-  //       }
-  //     </ul>
-  //   </InfiniteScroll>
-  // ): <Loading/>
-  
-  // )
+
 }
