@@ -9,22 +9,21 @@ import "./Detail.css";
 import Review from '../Reviews/createReview';
 import Reviews from '../Reviews/Reviews';
 import { Rating } from 'react-simple-star-rating';
+import { DetailContainer, DetailEvent, BuyEvent} from '../Styles/Styles';
+import Navbar from '../Navbar/Navbar'
+import {FcPlus} from 'react-icons/fc'
 
 export default function Detail() {
-
   const eventShowed = useSelector(state => state.events);
   const url = useSelector( s => s.payCryptoURL);
-
   const history = useHistory()
   const dispatch = useDispatch()
   const { id } = useParams()
-
   const [reload, setReload] = useState(false);
   const [cantidad, setCantidad] = useState(1);
   const [modalIsOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(false);
   const [info, setInfo] = useState({tipoTicket: "", precio:0 })
-
   const updateComponent = (message) => {
     setReload(message)
   }
@@ -33,14 +32,10 @@ export default function Detail() {
     dispatch(searchEventById(id))
     setReload(false)
   }, [id, reload, dispatch])
-
-
   function handleBack() {
     eventShowed.shift()
     return history.goBack()
   }
-  
-
   function submitData (e){
 
     if(e.precio === "Entrada Liberada"){
@@ -85,81 +80,79 @@ export default function Detail() {
     return dispatch(payCrypto(datosPago));
 
   };
-
-  
   function buttonRest (){
     
     if(cantidad > 1){
       return setCantidad(cantidad - 1);
     };
   };
-
   function buttonSum (){
 
     return setCantidad( cantidad +1);
   };
-
   function openModal() {
     setIsOpen(true);
     timer();
   };
-
   function closeModal() {
     setIsOpen(false);
   };
-
   function timer() {setTimeout(function (){
 
     setIndex(true)
    
   }, 5000)};
-
   return (
     <div>
-
-      <div>
-        <button onClick={handleBack}>
-          BACK
-        </button>
-      </div>
-
-      <div>
+      <Navbar/>
+      <DetailContainer>
+      
+      <DetailEvent>
         <div>
-          <img src={eventShowed.length ? eventShowed[0].image : null} alt= "" />
-          <Rating readonly={true} initialValue={eventShowed.length ? Math.round(eventShowed[0].rating) : null}/>
+          <img src={eventShowed.length ? eventShowed[0].image : null} alt= ""/>
         </div>
-
         <div>
-
-          <p>{eventShowed.length ? eventShowed[0].name : null}</p> 
-          <p>{eventShowed.length ? eventShowed[0].location : null}</p>
-
-         {
+          <h1>{eventShowed.length ? eventShowed[0].name : null}</h1> 
+          <Rating readonly={true} initialValue={eventShowed.length ? Math.round(eventShowed[0].rating) : null}/>
+          <p>Location: {eventShowed.length ? eventShowed[0].location : null}</p>
+          <div>
+            <p>Description event: {eventShowed[0]?.description}</p>
+          </div>
+        </div>
+        <div>
+            <h1>Buy your Ticket</h1>
+            {
+              
           eventShowed[0] ? eventShowed[0].price.map((e, i) => 
             <div key={i}>
               
               <p>Type Ticket: {e.tipoDeTicket}</p>
               {e.precio === "Entrada Liberada" ? <p>Price: Free</p> :<p>Price: ${Number(e.precio) * cantidad} | U$D {(Number(e.precio) * cantidad / 400).toPrecision(3)}</p>}
-              <button onClick={()=>submitData(e)}>comprar</button>
-              <button hidden={cantidad > 1 ? false : true} onClick={()=>buttonRest()}>-</button>
-              <button onClick={()=>buttonSum()}>+</button>
+              <button className='btn1' onClick={()=>submitData(e)}>comprar</button>
+              <button className='btn1' hidden={cantidad > 1 ? false : true} onClick={()=>buttonRest()}>-</button>
+              <button className='btn1' onClick={()=>buttonSum()}><FcPlus/></button>
               {cantidad > 1 ? <span> {cantidad} Tickets</span>: <span> {cantidad} Ticket</span>}
               
             </div>
           ) : 
           <p>Tickets Sold Out  :´(</p>
          }
-        </div>
+          </div>
+        </DetailEvent>
+        <BuyEvent>
+          <Map direction={eventShowed.length ? eventShowed[0].location : null}/>
+          <Review updateComponent={updateComponent} event={eventShowed.length ? eventShowed[0].name : null}/>
+        </BuyEvent>
+         
+        
 
-      </div>
-      <div>
-        <p>Description event: {eventShowed[0]?.description}</p>
-      </div>
+      
+      
 
-      <Review updateComponent={updateComponent} event={eventShowed.length ? eventShowed[0].name : null}/>
+      
       <Reviews reviews={eventShowed.length ? eventShowed[0].reviews : null}/>
-
-      <Map direction={eventShowed.length ? eventShowed[0].location : null}/>
+      
+      
 
       <Modal
         isOpen={modalIsOpen}
@@ -197,6 +190,8 @@ export default function Detail() {
       </div> 
       */}
 
+    </DetailContainer>
     </div>
+    
   )
 };

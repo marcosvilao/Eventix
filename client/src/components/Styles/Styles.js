@@ -216,6 +216,39 @@ export const PersonalContainer = styled.section`
   }
 `
 
+/////////////DETAIL//////////////
+
+export const DetailContainer = styled.div`
+width : 90vw;
+background-color : rgb(22, 21, 21);
+margin: 0 auto;
+position: relative;
+
+`
+
+export const DetailEvent = styled.div`
+margin-top: 3vh;
+display : flex;
+// width : 95vw;
+justify-content : space-around;
+`
+
+export const BuyEvent = styled.div`
+display : flex;
+// width : 90vw;
+justify-content : space-around;
+`
+
+/////////////Reviews///////////////
+
+export const FormReview = styled.form`
+background-color : rgb(22, 21, 21);
+width : 18vw;
+height : 30vh;
+text-align : center
+
+`
+
 
 
 
