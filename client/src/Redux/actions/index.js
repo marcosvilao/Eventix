@@ -231,7 +231,7 @@ export const payCrypto = (data) =>{
     try {
       // console.log("action", data);
       
-      await axios.post(`/paycrypto/create-charge`,data );
+      const url = await axios.post(`/paycrypto/create-charge`,data );
 
       dispatch({
         type: PAY_CRYPTO,
