@@ -8,6 +8,10 @@ import aboutUs from './components/About Us/AboutUs';
 import createEvent from './components/createEvent/createEvent';
 import Perfil from './components/Perfil/Perfil';
 
+import axios from "axios";
+
+axios.defaults.baseURL = "https://eventix-production.up.railway.app/";//http://localhost:3001/
+
 function App() {
   return (
     <div>

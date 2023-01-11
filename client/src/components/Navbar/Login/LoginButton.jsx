@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useHistory } from "react-router-dom";
 import { Avatar, IconButton, Modal } from '@mui/material';
-import LogoutIcon from '@mui/icons-material/Logout';
-import LoginIcon from '@mui/icons-material/Login';
+import {CiLogin} from 'react-icons/ci';
+
 import styled from "styled-components";
 //import Modal from "react-modal";
 
@@ -43,14 +43,14 @@ export const LoginButton = () => {
     <div>
 
       {!isAuthenticated ? (<IconButton  onClick={() => accountHandler()}>
-            <LoginIcon sx={{ fontSize: 45, color: "white" }} color="primary"/>
+            <CiLogin style={{ fontSize: 45, color: "white" }} color="primary"/>
           </IconButton>) : (
         <div>
           <IconButton onClick={() => accountHandler()}>
             <Avatar alt="p" src={user?.picture} size="lg" />
           </IconButton>
           <IconButton  onClick={() => logout()}>
-            <LogoutIcon sx={{ fontSize: 45, color: "white" }} />
+            <CiLogin style={{ fontSize: 45, color: "white" }} />
           </IconButton>
         </div>
       )}
