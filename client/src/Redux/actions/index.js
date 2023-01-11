@@ -24,6 +24,8 @@ export const PAYMENT_HANDLER = "PAYMENT_HANDLER";
 export const CREATE_REVIEW = "CREATE_REVIEW";
 
 export const GET_REVIEW = "GET_REVIEW";
+
+export const GET_USER = "GET_USER";
 //-------------------------------------------------
 // const URL = "http://localhost:3001";
 //-------------------------------------------------
@@ -174,6 +176,27 @@ export const searchEventById = (id) => {
   }
 }
 
+export const searchUserById = (id) => {
+  return async function (dispatch){
+    try {
+    
+      const user = await axios.get(URL + `/user/${id}`)
+      // console.log(eventDetailed.data)
+      dispatch({
+        type: GET_USER,
+        payload: user.data
+      })
+
+    } catch (error) {
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  }
+}
+
 export const createEvent = (data) => {
 
   return async function(dispatch){
@@ -281,7 +304,8 @@ export const notificationPayment = (infoPago) => {
     try {
       // console.log("info action:", infoPago);
       
-      const info = await axios.get(`ticket/notification/`+ infoPago);
+      // const info = 
+      await axios.get(`ticket/notification/`+ infoPago);
 
       // console.log("action info.data:", info.data);
       

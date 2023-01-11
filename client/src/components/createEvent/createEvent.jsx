@@ -1,7 +1,7 @@
 import {useForm, } from 'react-hook-form'
 import DatePicker from "react-datepicker";
 import { useState} from 'react';
-import { Autocomplete } from '@react-google-maps/api';
+// import { Autocomplete } from '@react-google-maps/api';
 import {useDispatch} from 'react-redux'
 import { createEvent } from '../../Redux/actions';
 
@@ -9,7 +9,7 @@ import { createEvent } from '../../Redux/actions';
 
 
 export default function CreateEvent() {
-  const {register, setValue, handleSubmit, reset, formState: {errors}} = useForm()
+  const {register, setValue, handleSubmit, reset} = useForm()
   const [selectedDate, setSelectedDate] = useState(null);
   const [price, setPrice] = useState([]);
   const dispatch = useDispatch()

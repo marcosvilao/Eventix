@@ -6,15 +6,15 @@ const {
   DB_USER, DB_PASSWORD, DB_HOST,DB_PORT,DB_NAME, DB_DEPLOY
 } = process.env;
 
-// let sequelize = new Sequelize( `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`, {
-//    logging: false, // set to console.log to see the raw SQL queries
-//    native: false, // lets Sequelize know we can use pg-native for ~30% more speed
-//  });
-
- let sequelize = new Sequelize( DB_DEPLOY, {
+let sequelize = new Sequelize( `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`, {
    logging: false, // set to console.log to see the raw SQL queries
    native: false, // lets Sequelize know we can use pg-native for ~30% more speed
  });
+
+//  let sequelize = new Sequelize( DB_DEPLOY, {
+//    logging: false, // set to console.log to see the raw SQL queries
+//    native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+//  });
  const basename = path.basename(__filename);
 
  const modelDefiners = [];
@@ -41,9 +41,6 @@ const { User, Event, Review, Ticket } = sequelize.models;
 // Product.hasMany(Reviews);
 
 //muchos a muchos
-User.belongsToMany(Event, {through : 'user_event'});
-Event.belongsToMany(User, {through : 'user_event'});
-
 //uno a muchos 
 // User.hasMany(Review);         // las relaciones que no sean de muchos a muchos no es necesario designarles tabla intermedia. :v
 // Review.belongsTo(User);
@@ -51,6 +48,8 @@ Event.hasMany(Review)
 
 //uno a muchos
 User.hasMany(Ticket);
+User.hasMany(Event);
+User.hasMany(Review);
 Ticket.belongsTo(User);
 
 module.exports = {

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import AboutUs from "../About Us/AboutUs";
+import React from "react";
+// import AboutUs from "../About Us/AboutUs";
 import Grid from "../Grid/Grid";
 import Navbar from "../Navbar/Navbar";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -12,7 +12,7 @@ import { H1 } from "../Styles/Styles";
 
 function Home() {
   const history = useHistory();
-  const { isAuthenticated, user, logout } = useAuth0();
+  const { logout } = useAuth0();
 
 
 function handleClick(){
