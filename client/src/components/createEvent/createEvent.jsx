@@ -4,6 +4,8 @@ import { useState} from 'react';
 import { Autocomplete } from '@react-google-maps/api';
 import {useDispatch} from 'react-redux'
 import { createEvent } from '../../Redux/actions';
+import { Link } from 'react-router-dom';
+import { Btn, CreateEvents, DetailInfo, H1, Input, Search } from '../Styles/Styles';
 
 
 
@@ -43,7 +45,7 @@ export default function CreateEvent() {
   const priceform = price.map((item, index) => (
     <div key={index}>
       <div>
-        <label>Ticket Type</label>
+        <p>Ticket Type</p>
         <input
         name={`price[${index}].tipoDeTicket`}
         {...register(`price[${index}].tipoDeTicket`)}
@@ -64,11 +66,14 @@ export default function CreateEvent() {
   
   return (
     <div>
-    <h2>Create Event</h2>
+      <Link to="/"><Btn>Back</Btn></Link>
+    <CreateEvents>
+    <div>
+    <H1>Create Event</H1>
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <label>Name</label>
-        <input type="text" {...register('name', {
+        <p>Name</p>
+        <Input type="text" {...register('name', {
           // required: true,
           // maxLength: 100
         })} />
@@ -76,30 +81,33 @@ export default function CreateEvent() {
         {errors.name?.type === 'maxLength' && <p>up to 100 characters</p>} */}
       </div>
       <div>
-        <label>Date</label>
-        <DatePicker 
+        <p>Date</p>
+        <p><DatePicker 
         id="date"
         selected={selectedDate}
-        onChange={handleDateChange}/>
+        onChange={handleDateChange}/></p>
       </div>
       <div>
-        <label>Image</label>
+        <p>Image</p>
         <input type="file" {...register('image')} />
       </div>
       <div>
-        <label>Location</label>
-        <input type="text" {...register('location')} />
+        <p>Location</p>
+        <Input type="text" {...register('location')} />
       </div>
       <div>
-      <button type="button" onClick={handleAddItem}>Add Price type</button>
+      <Btn type="button" onClick={handleAddItem}>Add Price type</Btn>
       {priceform}
       </div>
       <div>
-        <label>Description</label>
-        <input type="text" {...register('description')} />
+        <p>Description</p>
+        <Input type="text" {...register('description')} />
       </div>
-      <input type="submit" value='Create'/>
+      <Btn type="submit" value='Create'>Create</Btn>
     </form>
+  </div>
+  </CreateEvents>
+    
   </div>
   )
 }

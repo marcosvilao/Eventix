@@ -8,7 +8,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import styled, { keyframes } from "styled-components";
 import Loading from "../Loading/Loading";
 import { Carousel } from "react-responsive-carousel";
-import { Cube, NotFound, H1 } from "../Styles/Styles";
+import { Cube, NotFound, H1, Title } from "../Styles/Styles";
 import Filters from "../Filters/Filters";
 
 
@@ -112,7 +112,7 @@ export default function Grid() {
 
     Events.length ? (
     <div>
-      <p>All events</p>
+      <Title>All events</Title>
 
       <Carousel showThumbs={false}>
         {
@@ -134,7 +134,7 @@ export default function Grid() {
       
         <div>
 
-          <p>events +18</p>
+          <Title>events +18</Title>
 
           <Carousel slidesToShow={1}>
             {
@@ -157,7 +157,7 @@ export default function Grid() {
       
       
 
-      <p>events -18</p>
+      <Title>events -18</Title>
 
       <Carousel slidesToShow={1}>
         {

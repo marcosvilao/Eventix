@@ -3,7 +3,8 @@ import {useDispatch, useSelector} from "react-redux";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { filter } from '../../Redux/actions';
-import { MenuFilter } from '../Styles/Styles';
+import { Butt, ButtX, Locat, MaxMin, MenuFilter } from '../Styles/Styles';
+import { Search, Sort } from '../Styles/Styles';
 
 
 export default function Filters(check) {    //npm i react-datepicker
@@ -241,7 +242,7 @@ export default function Filters(check) {    //npm i react-datepicker
 
 
         <div>
-          <input type={"text"} placeholder={`search...`} onChange={(e)=>submitName(e)}  value={state.name}   />
+          <Search type={"text"} placeholder={`Search...`} onChange={(e)=>submitName(e)}  value={state.name}   />
         {/* <button onChange={submitNmae}>name</button>*/}
         </div>
 
@@ -249,39 +250,39 @@ export default function Filters(check) {    //npm i react-datepicker
 
           <DatePicker selected={stateDate}  onChange={(e) =>onChangeDate(e)}/>
 
-          <button onClick={()=>handleDate(stateDate)}>Filtrar</button>
-          <button onClick={(e)=>handleDeleteFilterDate(e)}>x</button>
+          <Butt onClick={()=>handleDate(stateDate)}>Filtrar</Butt>
+          <ButtX onClick={(e)=>handleDeleteFilterDate(e)}>x</ButtX>
         </div>
         
         <div>
 
-          <select onChange={(e)=>handleAge(e)}>
+          <Sort onChange={(e)=>handleAge(e)}>
 
             <option value={"false"}>Todas las edades</option>
             <option value={"mayores"}>Mayores de edad</option>
             <option value={"atp"}>Apto para menores</option>
-          </select>
+          </Sort>
         </div>
 
         <div>
-        <input  type={"text"} name={"location"} placeholder={`Location...`} value={stateLocation} onChange={(e)=>handleChangeLocation(e)} />
-        <button onClick={handleSubmitLocation}>Filtrar</button>
-        <button onClick={deleteFilterLocation}>x</button>
+        <Locat  type={"text"} name={"location"} placeholder={`Location...`} value={stateLocation} onChange={(e)=>handleChangeLocation(e)} />
+        <Butt onClick={handleSubmitLocation}>Filtrar</Butt>
+        <ButtX onClick={deleteFilterLocation}>x</ButtX>
         </div>
 
         <div>
-        <input  type={"text"} name={"min"} placeholder={`min`} value={statePrice.min} onChange={(e)=>handleChangePrice(e)} />
-        <input  type={"text"} name={"max"} placeholder={`max`} value={statePrice.max} onChange={(e)=>handleChangePrice(e)} />
-        <button onClick={handleSubmitPrice}>Filtrar</button>
-        <button onClick={deleteFilterPrice}>x</button>
+        <MaxMin  type={"text"} name={"min"} placeholder={`Minimal price`} value={statePrice.min} onChange={(e)=>handleChangePrice(e)} />
+        <MaxMin  type={"text"} name={"max"} placeholder={`Maximum price`} value={statePrice.max} onChange={(e)=>handleChangePrice(e)} />
+        <Butt onClick={handleSubmitPrice}>Filtrar</Butt>
+        <ButtX onClick={deleteFilterPrice}>x</ButtX>
         </div>
 
         <div>
-              <select onChange={(e)=> handleSort(e)}>
+              <Sort onChange={(e)=> handleSort(e)}>
                   <option value={"notSort"}>Not Sort</option>
                   <option value={"A-Z"}>A-Z</option>
                   <option value={"Z-A"}>Z-A</option>
-              </select>
+              </Sort>
         </div>
     </MenuFilter>
   )

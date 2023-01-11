@@ -33,7 +33,7 @@ export default function Map({direction}) {
   }
 
   return (
-    <div style={{width: "60vw", height: "70vh"}}>
+    <div style={{width: "30vw", height: "35vh", display: 'inline-block', border: "3px solid #ab4a8c", marginBlockEnd: "20px", margin: "20px"}}>
       <GoogleMap
       center={directionResponse}
       zoom={14}

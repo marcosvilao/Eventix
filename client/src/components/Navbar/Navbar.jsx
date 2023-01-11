@@ -1,6 +1,6 @@
 import React from "react";
 import { LoginButton } from "./Login/LoginButton";
-import {NavBar, Menu, Leftbar, Rightbar, MenuFilter, H1,} from '../Styles/Styles'
+import {NavBar, Menu, Leftbar, Rightbar, MenuFilter, H1, Pages} from '../Styles/Styles'
 import "./navbar.css";
 import Filters from "../Filters/Filters";
 
@@ -17,10 +17,12 @@ export default function Navbar() {
             <H1>Eventix</H1>
           </a>
           <a href="/aboutUs">
-            <h3>About us</h3>
+            <Pages>About us</Pages>
             {/* <aboutUs/> */}
           </a>
-          <a href="/createevents">Create Events</a>
+          <a href="/createevents">
+            <Pages>Create Events</Pages>
+            </a>
         </Leftbar>
         <Rightbar>
           <LoginButton />

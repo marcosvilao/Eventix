@@ -1,11 +1,12 @@
 import React, { useEffect, useState }from 'react';
 import { searchEventById } from '../../Redux/actions';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link, useHistory, useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import Map from '../Map/Map';
 import { payCrypto } from '../../Redux/actions';
 import Modal from 'react-modal';
 import "./Detail.css";
+import { Btn, Suma, BuyDetail, DetailImg, DetailInfo, H1, ModalInfo } from '../Styles/Styles';
 
 export default function Detail() {
 
@@ -109,20 +110,20 @@ export default function Detail() {
     <div>
 
       <div>
-        <button onClick={handleBack}>
+        <Btn onClick={handleBack}>
           BACK
-        </button>
+        </Btn>
       </div>
 
-      <div>
         <div>
-          <img src={eventShowed.length ? eventShowed[0].image : null} alt= "" />
+          <DetailImg src={eventShowed.length ? eventShowed[0].image : null} alt= "" />
         </div>
-
+        
+      <DetailInfo>
         <div>
 
           
-          <p>{eventShowed.length ? eventShowed[0].name : null}</p> 
+          <H1>{eventShowed.length ? eventShowed[0].name : null}</H1> 
           <p>{eventShowed.length ? eventShowed[0].location : null}</p>
 
           {console.log(eventShowed)}
@@ -132,35 +133,38 @@ export default function Detail() {
               
               <p>Type Ticket: {e.tipoDeTicket}</p>
               {e.precio === "Entrada Liberada" ? <p>Price: Free</p> :<p>Price: ${Number(e.precio) * cantidad} | U$D {(Number(e.precio) * cantidad / 400).toPrecision(3)}</p>}
-              <button onClick={()=>submitData(e)}>comprar</button>
-              <button hidden={cantidad > 1 ? false : true} onClick={()=>buttonRest()}>-</button>
-              <button onClick={()=>buttonSum()}>+</button>
+              <BuyDetail onClick={()=>submitData(e)}>Comprar</BuyDetail>
+              <Suma hidden={cantidad > 1 ? false : true} onClick={()=>buttonRest()}>-</Suma>
+              <Suma onClick={()=>buttonSum()}>+</Suma>
               {cantidad > 1 ? <span> {cantidad} Tickets</span>: <span> {cantidad} Ticket</span>}
               
             </div>
           ) : 
           <p>Tickets Sold Out  :´(</p>
          }
+        
+
+            <div>
+              <p>Description event: {eventShowed[0]?.description}</p>
+            </div>
+            
         </div>
 
-      </div>
-      <div>
-        <p>Description event: {eventShowed[0]?.description}</p>
-      </div>
-
       <Map direction={eventShowed.length ? eventShowed[0].location : null}/>
+      </DetailInfo>
 
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Example Modal">
 
-        <div className='modal' >
+        <ModalInfo>
+        <div className='modal'>
 
           <h2>Eventix</h2>
           <h3>{eventShowed[0]?.name}</h3>
           <p>Type Ticket: {info.tipoTicket}</p>
-          {cantidad > 1 ? <span> {cantidad} Tickets</span>: <span> {cantidad} Ticket</span>}
+          {cantidad > 1 ? <p> {cantidad} Tickets</p>: <p> {cantidad} Ticket</p>}
           <p>ARS$ {info.precio * cantidad}</p>
           <p>US$ {Number(info.precio) * cantidad / 400}</p>
           <p>You will be redirected to the Coinbase payment gateway</p>
@@ -168,15 +172,15 @@ export default function Detail() {
           { 
             index? <div>
 
-            <a href={`${url}`}><button>Buy Ticket</button></a>
-            <button onClick={closeModal}>cancel</button>
+            <a href={`${url}`}><Btn>Buy Ticket</Btn></a>
+            <Btn onClick={closeModal}>Cancel</Btn>
     
             </div> : <p>Generating payment link</p>
 
           }
 
         </div>
-          
+        </ModalInfo>       
       </Modal>   
 
 

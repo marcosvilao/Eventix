@@ -39,7 +39,7 @@ height: 50px;
 width: auto;
 background-color: transparent;
 justify-content: center;
-
+margin-bottom: 50px;
 `
 export const Searchbar = styled.input`
     width: 20vw;
@@ -49,6 +49,14 @@ export const Searchbar = styled.input`
     align-items:center;
     border-radius: 60px;
     padding: 10px 20px;
+`
+export const Pages = styled.h1`
+font-size: 20px;
+margin-left: 15px;
+
+&:hover {
+  color: #673c77;
+}
 `
 
 ///////////////GRID////////////////
@@ -62,6 +70,10 @@ display: flex
 `
 export const H1 = styled.h1`
 text-align: center;
+`
+export const Title = styled.h1`
+font-size: 20px;
+margin-left: 15px;
 `
 
 ///////////////CARDS////////////////
@@ -172,9 +184,227 @@ export const CardE = styled.div`
   }
 `
 
+///////////////ABOUTUS////////////////
+
+export const Techno = styled.div`
+    position: relative;
+    display: inline-block;
+    height: 480px;
+    width: 25vw;
+  
+  p {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+  
+
+  img {
+    width: 85%;
+    height: 220px;
+    
+  }
+`
+export const Btn = styled.button`
+border-radius: 5px;
+background-color: grey;
+width: 10%;
+height: 40px;
+margin: 20px;
+
+&:hover {
+    background-color: #673c77
+}
+`
+export const About = styled.h1`
+text-align: center;
+top: 10px;
+margin-bottom: 50px;
+`
+export const Descr = styled.div`
+font-size: 23px;
+color: white;
+margin-top: 40px;
+margin-bottom: 60px;
+margin-left: 300px;
+margin-right: 300px;
+text-align: center;
+font-family: arial;
+`
+export const Members = styled.div`
+height: 70vh;
+padding: 20px;
+background-color: rgba(68, 63, 63, 0.603);
+`
+export const Names = styled.div`
+margin: 50px;
+margin-top: 25px;
+margin-left: 5px;
+margin-right: 100px;
+padding: 10px;
+
+ p {
+      display: inline-block;
+      margin: 1px;
+      padding: 85px;
+      // margin-bottom: 10px;
+      // margin-top: 10px;
+      // margin-left: 10px;
+      // margin-right: 10px;
+      border: 3px solid #ab4a8c;
+      // font-size: 16px;
+      // text-align: top;
+      // color: white;
+      // line-height: 50px;
+      // box-shadow: 6px 9px 27px -2px rgba(5, 5, 5, 1)
+    }
+`
+
+///////////////FILTERS////////////////
+
+export const Search = styled.input`
+width: 100%;
+height: 30px;
+border-radius: 5px;
+background-color: white;
+border-color: black;
+margin-relative: 20px;
+`
+export const Locat = styled.input`
+width: 80%;
+height: 30px;
+border-radius: 5px;
+background-color: white;
+border-color: black;
+margin-relative: 20px;
+`
+
+export const MaxMin = styled.input`
+width: 35%;
+height: 30px;
+border-radius: 5px;
+background-color: white;
+border-color: black;
+margin-relative: 20px;
+`
 
 
+export const Butt = styled.button`
+border-radius: 10px;
+background-color: grey;
+width: 30%;
+height: 40px;
+margin-top: 6px;
+
+&:hover {
+    background-color: #673c77
+}
+`
+
+export const ButtX = styled.button`
+border-radius: 10px;
+background-color: grey;
+width: 15%;
+height: 40px;
+margin-top: 6px;
+
+&:hover {
+    background-color: #673c77
+}
+`
+
+export const Sort = styled.select`
+border-radius: 10px;
+background-color: grey;
+width: 100%;
+height: 40px;
+
+&:hover {
+  background-color: #673c77
+}
+`
+
+///////////////DETAIL////////////////
+
+export const DetailImg = styled.img`
+border-radius: 10px;
+float: left;
+margin: 80px;
+margin-top: 50px;
+box-shadow: 11px 13px 37px 3px rgba(5, 5, 5, 1)
+`
+
+export const Suma = styled.button`
+border-radius: 10px;
+background-color: grey;
+width: 4%;
+height: 40px;
+margin-top: 6px;
+
+&:hover {
+    background-color: #673c77
+}
+`
+
+export const BuyDetail = styled.button`
+border-radius: 10px;
+background-color: grey;
+width: 11%;
+height: 40px;
+margin-top: 6px;
+
+&:hover {
+    background-color: #673c77
+}
+`
+
+export const DetailInfo = styled.div`
+margin: 40px;
+border: 3px solid #ab4a8c;
+margin-right: 200px;
+margin-left: 465px;
+margin-bottom: 50px;
+background-color: rgba(0, 0, 0, 0.521);
+
+p{
+  font-size: 18px;
+  font-family: Arial;
+}
+`
+
+export const ModalInfo = styled.text`
+text-align: center;
+color: black;
+p{
+  font-size: 18px;
+  font-family: Arial;
+}
+`
+
+///////////////CREATE EVENTS////////////////
+
+export const CreateEvents = styled.div`
+margin: 40px;
+border: 3px solid #ab4a8c;
+margin-right: 100px;
+margin-left: 100px;
+margin-bottom: 50px;
+background-color: rgba(0, 0, 0, 0.521);
 
 
+p{
+  font-size: 18px;
+  font-family: Arial;
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
+}
+`
 
-
+export const Input = styled.input`
+width: 25%;
+height: 30px;
+border-radius: 5px;
+background-color: white;
+border-color: black;
+`
