@@ -4,18 +4,24 @@ import { H5, FormReview, H1 } from '../Styles/Styles'
 import {useForm, } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
 import { createReview } from '../../Redux/actions'
-
+import {useSelector} from 'react-redux'
 
 export default function Review({event, updateComponent}) {
     const dispatch = useDispatch();
     const {register, setValue, handleSubmit, reset} = useForm();
+    
+    const user = useSelector(state => state.user)
+
+    const userId = Object.keys(user).length > 0 ? user.user.id : null
+
 
     const [stars, setStars] = useState(0);
     
     useEffect(() => {
+        setValue('userId', userId)
         setValue('stars', stars)
         setValue('eventName', event)
-    }, [stars, event, setValue])
+    }, [stars, event, setValue, userId])
     
     
     //Catch Rating Value

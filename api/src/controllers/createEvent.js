@@ -1,10 +1,10 @@
-const {Event} = require("../db");
+const {Event, User} = require("../db");
 
 const createEvent = async(req) =>{
 
-    const {name, date, image, location, price, description, reviews} = req;
+    const {name, date, image, location, price, description, typeEvent, userId} = req;
 
-    await Event.create({
+    const event = await Event.create({
 
         name,
         date,
@@ -12,8 +12,14 @@ const createEvent = async(req) =>{
         location,
         price,
         description,
-        reviews
+        typeEvent
     })
+
+    const user = await User.findOne({
+        where : {id : userId}
+    })
+
+    await user.addEvent(event)
 };
 
 module.exports = createEvent;
