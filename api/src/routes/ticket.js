@@ -17,6 +17,12 @@ route.get("/notification/:infoPago", async(req,res)=>{
         
         const {infoPago} = req.params;
 
+
+        if(!infoPago){
+
+            return res.status(400).send("No User Id")
+        };
+
         console.log("id0", infoPago);
         
         const user = await User.findByPk(infoPago);
@@ -152,6 +158,10 @@ route.get("/:userId", async(req,res)=>{
         
         const {userId} = req.params;
 
+        if(!infoPago){
+
+            return res.status(400).send("No User Id")
+        };
 
         const ticket = await getTickets(Number(userId));
 
