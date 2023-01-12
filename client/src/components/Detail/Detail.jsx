@@ -16,6 +16,9 @@ import {FcPlus} from 'react-icons/fc'
 export default function Detail() {
   const eventShowed = useSelector(state => state.events);
   const url = useSelector( s => s.payCryptoURL);
+  const userId = useSelector(s => s.user);
+  console.log("userid detaill", userId)
+  
   const history = useHistory()
   const dispatch = useDispatch()
   const { id } = useParams()
@@ -64,10 +67,10 @@ export default function Detail() {
       description: arr.join(" "),
       typeTicket: e.tipoDeTicket,
       price: e.precio,
-      cantidad: cantidad
+      cantidad: cantidad,
       // img: eventShowed[0].image,
       // user:
-      // id_user:
+      id_user: userId.user.id
     };
 
     setInfo({
