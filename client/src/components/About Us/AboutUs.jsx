@@ -40,28 +40,28 @@ export default function aboutUs() {
             <About>Members</About>
             <Names>
             <p>Maximiliano Meder <Icon>
-              <a href='https://github.com/MaxMdr2022'><GitHubIcon /></a>
+              <a href='https://github.com/MaxMdr2022' target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
               </Icon>
               <Icon>
                 <a href='/aboutUs'><LinkedInIcon/></a>
                 </Icon> </p>
             <p>Marcos Vila <Icon>
-            <a href='https://github.com/Markanight'><GitHubIcon/></a>
+            <a href='https://github.com/Markanight' target="_blank" rel="noopener noreferrer"><GitHubIcon/></a>
               </Icon>
               <Icon>
               <a href='/aboutUs'><LinkedInIcon/></a>
                 </Icon> </p>
             <p>Nicolas Morales <Icon>
-            <a href='https://github.com/Machit0x'><GitHubIcon/></a>
+            <a href='https://github.com/Machit0x' target="_blank" rel="noopener noreferrer"><GitHubIcon/></a>
               </Icon>
               <Icon>
               <a href='/aboutUs'><LinkedInIcon/></a>
                 </Icon> </p>
             <p>Celeste Mateo <Icon>
-            <a href='https://github.com/CelesteMateo'><GitHubIcon/></a>
+            <a href='https://github.com/CelesteMateo' target="_blank" rel="noopener noreferrer"><GitHubIcon/></a>
               </Icon>
               <Icon>
-              <a href='https://www.linkedin.com/in/celeste-mateo-266902252/'><LinkedInIcon/></a>
+              <a href='https://www.linkedin.com/in/celeste-mateo-266902252/' target="_blank" rel="noopener noreferrer"><LinkedInIcon/></a>
                 </Icon> </p>
             </Names>
           </div>
