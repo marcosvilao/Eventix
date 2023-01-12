@@ -1,4 +1,4 @@
-import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER, GET_NAME_EVENT, GET_EVENT_ID, CREATE_EVENT, GET_ALL_EVENT_LIST,PAY_CRYPTO, PAYMENT_HANDLER, GET_USERS, CREATE_USER } from "../actions";
+import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER, GET_NAME_EVENT, GET_EVENT_ID, CREATE_EVENT, GET_ALL_EVENT_LIST,PAY_CRYPTO, PAYMENT_HANDLER, GET_USERS, CREATE_USER, GET_USER_EVENTS, GET_USER_REVIEWS } from "../actions";
 
 
 const initialState = {
@@ -11,7 +11,9 @@ const initialState = {
     payCryptoURL: "",
     dataPago: [],
     user : {},
-    users: []
+    users: [],
+    userEvents: [],
+    userReviews: []
 };
 
 
@@ -24,6 +26,18 @@ function rootReducer (state = initialState, action) {
                 ...state,
                 users : action.payload
             }
+
+        case GET_USER_EVENTS:
+            return {
+                ...state,
+                userEvents : action.payload
+            }
+
+            case GET_USER_REVIEWS:
+                return {
+                    ...state,
+                    userReviews : action.payload
+                }
 
         case GET_ALL_EVENTS:
             // const events = state.events  

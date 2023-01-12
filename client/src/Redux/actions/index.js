@@ -28,13 +28,17 @@ export const GET_REVIEW = "GET_REVIEW";
 export const GET_USERS = "GET_USERS";
 
 export const CREATE_USER= "CREATE_USER"
+
+export const GET_USER_EVENTS = "GET_USER_EVENTS"
+
+export const GET_USER_REVIEWS = "GET_USER_REVIEWS"
 //-------------------------------------------------
  const URL = "http://localhost:3001";
 //-------------------------------------------------
 
 export function getUsers() {
   return (dispatch) => {
-    axios.get(`${URL}/users`)
+    axios.get(`/users`)
       .then(response => {
         dispatch({
           type: GET_USERS,
@@ -49,7 +53,7 @@ export function getUsers() {
 
 export function createUser(loginWithAuth0) {
   return (dispatch) => {
-    axios.post(`${URL}/users`, loginWithAuth0)
+    axios.post(`users`, loginWithAuth0)
       .then(response => {
         dispatch({
           type: CREATE_USER,
@@ -68,7 +72,7 @@ export const getAllEvents = (page) => {
 
     try {
 
-      const event = await axios.get(`/events/page/${page}`);
+      const event = await axios.get(`events/page/${page}`);
 
       dispatch({
 
@@ -92,7 +96,7 @@ export const getAllEventList = () => {
 
     try {
 
-      const event = await axios.get(`${URL}/events/allevents`);
+      const event = await axios.get(`events/allevents`);
 
       dispatch({
 
@@ -117,7 +121,7 @@ export const getNameEvent = (name) => {
 
     try {
 
-      const event = await axios.get(`/events/page/:page?name=${name}`);
+      const event = await axios.get(`events/page/:page?name=${name}`);
 
       dispatch({
 
@@ -142,7 +146,7 @@ export const orderByName = (order) => {
 
     try {
 
-      const eventOrder = await axios.get(`/order`, order);
+      const eventOrder = await axios.get(`order`, order);
 
       dispatch({
 
@@ -166,7 +170,7 @@ export const filter = (info) => {
 
     // console.log("infoo",info);
     try {
-      const eventDate = await axios.post(`/filters`, info);
+      const eventDate = await axios.post(`filters`, info);
       dispatch({
 
         type: FILTER,
@@ -189,7 +193,7 @@ export const searchEventById = (id) => {
   return async function (dispatch){
     try {
     
-      const eventDetailed = await axios.get(`/events/${id}`)
+      const eventDetailed = await axios.get(`events/${id}`)
       // console.log(eventDetailed.data)
       dispatch({
         type: GET_EVENT_ID,
@@ -210,11 +214,53 @@ export const getAllUsers = () => {
   return async function (dispatch){
     try {
     
-      const user = await axios.get(URL + `/users`)
+      const user = await axios.get(`users`)
        console.log(user.data)
       dispatch({
         type: GET_USERS,
         payload: user.data
+      })
+
+    } catch (error) {
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  }
+}
+
+export const getUserEvents = (id) => {
+  return async function (dispatch){
+    try {
+    
+      const events = await axios.get(`users/${id}/events`)
+
+      dispatch({
+        type: GET_USER_EVENTS,
+        payload: events.data
+      })
+
+    } catch (error) {
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  }
+}
+
+export const getUserReviews = (id) => {
+  return async function (dispatch){
+    try {
+    
+      const reviews = await axios.get(`review/${id}/reviews`)
+
+      dispatch({
+        type: GET_USER_REVIEWS,
+        payload: reviews.data
       })
 
     } catch (error) {
@@ -233,7 +279,7 @@ export const createEvent = (data) => {
 
     try {
       
-      const event = await axios.post(`/events`, data);
+      const event = await axios.post(`events`, data);
 
       dispatch({
 
@@ -258,7 +304,7 @@ export const createReview = (data) => {
 
     try {
       
-      const event = await axios.post(`/review`, data);
+      const event = await axios.post(`review`, data);
 
       dispatch({
 
@@ -284,7 +330,7 @@ export const payCrypto = (data) =>{
     try {
        console.log("action", data);
       
-      const url = await axios.post(`/paycrypto/create-charge`,data );
+      const url = await axios.post(`paycrypto/create-charge`,data );
 
       dispatch({
         type: PAY_CRYPTO,
@@ -349,3 +395,5 @@ export const notificationPayment = (infoPago) => {
     }
   }
 };
+
+

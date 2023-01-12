@@ -8,7 +8,7 @@ import {CiLogin} from 'react-icons/ci';
 //import Modal from "react-modal";
 
 
-export const LoginButton = () => {
+export const LoginButton = ({islog}) => {
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
   // const history = useHistory();
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -30,6 +30,7 @@ export const LoginButton = () => {
 
   function accountHandler() {
     isAuthenticated ? openModal() : loginWithRedirect();
+    
   }
 
   function openModal() {
@@ -47,8 +48,8 @@ export const LoginButton = () => {
             <CiLogin style={{ fontSize: 45, color: "white" }} color="primary"/>
           </IconButton>) : (
         <div>
-          <IconButton onClick={() => accountHandler()}>
-              <Avatar alt="p" src={user?.picture} size="lg" />
+          <IconButton onClick={() => accountHandler()}>{islog()}
+              <Avatar alt="p" src={user?.picture} size="lg"/>
           </IconButton>
           <IconButton  onClick={() => logout()}>
             <CiLogin style={{ fontSize: 45, color: "white" }} />
