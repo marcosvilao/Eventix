@@ -17,7 +17,7 @@ const route = Router();
 
 route.post("/create-charge", async(req,res)=>{   // ruta de pago http://localhost:3001/paycrypto/create-charge
 
-    const {total,name,description, typeTicket, price, cantidad} = await req.body;
+    const {total,name,description, typeTicket, price, cantidad, id_user} = await req.body;
     
     
     // creo el ticket y lo guardo en la BD ---------------------------
@@ -34,7 +34,7 @@ route.post("/create-charge", async(req,res)=>{   // ruta de pago http://localhos
             event: name,
             price: price,
             typeTicket: typeTicket,
-            usersId: 01,
+            // usersId: 01,
             paymentMade:false,
             pendingPayment:false,
             invoiceTicketId: uuid
@@ -56,8 +56,8 @@ route.post("/create-charge", async(req,res)=>{   // ruta de pago http://localhos
         },
         pricing_type: 'fixed_price',
         metadata: {                        // info del comprador. para guardar en la base de datos.
-            customer_id: "idusuaro",
-            customer_name: "Maxi Meder",
+            customer_id: id_user,
+            // customer_name: "Maxi Meder",
             customer_id_ticket: ticketId  //guardo el id de cada ticket
         },
         redirect_url: `${DOMAIN}/perfil`, // ${DOMAIN}/perfilusuario/pago   cuando el pago se finaliza le sale un boton para continuar. Esa url es donde lo va a redirigir el boton. NOTA: tiene que ser un dominio https. Si no coinbase no redirecciona. 
@@ -118,20 +118,32 @@ route.post("/payment-handler", async(req,res)=>{   /// trae los estados del pago
             
             console.log("pago realizado");  
 
+            // const tickets = await Ticket.findAll();
 
-            // for(let i=0; i<event.customer_id_ticket.length; i++){
+            // const ticketsIds = tickets.filter(e => e.);
 
-            //     await Ticket.update({paymentMade: true},{ where: {[Op.and]: [{usersId: 01},{id:event.customer_id_ticket[i]}]}});
-            // };
+            // const usersIds = tickets.map(e => e.id)
+
+
+            for(let i=0; i<event.customer_id_ticket.length; i++){
+
+                await Ticket.update({paymentMade: true},{ where: {[Op.and]: [{userId :event.customer_id },{id:event.customer_id_ticket[i]}]}});
+            };
         
             //PARA HACER LA PRUEBA BUSCAR POR EL ID DEL USER Y MODIFICAR EN TRUE 
 
-            await Ticket.update({paymentMade: true},{ where: {usersId: 01}})  // <----Prueba 
+            // await Ticket.update({paymentMade: true},{ where: {usersId: 01}})  // <----Prueba 
         };
 
         if(event.type === "charge:pending"){
 
-            await Ticket.update({pendingPayment: true},{ where: {usersId: 01}}) // <---------prueba
+
+            for(let i=0; i<event.customer_id_ticket.length; i++){
+
+                await Ticket.update({pendingPayment: true},{ where: {[Op.and]: [{userId :event.customer_id },{id:event.customer_id_ticket[i]}]}});
+            };
+
+            // await Ticket.update({pendingPayment: true},{ where: {usersId: 01}}) // <---------prueba
 
             console.log("pago pendiente");
 
@@ -142,14 +154,15 @@ route.post("/payment-handler", async(req,res)=>{   /// trae los estados del pago
             console.log("pago fallido");
      
 
-            // for(let i=0; i<event.customer_id_ticket.length; i++){
+            for(let i=0; i<event.customer_id_ticket.length; i++){
 
-            //     await Ticket.destroy ({ where: {[Op.and]: [{usersId: 01},{id:event.customer_id_ticket[i]}]}})
-            // }
+                await Ticket.destroy ({ where: {[Op.and]: [{userId :event.customer_id },{id:event.customer_id_ticket[i]}]}})
+            }
+
             //    userId: event.metadata.customer_id
 
 
-            await Ticket.destroy ({ where: {usersId: 01}}) // <-------------- prueba
+            // await Ticket.destroy ({ where: {usersId: 01}}) // <-------------- prueba
         };
 
         res.status(200).send("ok");
