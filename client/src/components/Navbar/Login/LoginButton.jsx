@@ -64,6 +64,7 @@ export const LoginButton = () => {
         <img src={user?.picture} alt=''/>
         <h3>{user?.name}</h3>
         <p>{user?.email}</p>
+        <a href="/perfil">Purchase history</a>
         </div>
       </Modal>
     </div>

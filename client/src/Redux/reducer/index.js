@@ -1,4 +1,4 @@
-import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER, GET_NAME_EVENT, GET_EVENT_ID, CREATE_EVENT, GET_ALL_EVENT_LIST,PAY_CRYPTO, PAYMENT_HANDLER, GET_USER } from "../actions";
+import { GET_ALL_EVENTS, ERROR, ORDER_BY_NAME, FILTER, GET_NAME_EVENT, GET_EVENT_ID, CREATE_EVENT, GET_ALL_EVENT_LIST,PAY_CRYPTO, PAYMENT_HANDLER, GET_USERS, CREATE_USER } from "../actions";
 
 
 const initialState = {
@@ -10,7 +10,8 @@ const initialState = {
     filtrado:[],
     payCryptoURL: "",
     dataPago: [],
-    user : []
+    user : {},
+    users: []
 };
 
 
@@ -18,10 +19,10 @@ function rootReducer (state = initialState, action) {
 
     switch (action.type) {
 
-        case GET_USER:
+        case GET_USERS:
             return {
                 ...state,
-                user : action.payload
+                users : action.payload
             }
 
         case GET_ALL_EVENTS:
@@ -85,7 +86,12 @@ function rootReducer (state = initialState, action) {
             return{
                 ...state,
                 dataPago: action.payload
-            }                 
+            }
+        case CREATE_USER:  
+            return{
+                ...state,
+                user: action.payload
+            }               
         default:
             
             return {
