@@ -16,7 +16,7 @@ const  getApi = async()=>{
         "price": [
           {
             "tipoDeTicket": "Preventa 4",
-            "precio": "$4.000.-"
+            "precio": "$0.0002.-"
           },
           {
             "tipoDeTicket": "Preventa 4 - Pack x10 (40% OFF)",
