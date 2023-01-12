@@ -27,7 +27,7 @@ function App() {
       }
     };
     createUserFromDispatch();
-  }, [user, isAuthenticated, dispatch]);
+  }, [user, dispatch]);
   return (
     <div>
       <Switch>
