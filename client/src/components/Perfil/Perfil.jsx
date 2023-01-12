@@ -10,13 +10,16 @@ export default function Perfil () {
     const [Render, setRender] = useState(null)
 
     const dispatch = useDispatch();
-    const userId = 1
+    // const userId = 1
     const ticket = useSelector(s => s.dataPago);
 
+    const userId = useSelector(s=> s.user);
+
+    console.log("user", userId);
 
     useEffect(()=> {
-        dispatch(paymentHandler(userId));
-        dispatch(notificationPayment(userId))
+        dispatch(paymentHandler(userId.user.id));
+        dispatch(notificationPayment(userId.user.id))
 
     },[dispatch]);
 

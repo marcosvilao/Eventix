@@ -5,12 +5,12 @@ const getTickets = async(userId) =>{
 
     const ticket = await Ticket.findAll({
 
-        where:{usersId: userId}
+        where:{userId : userId}
     });
 
     if(!ticket.length > 0){
 
-        // console.log("ticketget::", ticket);
+        console.log("ticketget::", ticket);
         return "No tickets"
     };
 

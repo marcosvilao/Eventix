@@ -1,7 +1,7 @@
 const {Router} = require("express");
 const getTickets= require("../controllers/getTickets");
 const qrCode = require("qrcode");
-const {Ticket} = require("../db");
+const {Ticket, User} = require("../db");
 const nodemailer = require("nodemailer");
 require('dotenv').config();
 const {PASS_GMAIL, GMAIL, EMAIL_PRUEBA} = process.env;
@@ -17,8 +17,16 @@ route.get("/notification/:infoPago", async(req,res)=>{
         
         const {infoPago} = req.params;
 
-        // console.log("id0", infoPago);
+
+        if(!infoPago){
+
+            return res.status(400).send("No User Id")
+        };
+
+        console.log("id0", infoPago);
         
+        const user = await User.findByPk(infoPago);
+
         const ticket = await getTickets(Number(infoPago));
 
 
@@ -84,7 +92,7 @@ route.get("/notification/:infoPago", async(req,res)=>{
                                     const mailOption = {
 
                                         from: 'Eventix', // sender address
-                                        to: `${EMAIL_PRUEBA}`, // list of receivers
+                                        to: `${user.email}`, // list of receivers
                                         subject: "Eventix tickets", // Subject line
                                         html: `<div><p>Thanks for your purchase. Enjoy the event :D</p>${mostrarInfo}<p>Eventix</p></div>`
                                         
@@ -150,6 +158,10 @@ route.get("/:userId", async(req,res)=>{
         
         const {userId} = req.params;
 
+        if(!infoPago){
+
+            return res.status(400).send("No User Id")
+        };
 
         const ticket = await getTickets(Number(userId));
 
