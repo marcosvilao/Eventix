@@ -51,6 +51,15 @@ export const Searchbar = styled.input`
     padding: 10px 20px;
 `
 
+export const H3 = styled.h3`
+color: white;
+padding: 30px;
+
+&:hover {
+  color:  #673c77;
+}
+`
+
 ///////////////GRID////////////////
 
 export const NotFound = styled.p`
@@ -246,6 +255,103 @@ background-color : rgb(22, 21, 21);
 width : 18vw;
 height : 30vh;
 text-align : center
+
+`
+
+///////////////ABOUTUS////////////////
+
+export const Techno = styled.div`
+    position: relative;
+    display: inline-block;
+    height: 480px;
+    width: 25vw;
+    align-items: center;
+  
+  p {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+  
+
+  img {
+    width: 85%;
+    height: 220px;
+    
+  }
+`
+export const Btn = styled.button`
+border-radius: 5px;
+background-color: grey;
+width: 10%;
+height: 40px;
+margin: 20px;
+
+&:hover {
+    background-color: #673c77
+}
+`
+export const About = styled.h1`
+text-align: center;
+top: 10px;
+margin-bottom: 50px;
+font-color: white;
+// float: left;
+// margin-left: 20px;
+`
+export const Descr = styled.div`
+font-size: 23px;
+color: white;
+margin-top: 40px;
+margin-bottom: 60px;
+margin-left: 300px;
+margin-right: 300px;
+text-align: center;
+font-family: arial;
+`
+export const Members = styled.div`
+height: 115vh;
+padding: 1px;
+margin-top: -60px;
+background: linear-gradient(180deg, rgba(0, 0, 0) 0%, rgba(156, 150, 150) 100%) 
+`
+export const Names = styled.div`
+margin: 50px;
+// margin-top: 25px;
+// margin-left: 100px;
+// margin-right: 1px;
+padding: 1px;
+
+ p {
+      
+      margin: 20px;
+      padding: 35px;
+      // margin-bottom: 10px;
+      // margin-top: 10px;
+      margin-left: 200px;
+      margin-right: 200px;
+      border: 3px solid #ab4a8c;
+      font-size: 20px;
+      // display: flex;
+      // justify-content: center;
+      text-align: center;
+      // color: white;
+      // line-height: 50px;
+      // box-shadow: 6px 9px 27px -2px rgba(5, 5, 5, 1)
+    }
+
+`
+
+export const Icon = styled.svg`
+display: inline;
+// place-content: center;
+height: 40px;
+// padding: 1px;
+
+
+&:hover{
+  color: black;
+}
 
 `
 
