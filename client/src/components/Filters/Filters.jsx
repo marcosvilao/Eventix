@@ -339,11 +339,11 @@ export default function Filters(check) {    //npm i react-datepicker
           </select>
         </div>
 
-        <div>
+        {/*<div>
         <input  type={"text"} name={"location"} placeholder={`Location...`} value={stateLocation} onChange={(e)=>handleChangeLocation(e)} />
         <button onClick={handleSubmitLocation}>Filtrar</button>
         <button onClick={deleteFilterLocation}>x</button>
-        </div>
+        </div>*/}
 
         {/*<div>
         <input  type={"text"} name={"min"} placeholder={`min`} value={statePrice.min} onChange={(e)=>handleChangePrice(e)} />
