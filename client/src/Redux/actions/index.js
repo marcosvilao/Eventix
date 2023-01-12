@@ -92,7 +92,7 @@ export const getAllEventList = () => {
 
     try {
 
-      const event = await axios.get(`/events/allevents`);
+      const event = await axios.get(`${URL}/events/allevents`);
 
       dispatch({
 
