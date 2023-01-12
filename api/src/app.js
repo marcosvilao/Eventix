@@ -10,6 +10,13 @@ require('./db.js');
 
 const server = express();
 
+server.use(express.json({      // traducir de binario a json el estado de la transaccion que manda coinbase
+  verify: (req, res, buf) => {
+    req.rawBody = buf;
+    // console.log("middleware");
+  }
+}))
+
 server.name = 'API';
 
 server.use(cors());
