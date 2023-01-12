@@ -12,6 +12,7 @@ require('./db.js');
 
 const server = express();
 
+<<<<<<< HEAD
 
 
 server.use(
@@ -23,6 +24,14 @@ server.use(
   secret: process.env.SECRET,
   })
   );
+=======
+server.use(express.json({      // traducir de binario a json el estado de la transaccion que manda coinbase
+  verify: (req, res, buf) => {
+    req.rawBody = buf;
+    // console.log("middleware");
+  }
+}))
+>>>>>>> b2ec2539be86c614dc90075496edb8b3431bceb4
 
 server.name = 'API';
 

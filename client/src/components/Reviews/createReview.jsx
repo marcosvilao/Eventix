@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { Rating } from 'react-simple-star-rating'
-import { H5 } from '../Styles/Styles'
+import { H5, FormReview, H1 } from '../Styles/Styles'
 import {useForm, } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
 import { createReview } from '../../Redux/actions'
@@ -39,22 +39,23 @@ export default function Review({event, updateComponent}) {
     }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <FormReview onSubmit={handleSubmit(onSubmit)}>
+        <H1>Leave us you review</H1>
         <div>
-           <H5>Title</H5>
+           <h3>Title</h3>
            <input type="text" {...register('title')}/> 
         </div>
         <div>
             <Rating initialValue={stars} onClick={handleRating} allowFraction={true} transition={true}/>
         </div>
         <div>
-            <H5>description</H5>
+            <h3>description</h3>
             <input type="text" {...register('text')}/>
         </div>
         <div>
             <button>Rate</button>
             <button onClick={handleReset}>Reset</button>
         </div> 
-    </form>
+    </FormReview>
   )
 }
