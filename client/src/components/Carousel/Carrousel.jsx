@@ -14,7 +14,7 @@ export default function Carrousel() {
   }, [dispatch]);
   
   const Human = Events.length ? Events.findIndex(event => event.name === "Sábado 28.01 - Maria Becerra") : null;
-  const Burda = Events.length ? Events.findIndex(event => event.name === "20.01 YSY (ATP)") : null;
+  //const Burda = Events.length ? Events.findIndex(event => event.name === "20.01 YSY (ATP)") : "null";
   const newYear = Events.length ? Events.findIndex(event => event.name === "Bresh Enero en Niceto Club (+18)") : null;
   const newYear2 = Events.length ? Events.findIndex(event => event.name === "BRUJA SALGUERO-BRUNO ARIAS Y FACUNDO RAMIREZ.") : null;
   const newYear3 = Events.length ? Events.findIndex(event => event.name === "Club 69 Super Sábado Enero en Niceto Club (+18)") : null;
@@ -28,15 +28,6 @@ export default function Carrousel() {
     <div className="carousel">
       <H1>Main Events</H1>
       <Carousel showThumbs={false} infiniteLoop={true} interval={2500} autoPlay={true}>
-          <Link to={'/home/' + (Events.length ? Events[Burda].id : null)}>
-        <div>
-          <img className="carouselimg"
-            src={Events.length ? Events[Burda].imageBanner : null}
-            alt={Events.length ? Events[Burda].name : null}
-          />
-          {/*<p className="legend">{Events.length ? Events[0].name : null}</p>*/}
-        </div>
-          </Link>
           <Link to={'/home/' + (Events.length ? Events[Human].id : null)}>
         <div>
           <img className="carouselimg"

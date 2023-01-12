@@ -1,4 +1,5 @@
 const { User } = require("../db");
+const fs = require("fs");
 // const { isAdmin } = require('../middleware');
 
 const getUser = async (req, res, next) => {
@@ -128,12 +129,38 @@ const adminBanUser = async (req, res, next) => {
   }
 };
 
+const bulkCreateUsers = async () => {
+  try {
+    let data = fs.readFileSync(__dirname + "/../json/users.json", "utf8");
+    data = JSON.parse(data);
 
+    for (let i = 0; i < data.length; i++) {
+      let arrayName = data[i].name.split(" ");
+      const firstName = arrayName.shift();
+      const lastName = arrayName.join(" ");
+
+      const [admins, boolean] = await User.findOrCreate({
+        where: { email: data[i].email },
+        defaults: {
+          nick: data[i].nickname,
+          first_name: firstName,
+          last_name: lastName,
+          email: data[i].email,
+          image: data[i].picture,
+          isAdmin: data[i].isAdmin
+        },
+      });
+      // console.log(admins)
+    }
+  } catch (error) {
+    console.log({ errorMsg: error.message });
+  }
+};
 
 module.exports = {
   getUser,
   logintUser,
   updateUser,
   adminBanUser,
-  
+  bulkCreateUsers
 };
