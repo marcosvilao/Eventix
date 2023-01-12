@@ -52,7 +52,7 @@ const filterByDate = async(day, month, year, state) =>{
     });
     
     if(day && month && year){
-        const eventsFilterDate = events2.filter( e => e.date[1] === day.toString() && e.date[2] === month.toString() && e.date[3] === year.toString());
+        const eventsFilterDate = events2.filter( e => e.date[1] === day.toString() && e.date[3] === month.toString() && e.date[4] === year.toString());
         if(eventsFilterDate.length > 0){
 
             const eventsDate = eventsFilterDate.map(e => {
