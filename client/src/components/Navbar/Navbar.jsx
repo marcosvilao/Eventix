@@ -1,8 +1,8 @@
 import React from "react";
 import { LoginButton } from "./Login/LoginButton";
-import {NavBar, Menu, Leftbar, Rightbar, MenuFilter, H1,} from '../Styles/Styles'
+import {NavBar, Menu, Leftbar, Rightbar, H1,} from '../Styles/Styles'
 import "./navbar.css";
-import Filters from "../Filters/Filters";
+// import Filters from "../Filters/Filters";
 
 export default function Navbar() {
 
@@ -21,8 +21,10 @@ export default function Navbar() {
             {/* <aboutUs/> */}
           </a>
           <a href="/createevents">Create Events</a>
+          <a href="/perfil">Profile</a>
         </Leftbar>
         <Rightbar>
+          
           <LoginButton />
         </Rightbar>
       </NavBar>

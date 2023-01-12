@@ -24,11 +24,43 @@ export const PAYMENT_HANDLER = "PAYMENT_HANDLER";
 export const CREATE_REVIEW = "CREATE_REVIEW";
 
 export const GET_REVIEW = "GET_REVIEW";
+
+export const GET_USERS = "GET_USERS";
+
+export const CREATE_USER= "CREATE_USER"
 //-------------------------------------------------
-// const URL = "http://localhost:3001";
+ const URL = "http://localhost:3001";
 //-------------------------------------------------
 
+export function getUsers() {
+  return (dispatch) => {
+    axios.get(`${URL}/users`)
+      .then(response => {
+        dispatch({
+          type: GET_USERS,
+          payload: response.data
+        })
+      })
+      .catch(error => {
+        console.log(error)
+      });
+  }
+};
 
+export function createUser(loginWithAuth0) {
+  return (dispatch) => {
+    axios.post(`${URL}/users`, loginWithAuth0)
+      .then(response => {
+        dispatch({
+          type: CREATE_USER,
+          payload: response.data
+        })
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+};
 
 export const getAllEvents = (page) => {
 
@@ -174,6 +206,27 @@ export const searchEventById = (id) => {
   }
 }
 
+export const getAllUsers = () => {
+  return async function (dispatch){
+    try {
+    
+      const user = await axios.get(URL + `/users`)
+       console.log(user.data)
+      dispatch({
+        type: GET_USERS,
+        payload: user.data
+      })
+
+    } catch (error) {
+      dispatch({
+
+        type: ERROR,
+        payload: error.message
+      })
+    }
+  }
+}
+
 export const createEvent = (data) => {
 
   return async function(dispatch){
@@ -229,7 +282,7 @@ export const payCrypto = (data) =>{
   return async function (dispatch){
 
     try {
-      // console.log("action", data);
+       console.log("action", data);
       
       const url = await axios.post(`/paycrypto/create-charge`,data );
 
@@ -281,7 +334,8 @@ export const notificationPayment = (infoPago) => {
     try {
       // console.log("info action:", infoPago);
       
-      const info = await axios.get(`ticket/notification/`+ infoPago);
+      // const info = 
+      await axios.get(`ticket/notification/`+ infoPago);
 
       // console.log("action info.data:", info.data);
       

@@ -177,6 +177,78 @@ export const CardE = styled.div`
   }
 `
 
+//////////////Profile/////////////////
+
+export const PersonalContainer = styled.section`
+  display : flex;
+  width : 100vw;
+  justify-content : space-around;
+
+  nav {
+    background-color : gray;
+    opacity : 0.6;
+    border-radius : 20px;
+    display: flex;
+    justify-content : space-around;
+    flex-direction : column;
+    width : 15vw;
+    height : 20vh;
+    align-items : center;
+  }
+
+  button {
+    background-color : black;
+    color : white;
+    font-family: 'Poppins', sans-serif;
+    width : 10vw;
+    height : 4vh;
+    border-radius : 10px;
+    border : none
+  }
+
+  section {
+    background-color : gray;
+    opacity : 0.6;
+    border-radius : 20px;
+    width : 75vw;
+    height : 70vh;
+    justify-content: space-around;
+  }
+`
+
+/////////////DETAIL//////////////
+
+export const DetailContainer = styled.div`
+width : 90vw;
+background-color : rgb(22, 21, 21);
+margin: 0 auto;
+position: relative;
+
+`
+
+export const DetailEvent = styled.div`
+margin-top: 3vh;
+display : flex;
+// width : 95vw;
+justify-content : space-around;
+`
+
+export const BuyEvent = styled.div`
+display : flex;
+// width : 90vw;
+justify-content : space-around;
+`
+
+/////////////Reviews///////////////
+
+export const FormReview = styled.form`
+background-color : rgb(22, 21, 21);
+width : 18vw;
+height : 30vh;
+text-align : center
+
+`
+
 
 
 

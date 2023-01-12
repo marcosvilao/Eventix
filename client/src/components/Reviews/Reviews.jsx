@@ -1,8 +1,8 @@
 import React from 'react'
-import { H5 } from '../Styles/Styles';
+import { H1, H5 } from '../Styles/Styles';
 import { Rating } from 'react-simple-star-rating';
 // import {Carousel} from 'react-responsive-carousel'
-import Carousel from 'react-elastic-carousel'
+import {Carousel} from 'react-responsive-carousel'
 import Loading from '../Loading/Loading';
 
 
@@ -10,15 +10,15 @@ export default function Reviews({reviews}) {
   if(reviews !== null) {
     return (
     <div>
-        <h3>Reviews</h3>
+        <H1>Reviews</H1>
         
           {
            reviews.length > 0 ?
-          <Carousel showEmptySlots={true} itemsToShow={4} dots={false}> 
+          <Carousel> 
           {reviews.map((review) => {
             return (
                 <div key={review.id}>
-                    <H5>{review.title}</H5>
+                    <h3>{review.title}</h3>
                     <Rating readonly={true} initialValue={review.stars} />
                     <p>{review.text}</p>
                 </div>

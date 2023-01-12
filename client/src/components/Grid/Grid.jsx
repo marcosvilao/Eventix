@@ -1,22 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./grid.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getAllEventList, getAllEvents } from "../../Redux/actions";
+import { getAllEventList } from "../../Redux/actions";
 import Card from "../Card/Card";
-import InfiniteScroll from "react-infinite-scroll-component";
-import styled, { keyframes } from "styled-components";
+// import styled, { keyframes } from "styled-components";
 import Loading from "../Loading/Loading";
 import { Carousel } from "react-responsive-carousel";
-import { Cube, NotFound, H1 } from "../Styles/Styles";
-import Filters from "../Filters/Filters";
+import { Cube, NotFound } from "../Styles/Styles";
+// import Filters from "../Filters/Filters";
 
 
 
 export default function Grid() {
   const dispatch = useDispatch();
-  const [page, setPage] = useState(1);
-  const [hasMore, setHasMore] = useState(true);
+  // const [page, setPage] = useState(1);
+  // const [hasMore, setHasMore] = useState(true);
   const Events = useSelector((state) => state.events);
   const err = useSelector(s=> s.error);
   const filtered = useSelector(s => s.filtrado);
@@ -229,18 +228,5 @@ export default function Grid() {
 
 
 
-  // return (
-  //   Events.length ? (
-  //   <InfiniteScroll dataLength={Events.length} hasMore={hasMore} next={next}>
-  //     <ul className="eventsGrid">
-  //       { 
-  //         Events.map((event,i) => {
-  //           return <Card event={event} key={i} />;
-  //         })
-  //       }
-  //     </ul>
-  //   </InfiniteScroll>
-  // ): <Loading/>
-  
-  // )
+
 }
