@@ -1,8 +1,10 @@
+require('dotenv').config();
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const routes = require('./routes/index.js');
+const { auth } = require('express-openid-connect');
 
 const cors = require("cors");
 
@@ -10,12 +12,17 @@ require('./db.js');
 
 const server = express();
 
-server.use(express.json({      // traducir de binario a json el estado de la transaccion que manda coinbase
-  verify: (req, res, buf) => {
-    req.rawBody = buf;
-    // console.log("middleware");
-  }
-}))
+
+
+server.use(
+  auth({
+  authRequired: false,
+  issuerBaseURL: process.env.ISSUER_BASE_URL,
+  baseURL: process.env.BASE_URL,
+  clientID: process.env.CLIENT_ID,
+  secret: process.env.SECRET,
+  })
+  );
 
 server.name = 'API';
 
