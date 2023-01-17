@@ -13,7 +13,7 @@ import { createUser } from "./Redux/actions/index";
 
 import axios from "axios";
 
-axios.defaults.baseURL = "https://eventix-production.up.railway.app/"//";//http://localhost:3001/ http://localhost:3001/
+axios.defaults.baseURL ="https://eventix-production.up.railway.app/" //"http://localhost:3001"///"; http://localhost:3001/
 
 function App() {
 
