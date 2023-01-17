@@ -9,7 +9,7 @@ import {CiLogin} from 'react-icons/ci';
 
 
 export const LoginButton = ({islog}) => {
-  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, logout, user, loginWithPopup } = useAuth0();
   // const history = useHistory();
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -29,7 +29,7 @@ export const LoginButton = ({islog}) => {
   // `;
 
   function accountHandler() {
-    isAuthenticated ? openModal() : loginWithRedirect();
+    isAuthenticated ? openModal() : loginWithPopup();
     
   }
 
