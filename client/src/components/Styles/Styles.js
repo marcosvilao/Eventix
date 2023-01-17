@@ -21,7 +21,7 @@ color:black;
 align-items: center;
 display: flex;
 width: 30vw;
-justify-content: space-between;
+// justify-content: space-between;
 text-align: center;
 `
 

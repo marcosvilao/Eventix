@@ -31,13 +31,11 @@ export default function Navbar() {
           <a href="/aboutUs">
             <H3>About us</H3>
           </a>
-          
-          {logeado ? <a style={{cursor : 'pointer'}} onClick={openIt}>Create Events</a> : null}
-          {logeado ? <a href="/perfil">Profile</a> : null}
-          
+           {logeado ? <a style={{cursor : 'pointer'}} onClick={openIt}>Create Events</a> : null} 
+            
         </Leftbar>
         <Rightbar>
-          
+          {logeado ? <a href="/perfil">Profile</a> : null}
           <LoginButton islog={islog}/>
         </Rightbar>
       </NavBar>
