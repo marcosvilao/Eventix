@@ -19,7 +19,7 @@ export const LoginButton = ({islog}) => {
       if (isAuthenticated) {
         const token = await getAccessTokenSilently();
         setJwt(token);
-        localStorage.setItem("jwt", token);
+        localStorage.setItem("jwt", jwt);
       }
     };
     getJWT();
