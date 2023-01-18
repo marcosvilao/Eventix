@@ -7,7 +7,7 @@ import Loading from '../../Loading/Loading'
 
 
 export const LoginButton = ({islog}) => {
-  const { loginWithRedirect, isAuthenticated, user, isLoading, getAccessTokenSilently, error, logout  } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, user, getAccessTokenSilently, error, logout  } = useAuth0();
   const [jwt, setJwt] = useState(null);
 
   async function loginHandler() {
@@ -33,10 +33,6 @@ export const LoginButton = ({islog}) => {
 
   if (error) {
     return <div>Error: {error.message}</div>;
-  }
-
-  if (isLoading) {
-    return <Loading/>;
   }
   return (
     <div>
