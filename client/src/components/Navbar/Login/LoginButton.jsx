@@ -35,9 +35,7 @@ export const LoginButton = ({islog}) => {
     return <div>Error: {error.message}</div>;
   }
 
-  if (isLoading) {
-    return <Loading/>;
-  }
+
   return (
     <div>
 
