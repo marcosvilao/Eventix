@@ -1,62 +1,60 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 // import { useHistory } from "react-router-dom";
 import { Avatar, IconButton, Modal } from '@mui/material';
 import {CiLogin} from 'react-icons/ci';
-// import { Link } from "react-router-dom";
-// import styled from "styled-components";
-//import Modal from "react-modal";
+import Loading from '../../Loading/Loading'
 
 
 export const LoginButton = ({islog}) => {
-  const { loginWithRedirect, isAuthenticated, logout, user, loginWithPopup } = useAuth0();
-  // const history = useHistory();
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const { loginWithRedirect, isAuthenticated, user, isLoading, getAccessTokenSilently, error, logout  } = useAuth0();
+  const [jwt, setJwt] = useState(null);
 
-  // const Logbut = styled.button`
-  //   color: black;
-  //   background-color: rgba(255, 255, 255, 1);
-  //   border: 1px solid #ab4a8c;
-  //   width: 5vw;
-  //   transition: color 0.2s ease-out;
-
-  //   &:hover {
-  //     cursor: pointer;
-  //     color: white;
-  //     box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
-  //     background-color: #673c77;
-  //   }
-  // `;
-
-  function accountHandler() {
-    isAuthenticated ? openModal() : loginWithPopup();
-    
+  async function loginHandler() {
+    await loginWithRedirect()
   }
 
-  function openModal() {
-    setIsOpen(true);
+  useEffect(() => {
+    const getJWT = async () => {
+      if (isAuthenticated) {
+        const token = await getAccessTokenSilently();
+        setJwt(token);
+        localStorage.setItem("jwt", token);
+      }
+    };
+    getJWT();
+  }, [isAuthenticated, getAccessTokenSilently]);
+
+  function logoutHandler() {
+    localStorage.removeItem("jwt");
+    setJwt(null);
+    logout()
   }
 
-  function closeModal() {
-    setIsOpen(false);
+  if (error) {
+    return <div>Error: {error.message}</div>;
   }
-  console.log(user)
+
+  if (isLoading) {
+    return <Loading/>;
+  }
   return (
     <div>
 
-      {!isAuthenticated ? (<IconButton  onClick={() => accountHandler()}>
+      {!isAuthenticated ? (<IconButton  onClick={() => loginHandler()}>
             <CiLogin style={{ fontSize: 45, color: "white" }} color="primary"/>
           </IconButton>) : (
         <div>
-          <IconButton onClick={() => accountHandler()}>{islog()}
+          <IconButton>{islog()}
               <Avatar alt="p" src={user?.picture} size="lg"/>
           </IconButton>
-          <IconButton  onClick={() => logout()}>
+          <IconButton  onClick={() => logoutHandler()}>
             <CiLogin style={{ fontSize: 45, color: "white" }} />
           </IconButton>
+          {/* <p>JWT: {jwt}</p> */}
         </div>
       )}
-      <Modal
+      {/* <Modal
       style={{display:'flex',alignItems:'center',justifyContent:'center'}}
         open={modalIsOpen}
         onClose={closeModal}
@@ -67,7 +65,7 @@ export const LoginButton = ({islog}) => {
         <p>{user?.email}</p>
         <a href="/perfil">Purchase history</a>
         </div>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };
